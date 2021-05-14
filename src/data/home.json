@@ -1,0 +1,75 @@
+{
+  "female": {
+    "slider": [
+      {
+        "image": "/rbk/pexels-rachel-claire-4992487.jpg",
+        "title": "EN-SUITE ROOMS",
+        "desc": "FULLY FURNISHED"
+      },
+      {
+        "image": "/rbk/pexels-ivan-samkov-7620569.jpg",
+        "title": "FREE WIFI & Printers",
+        "desc": "EASY CONNECTIVITY"
+      },
+      {
+        "image": "/rbk/pexels-artem-2249063.jpg",
+        "title": "SECURITY & POWER",
+        "desc": "GUARANTEED 24/7"
+      }
+    ],
+    "fancy": [
+      {
+        "image": "/rbk/pexels-ivan-samkov-7620569.jpg",
+        "title": "FREE WIFI",
+        "desc": ""
+      },
+      {
+        "image": "/rbk/pexels-valeria-boltneva-1484516.jpg",
+        "title": "Skylight Restaurant",
+        "desc": ""
+      },
+      {
+        "image": "/rbk/pexels-artem-2249063.jpg",
+        "title": "24/7 Security & Power",
+        "desc": ""
+      },
+      {
+        "image": "/rbk/pexels-rachel-claire-4992487.jpg",
+        "title": "Air Condition",
+        "desc": ""
+      }
+    ],
+    "carousel": [
+      {
+        "name": "Deluxe Room",
+        "desc": "Karimu, Abuja",
+        "image": "/rbk/carousel-01.jpg",
+        "link": "/home/female/0001"
+      },
+      {
+        "name": "One Bedroom Suite",
+        "desc": "Karimu, Abuja",
+        "image": "/rbk/carousel-02.jpg",
+        "link": "/home/female/0002"
+      },
+      {
+        "name": "Two Bedroom Suite",
+        "desc": "Karimu, Abuja",
+        "image": "/rbk/carousel-03.jpg",
+        "link": "/home/female/0003"
+      },
+      {
+        "name": "Single Room",
+        "desc": "Karimu, Abuja",
+        "image": "/rbk/carousel-04.jpg",
+        "link": "/home/female/0004"
+      },
+      {
+        "name": "Special Room",
+        "desc": "Karimu, Abuja",
+        "image": "/rbk/carousel-05.jpg",
+        "link": "/home/female/0005"
+      }
+    ]
+  }
+}

@@ -4,12 +4,26 @@
     "link": "/"
   },
   {
-    "name": "About Us",
-    "link": "/about"
+    "name": "Accommodation",
+    "link": "#",
+    "items": [
+      {
+        "name": "Female",
+        "link": "/home/female"
+      },
+      {
+        "name": "Male",
+        "link": "/home/male"
+      }
+    ]
   },
   {
-    "name": "Solutions",
-    "link": "/solutions"
+    "name": "Rooms",
+    "link": "/rooms"
+  },
+  {
+    "name": "Gallery",
+    "link": "/gallery"
   },
   {
     "name": "Contact",

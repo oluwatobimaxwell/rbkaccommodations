@@ -9,8 +9,7 @@ export const Home = () => {
         className="p-0 mobile-height parallax"
         data-parallax-background-ratio="0.5"
         style={{
-          backgroundImage:
-            'url("https://images.pexels.com/photos/87236/pexels-photo-87236.jpeg")',
+          backgroundImage: `url("https://images.pexels.com/photos/87236/pexels-photo-87236.jpeg")`,
         }}
       >
         <div className="opacity-light bg-gradient-black-blue z-index-0" />
