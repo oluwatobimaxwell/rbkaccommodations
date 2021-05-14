@@ -1,0 +1,19 @@
+{
+  "name": "Gankco Energy",
+  "description": "Since 2017, Gankco Energy in Abuja has been a company with a total commitment to quality, safety, and timely delivery of projects within the clients’ specified schedule.",
+  "socials": {
+    "facebook": "#",
+    "instagram": "#",
+    "twitter": "#",
+    "linkedin": "#"
+  },
+  "address": "Suite SF03 Olive Plaza, Plot 913 Alexandra Crescent Wuse II, Abuja",
+  "phone1": "+234 705 454 5477",
+  "email": "info@gankcoenergy.com",
+  "pages": [
+    { "name": "home", "title": "", "theme": "" },
+    { "name": "about-us", "title": "About Us", "theme": "" },
+    { "name": "services", "title": "Solutions", "theme": "" },
+    { "name": "contact", "title": "Contact", "theme": "" }
+  ]
+}
