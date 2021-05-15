@@ -2,6 +2,11 @@
   "female": {
     "slider": [
       {
+        "image": "https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg",
+        "title": "Female Hostels",
+        "desc": "Welcome to RBK"
+      },
+      {
         "image": "/rbk/pexels-rachel-claire-4992487.jpg",
         "title": "EN-SUITE ROOMS",
         "desc": "FULLY FURNISHED"
@@ -74,6 +79,11 @@
   },
   "male": {
     "slider": [
+      {
+        "image": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg",
+        "title": "Male Hostels",
+        "desc": "Welcome to RBK"
+      },
       {
         "image": "/rbk/pexels-rachel-claire-4992487.jpg",
         "title": "EN-SUITE ROOMS",
