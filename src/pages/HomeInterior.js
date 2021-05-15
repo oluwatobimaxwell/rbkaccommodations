@@ -318,7 +318,7 @@ export const Home = ({ match }) => {
       >
         <div className="opacity-very-light opacity-3 bg-extra-dark-gray" />
         <div className="container-fluid">
-          <div className="row row-cols-1 row-cols-xl-4 row-cols-sm-2 align-items-center justify-content-center">
+          <div className="row row-cols-2 row-cols-xl-4 row-cols-sm-2 align-items-center justify-content-center">
             {/* start fancy text box item */}
             {/* end fancy text box item */}
 
@@ -384,7 +384,7 @@ export const Home = ({ match }) => {
               </h4>
             </div>
           </div>
-          <div className="row row-cols-1 row-cols-lg-5 row-cols-sm-2">
+          <div className="row row-cols-2 row-cols-lg-5 row-cols-sm-2">
             {/* start feature box item */}
             {features.map((item, i) => {
               return (
