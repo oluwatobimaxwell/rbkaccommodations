@@ -19,20 +19,20 @@ export const TopNavigation = () => {
           <div className="col-auto col-sm-6 col-lg-2 mr-auto pl-lg-0">
             <a className="navbar-brand" href="/">
               <img
-                src="images/logo-main.png"
-                data-at2x="images/logo-main.png"
+                src={require("../media/images/logo-black.png").default}
+                data-at2x={require("../media/images/logo-black.png").default}
                 className="default-logo"
                 alt=""
               />
               <img
-                src="images/logo-main.png"
-                data-at2x="images/logo-main.png"
+                src={require("../media/images/logo-black.png").default}
+                data-at2x={require("../media/images/logo-black.png").default}
                 className="alt-logo"
                 alt=""
               />
               <img
-                src="images/logo-main.png"
-                data-at2x="images/logo-main.png"
+                src={require("../media/images/logo-black.png").default}
+                data-at2x={require("../media/images/logo-black.png").default}
                 className="mobile-logo"
                 alt=""
               />
@@ -208,9 +208,12 @@ export const Footer = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-12 col-md-3 text-center text-md-left sm-margin-20px-bottom">
-              <a href="index.html" className="footer-logo">
+              <a href="/" className="footer-logo">
                 <img
-                  src="../images/logo-gradient-tan-geraldine.png"
+                  src={
+                    require("../media/images/logo-gradient-tan-geraldine.png")
+                      .default
+                  }
                   data-at2x="images/logo-gradient-tan-geraldine@2x.png"
                   alt=""
                 />
