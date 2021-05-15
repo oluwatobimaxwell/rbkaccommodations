@@ -4,7 +4,12 @@ import { Layout } from "../components/Layout";
 export const Home = ({ match }) => {
   const source = require("../data/home.json");
   const data = source[match?.params?.type];
-  let { carousel, fancy, slider } = data || source.female;
+  let {
+    carousel = [],
+    fancy = [],
+    slider = [],
+    features = [],
+  } = data || source.female;
   return (
     <Layout>
       <section className="p-0 sm-border-bottom border-color-medium-gray mobile-height">
@@ -363,6 +368,53 @@ export const Home = ({ match }) => {
         </div>
       </section>
       {/* end section */}
+
+      <section id="features" className="bg-white">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div
+              className="col-12 col-lg-5 col-sm-6 text-center margin-5-half-rem-bottom md-margin-3-rem-bottom wow animate__fadeIn"
+              style={{ visibility: "visible", animationName: "fadeIn" }}
+            >
+              <span className="text-yellow-ochre-light text-uppercase">
+                RBK Accommodation Features
+              </span>
+              <h4 className="alt-font font-weight-700 text-uppercase text-extra-dark-gray letter-spacing-minus-1px m-0">
+                Other features & facilities
+              </h4>
+            </div>
+          </div>
+          <div className="row row-cols-1 row-cols-lg-5 row-cols-sm-2">
+            {/* start feature box item */}
+            {features.map((item, i) => {
+              return (
+                <div
+                  className="col text-center padding-20px-tb box-shadow-double-large-hover border-radius-6px transition wow animate__fadeIn"
+                  data-wow-delay="0.1s"
+                  style={{
+                    visibility: "visible",
+                    animationDelay: "0.1s",
+                    animationName: "fadeIn",
+                  }}
+                >
+                  <img
+                    className="margin-25px-bottom mt-4"
+                    src={
+                      item.icon || "../images/litho-landing-page-icon-01.jpg"
+                    }
+                    alt=""
+                    data-no-retina
+                  />
+                  <span className="text-extra-medium font-weight-500 text-extra-dark-gray d-block w-90 mx-auto xs-w-100">
+                    {item.title}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       <section className="p-0 wow animate__fadeIn">
         <div className="container-fluid">
           <div className="row">

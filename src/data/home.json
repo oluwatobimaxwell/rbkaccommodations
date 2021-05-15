@@ -75,6 +75,48 @@
         "image": "/rbk/carousel-05.jpg",
         "link": "/home/female/0005"
       }
+    ],
+    "features": [
+      {
+        "icon": "https://d3re0f381bckq9.cloudfront.net/18242587_1528877083730_1024x969.jpg",
+        "title": "Reading Table"
+      },
+      {
+        "icon": "https://www.thespruce.com/thmb/A5-rSA6fv0SnkT69oyacx70a8tU=/1414x1414/smart/filters:no_upscale()/close-up-of-an-open-refrigerator-1094166778-f843a1c6766e471e92daae193e6b3eb6.jpg",
+        "title": "Refriderator & Water Heater"
+      },
+      {
+        "icon": "https://images.samsung.com/is/image/samsung/africa-en-fhdtv-n5300-global-ua40n5300arxxa-frontblack-153239960?$720_576_PNG$",
+        "title": "Smart Television"
+      },
+      {
+        "icon": "https://www.alarmnewengland.com/hs-fs/hubfs/smoke-detector-flames.jpg?width=600&name=smoke-detector-flames.jpg",
+        "title": "Smoke Detector"
+      },
+      {
+        "icon": "https://i.pinimg.com/originals/08/9a/c0/089ac023056b621cc04e03d63a74354d.jpg",
+        "title": "Walk-in Closet (wardrobe)"
+      },
+      {
+        "icon": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1594317518-hp-officejet-1594317461.jpg",
+        "title": "Printer in each room"
+      },
+      {
+        "icon": "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2018/07/GettyImages-929976910-1440x864.jpg",
+        "title": "Laundry Facility (Washing Machine)"
+      },
+      {
+        "icon": "https://sc04.alicdn.com/kf/H2be78c66f1644306a8a18415da4ce666V.jpg",
+        "title": "Free shuttle to school"
+      },
+      {
+        "icon": "https://5.imimg.com/data5/CS/KM/UV/SELLER-43359749/designer-office-reception-table-500x500.jpg",
+        "title": "Reception"
+      },
+      {
+        "icon": "https://i.pinimg.com/originals/c0/df/03/c0df037c5852ccb78ae6007d9b670264.jpg",
+        "title": "Automated Tap & CCTV"
+      }
     ]
   },
   "male": {
@@ -152,6 +194,48 @@
         "desc": "Karimu, Abuja",
         "image": "/rbk/carousel-05.jpg",
         "link": "/home/female/0005"
+      }
+    ],
+    "features": [
+      {
+        "icon": "https://d3re0f381bckq9.cloudfront.net/18242587_1528877083730_1024x969.jpg",
+        "title": "Reading Table"
+      },
+      {
+        "icon": "https://www.thespruce.com/thmb/A5-rSA6fv0SnkT69oyacx70a8tU=/1414x1414/smart/filters:no_upscale()/close-up-of-an-open-refrigerator-1094166778-f843a1c6766e471e92daae193e6b3eb6.jpg",
+        "title": "Refriderator & Water Heater"
+      },
+      {
+        "icon": "https://images.samsung.com/is/image/samsung/africa-en-fhdtv-n5300-global-ua40n5300arxxa-frontblack-153239960?$720_576_PNG$",
+        "title": "Smart Television"
+      },
+      {
+        "icon": "https://www.alarmnewengland.com/hs-fs/hubfs/smoke-detector-flames.jpg?width=600&name=smoke-detector-flames.jpg",
+        "title": "Smoke Detector"
+      },
+      {
+        "icon": "https://i.pinimg.com/originals/08/9a/c0/089ac023056b621cc04e03d63a74354d.jpg",
+        "title": "Walk-in Closet (wardrobe)"
+      },
+      {
+        "icon": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1594317518-hp-officejet-1594317461.jpg",
+        "title": "Printer in each room"
+      },
+      {
+        "icon": "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2018/07/GettyImages-929976910-1440x864.jpg",
+        "title": "Laundry Facility (Washing Machine)"
+      },
+      {
+        "icon": "https://sc04.alicdn.com/kf/H2be78c66f1644306a8a18415da4ce666V.jpg",
+        "title": "Free shuttle to school"
+      },
+      {
+        "icon": "https://5.imimg.com/data5/CS/KM/UV/SELLER-43359749/designer-office-reception-table-500x500.jpg",
+        "title": "Reception"
+      },
+      {
+        "icon": "https://i.pinimg.com/originals/c0/df/03/c0df037c5852ccb78ae6007d9b670264.jpg",
+        "title": "Automated Tap & CCTV"
       }
     ]
   }

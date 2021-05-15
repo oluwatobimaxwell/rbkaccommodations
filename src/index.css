@@ -136,3 +136,10 @@ a.text-salmon-rose-hover:hover {
   height: 100%;
   min-width: 100%;
 }
+
+#features .margin-25px-bottom {
+  margin-bottom: 25px;
+  width: 88px;
+  height: 85px;
+  border-radius: 15px;
+}
