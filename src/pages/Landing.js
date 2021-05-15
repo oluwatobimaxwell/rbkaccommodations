@@ -168,7 +168,7 @@ export const Landing = () => {
       <section className="home-vertical-portfolio p-0 full-screen w-100 position-relative">
         <div
           className="swiper-container vertical-white-move slider-vertical swiper-container-vertical"
-          data-slider-options='{ "slidesPerView": 1, "spaceBetween": 0, "direction": "vertical", "autoplay": { "delay": 3000, "disableOnInteraction": false }, "pagination": { "el": ".swiper-vertical-pagination", "clickable": true }, "allowTouchMove": true, "mousewheel": true, "loop": true, "iOSEdgeSwipeThreshold": 200, "keyboard": { "enabled": true, "onlyInViewport": true } }'
+          data-slider-options='{ "slidesPerView": 1, "spaceBetween": 0, "direction": "vertical", "autoplay": { "delay": 5000, "disableOnInteraction": false }, "pagination": { "el": ".swiper-vertical-pagination", "clickable": true }, "allowTouchMove": true, "mousewheel": true, "loop": true, "iOSEdgeSwipeThreshold": 200, "keyboard": { "enabled": true, "onlyInViewport": true } }'
           data-slider-md-direction="horizontal"
           data-slider-number-pagination={1}
         >
@@ -188,7 +188,7 @@ export const Landing = () => {
                       <div className="col-12 swiper-bottom-content d-flex flex-column justify-content-center text-left padding-9-rem-tb md-padding-5-rem-tb">
                         <a
                           href={item.link}
-                          className="w-30 xl-w-60 md-w-50 xs-w-80"
+                          className="w-30 xl-w-60 md-w-50 xs-w-100"
                         >
                           <span className="alt-font text-large text-white">
                             Welcome to
