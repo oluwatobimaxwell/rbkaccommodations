@@ -26,6 +26,7 @@ export const Landing = () => {
 
   return (
     <>
+      <style>{`.show-theme-demos .theme-demos {display: none }`}</style>
       <header className="home-vertical-portfolio">
         {/* start navigation */}
         <nav className="navbar navbar-expand-lg navbar-dark bg-transparent header-dark fixed-top navbar-static-overlay">

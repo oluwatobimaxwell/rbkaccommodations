@@ -1,9 +1,10 @@
 import React from "react";
 import { Layout } from "../components/Layout";
 
-export const Home = () => {
-  let { carousel, fancy, slider } = require("../data/home.json").female;
-
+export const Home = ({ match }) => {
+  const source = require("../data/home.json");
+  const data = source[match?.params?.type];
+  let { carousel, fancy, slider } = data || source.female;
   return (
     <Layout>
       <section className="p-0 sm-border-bottom border-color-medium-gray mobile-height">
