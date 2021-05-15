@@ -190,6 +190,9 @@ export const Landing = () => {
                           href={item.link}
                           className="w-30 xl-w-60 md-w-50 xs-w-80"
                         >
+                          <span className="alt-font text-large text-white">
+                            Welcome to
+                          </span>
                           <h1 className="alt-font font-weight-300 text-white mb-0">
                             <span className="font-weight-600 d-block">
                               {item.name.line1}
