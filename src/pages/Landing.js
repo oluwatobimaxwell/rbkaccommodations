@@ -5,7 +5,7 @@ export const Landing = () => {
     {
       name: {
         line1: "RBK Female",
-        line2: "Accommodation",
+        line2: "Hostel",
       },
       location: "Karimu, Abuja",
       image: "https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg",
@@ -14,7 +14,7 @@ export const Landing = () => {
     {
       name: {
         line1: "RBK Male",
-        line2: "Accommodation",
+        line2: "Hostel",
       },
       location: "Gwarinpa, Abuja",
       image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg",
