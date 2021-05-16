@@ -107,7 +107,7 @@ export const Home = ({ match }) => {
               data-wow-duration="0.3"
             >
               <div className="alt-font text-uppercase text-extra-medium font-weight-600 text-extra-dark-gray margin-25px-bottom sm-margin-15px-bottom">
-                Situation at the heart of ABuja
+                Situated at the heart of ABuja
               </div>
               <p className="w-85 xl-w-100">
                 Set in the heart of the bustling Downtown Area of Dubai, the
