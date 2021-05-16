@@ -389,7 +389,7 @@ export const Home = ({ match }) => {
             {features.map((item, i) => {
               return (
                 <div
-                  className="col text-center padding-20px-tb box-shadow-double-large-hover border-radius-6px transition wow animate__fadeIn"
+                  className="feature-item-holder col text-center border-radius-6px box-shadow-double-large-hover  transition wow animate__fadeIn"
                   data-wow-delay="0.1s"
                   style={{
                     visibility: "visible",
@@ -397,17 +397,19 @@ export const Home = ({ match }) => {
                     animationName: "fadeIn",
                   }}
                 >
-                  <img
-                    className="margin-25px-bottom mt-4"
-                    src={
-                      item.icon || "../images/litho-landing-page-icon-01.jpg"
-                    }
-                    alt=""
-                    data-no-retina
-                  />
-                  <span className="text-extra-medium font-weight-500 text-extra-dark-gray d-block w-90 mx-auto xs-w-100">
-                    {item.title}
-                  </span>
+                  <div className="w-100 h-100 feature-item padding-20px-tb border-radius-6px">
+                    <img
+                      className="margin-25px-bottom mt-4"
+                      src={
+                        item.icon || "../images/litho-landing-page-icon-01.jpg"
+                      }
+                      alt=""
+                      data-no-retina
+                    />
+                    <span className="text-extra-medium font-weight-500 text-extra-dark-gray d-block w-90 mx-auto xs-w-100">
+                      {item.title}
+                    </span>
+                  </div>
                 </div>
               );
             })}

@@ -143,7 +143,7 @@ export const Footer = () => {
               className="col-12 col-xl-5 col-lg-4 md-margin-50px-bottom sm-margin-30px-bottom last-paragraph-no-margin wow animate__fadeIn"
               data-wow-delay="0.6s"
             >
-              <h5 className="alt-font font-weight-500 text-dark-purple w-70 d-inline-block letter-spacing-minus-1px m-0 lg-w-100 md-w-50 xs-w-70">
+              <h5 className="alt-font font-weight-500 text-dark w-70 d-inline-block letter-spacing-minus-1px m-0 lg-w-100 md-w-50 xs-w-70">
                 Please feel free to get in touch with us
               </h5>
             </div>
@@ -157,7 +157,7 @@ export const Footer = () => {
                   <i className="line-icon-Geo2-Love icon-extra-medium text-salmon-rose d-block" />
                 </div>
                 <div className="feature-box-content">
-                  <span className="text-dark-purple text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
+                  <span className="text-dark text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
                     RBK Accommodation
                   </span>
                   <p className="m-0">
@@ -177,7 +177,7 @@ export const Footer = () => {
                   <i className="line-icon-Mail icon-extra-medium text-salmon-rose d-block" />
                 </div>
                 <div className="feature-box-content">
-                  <span className="text-dark-purple text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
+                  <span className="text-dark text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
                     How can we help?
                   </span>
                   <p className="m-0">
