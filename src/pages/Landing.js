@@ -7,7 +7,7 @@ export const Landing = () => {
         line1: "RBK Female",
         line2: "Hostel",
       },
-      location: "Karimu, Abuja",
+      location: "Ochacho Real-Homes, Karmo,Abuja",
       image: "https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg",
       link: "/home/female",
     },
