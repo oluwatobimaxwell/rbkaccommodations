@@ -141,7 +141,7 @@ a.text-salmon-rose-hover:hover {
   margin-bottom: 25px;
   width: 88px;
   height: 85px;
-  border-radius: 15px;
+  border-radius: 6px;
 }
 
 .feature-item.h-100.w-100 {
@@ -152,7 +152,7 @@ a.text-salmon-rose-hover:hover {
   border: 1px solid #e3e3e3;
 }
 
-.feature-item.h-100.w-100:hover {
+.feature-item-holder:hover .feature-item.h-100.w-100 {
   border: none;
 }
 
