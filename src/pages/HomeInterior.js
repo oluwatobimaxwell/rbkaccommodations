@@ -168,7 +168,7 @@ export const Home = ({ match }) => {
       {/* start section */}
       <section
         id="rooms-in-here"
-        className="bg-penguin-white position-relative padding-thirteen-top lg-padding-nine-top"
+        className="room bg-penguin-white position-relative padding-thirteen-top lg-padding-nine-top"
       >
         <div className="container">
           <div className="row justify-content-lg-center">

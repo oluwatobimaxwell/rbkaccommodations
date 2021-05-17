@@ -2,6 +2,7 @@ import React from "react";
 import { Layout } from "../components/Layout";
 
 export const Gallery = () => {
+  const media = require("../data/gallery.json");
   return (
     <Layout
       subtitle={"Gallery"}
@@ -19,157 +20,28 @@ export const Gallery = () => {
               >
                 <li className="grid-sizer" />
                 {/* start lightbox gallery item */}
-                <li className="grid-item wow animate__fadeIn">
-                  <a
-                    href="images/portfolio-96.jpg"
-                    title="Lightbox gallery image title..."
-                    data-group="lightbox-gallery-3"
-                    className="lightbox-group-gallery-item"
-                  >
-                    <div className="portfolio-box">
-                      <div className="portfolio-image bg-gradient-peacock-blue-crome-yellow">
-                        <img src="images/portfolio-96.jpg" alt="" />
-                        <div className="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
-                          <i className="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom" />
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
                 {/* end lightbox gallery item */}
-                {/* start lightbox gallery item */}
-                <li className="grid-item wow animate__fadeIn">
-                  <a
-                    href="images/portfolio-95.jpg"
-                    title="Lightbox gallery image title..."
-                    data-group="lightbox-gallery-3"
-                    className="lightbox-group-gallery-item"
-                  >
-                    <div className="portfolio-box">
-                      <div className="portfolio-image bg-gradient-peacock-blue-crome-yellow">
-                        <img src="images/portfolio-95.jpg" alt="" />
-                        <div className="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
-                          <i className="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom" />
+                {media.map((item, i) => {
+                  return (
+                    <li className="grid-item wow animate__fadeIn">
+                      <a
+                        href={item.image}
+                        title={item.title}
+                        data-group="lightbox-gallery-3"
+                        className="lightbox-group-gallery-item"
+                      >
+                        <div className="portfolio-box">
+                          <div className="portfolio-image bg-secondary">
+                            <img src={item.image} alt="" />
+                            <div className="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
+                              <i className="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom" />
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                {/* end lightbox gallery item */}
-                {/* start lightbox gallery item */}
-                <li className="grid-item wow animate__fadeIn">
-                  <a
-                    href="images/portfolio-97.jpg"
-                    title="Lightbox gallery image title..."
-                    data-group="lightbox-gallery-3"
-                    className="lightbox-group-gallery-item"
-                  >
-                    <div className="portfolio-box">
-                      <div className="portfolio-image bg-gradient-peacock-blue-crome-yellow">
-                        <img src="images/portfolio-97.jpg" alt="" />
-                        <div className="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
-                          <i className="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom" />
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                {/* end lightbox gallery item */}
-                {/* start lightbox gallery item */}
-                <li className="grid-item wow animate__fadeIn">
-                  <a
-                    href="images/portfolio-99.jpg"
-                    title="Lightbox gallery image title..."
-                    data-group="lightbox-gallery-3"
-                    className="lightbox-group-gallery-item"
-                  >
-                    <div className="portfolio-box">
-                      <div className="portfolio-image bg-gradient-peacock-blue-crome-yellow">
-                        <img src="images/portfolio-99.jpg" alt="" />
-                        <div className="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
-                          <i className="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom" />
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                {/* end lightbox gallery item */}
-                {/* start lightbox gallery item */}
-                <li className="grid-item wow animate__fadeIn">
-                  <a
-                    href="images/portfolio-98.jpg"
-                    title="Lightbox gallery image title..."
-                    data-group="lightbox-gallery-3"
-                    className="lightbox-group-gallery-item"
-                  >
-                    <div className="portfolio-box">
-                      <div className="portfolio-image bg-gradient-peacock-blue-crome-yellow">
-                        <img src="images/portfolio-98.jpg" alt="" />
-                        <div className="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
-                          <i className="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom" />
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                {/* end lightbox gallery item */}
-                {/* start lightbox gallery item */}
-                <li className="grid-item wow animate__fadeIn">
-                  <a
-                    href="images/portfolio-100.jpg"
-                    title="Lightbox gallery image title..."
-                    data-group="lightbox-gallery-3"
-                    className="lightbox-group-gallery-item"
-                  >
-                    <div className="portfolio-box">
-                      <div className="portfolio-image bg-gradient-peacock-blue-crome-yellow">
-                        <img src="images/portfolio-100.jpg" alt="" />
-                        <div className="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
-                          <i className="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom" />
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                {/* end lightbox gallery item */}
-                {/* start lightbox gallery item */}
-                <li className="grid-item wow animate__fadeIn">
-                  <a
-                    href="images/portfolio-105.jpg"
-                    title="Lightbox gallery image title..."
-                    data-group="lightbox-gallery-3"
-                    className="lightbox-group-gallery-item"
-                  >
-                    <div className="portfolio-box">
-                      <div className="portfolio-image bg-gradient-peacock-blue-crome-yellow">
-                        <img src="images/portfolio-105.jpg" alt="" />
-                        <div className="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
-                          <i className="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom" />
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                {/* end lightbox gallery item */}
-                {/* start lightbox gallery item */}
-                <li className="grid-item wow animate__fadeIn">
-                  <a
-                    href="images/portfolio-101.jpg"
-                    title="Lightbox gallery image title..."
-                    data-group="lightbox-gallery-3"
-                    className="lightbox-group-gallery-item"
-                  >
-                    <div className="portfolio-box">
-                      <div className="portfolio-image bg-gradient-peacock-blue-crome-yellow">
-                        <img src="images/portfolio-101.jpg" alt="" />
-                        <div className="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
-                          <i className="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom" />
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                {/* end lightbox gallery item */}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>
