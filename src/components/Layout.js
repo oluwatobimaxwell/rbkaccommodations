@@ -12,7 +12,7 @@ export const Layout = ({
   return (
     <>
       <TopNavigation boxheader={boxheader} />
-      {boxheader && (
+      {boxheader && subtitle && (
         <section className="bg-extra-dark-gray padding-25px-tb page-title-small">
           <div className="container">
             <div className="row align-items-center justify-content-center">

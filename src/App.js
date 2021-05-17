@@ -5,6 +5,7 @@ import { Career } from "./pages/Career";
 import { Contact } from "./pages/Contact";
 import { Gallery } from "./pages/Gallery";
 import { Home } from "./pages/HomeInterior";
+import { HomeLanding } from "./pages/HomeLanding";
 import { Landing } from "./pages/Landing";
 import { Rooms } from "./pages/Rooms";
 import { Services } from "./pages/Services";
@@ -19,7 +20,8 @@ function App() {
   return (
     <Router forceRefresh={!supportsHistory}>
       <Switch>
-        <Route exact path="/" component={Landing} />
+        <Route exact path="/" component={HomeLanding} />
+        {/* <Route exact path="/" component={Landing} /> */}
         <Route exact path="/home/:type" component={Home} />
         <Route exact path="/career" component={Career} />
         <Route exact path="/contact" component={Contact} />
