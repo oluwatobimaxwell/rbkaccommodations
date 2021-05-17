@@ -1,11 +1,50 @@
 import React from "react";
 import { Footer, TopNavigation } from "./Header";
 
-export const Layout = ({ children, title, subtitle, bgimage, jumpto }) => {
+export const Layout = ({
+  boxheader,
+  children,
+  title,
+  subtitle,
+  bgimage,
+  jumpto,
+}) => {
   return (
     <>
-      <TopNavigation />
-      {title && (
+      <TopNavigation boxheader={boxheader} />
+      {boxheader && (
+        <section className="bg-extra-dark-gray padding-25px-tb page-title-small">
+          <div className="container">
+            <div className="row align-items-center justify-content-center">
+              <div className="col-12 col-xl-8 col-lg-6">
+                {/* start page title */}
+                <h1 className="alt-font text-white font-weight-500 no-margin-bottom text-center text-lg-left">
+                  {title}
+                </h1>
+                {/* end page title */}
+              </div>
+              <div className="col-12 col-xl-4 col-lg-6 breadcrumb justify-content-center justify-content-lg-end text-small alt-font md-margin-10px-top">
+                {/* start breadcrumb */}
+                <ul className="xs-text-center">
+                  <li>
+                    <a href="/" className="text-white-hover">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="text-white-hover">
+                      {subtitle}
+                    </a>
+                  </li>
+                  {/* <li>Text box</li> */}
+                </ul>
+                {/* end breadcrumb */}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+      {title && !boxheader && (
         <section
           className="parallax "
           data-parallax-background-ratio="0.5"
@@ -32,6 +71,7 @@ export const Layout = ({ children, title, subtitle, bgimage, jumpto }) => {
         </section>
       )}
       {children}
+
       <Footer />
     </>
   );

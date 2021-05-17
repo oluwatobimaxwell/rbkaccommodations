@@ -1371,6 +1371,7 @@
       }
     });
   }
+  window.A = A;
   function B() {
     for (var e = 0; e < c.length; e++) {
       var t = c[e],

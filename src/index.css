@@ -112,8 +112,8 @@ a.text-dark-golden-yellow-hover:hover {
   background-color: #000000bf;
 }
 
-.blog-post-image img,
-.portfolio-image img {
+.room .blog-post-image img,
+.room .portfolio-image img {
   width: 100%;
   height: 352px;
 }
@@ -159,3 +159,159 @@ a.text-salmon-rose-hover:hover {
 .feature-item-holder {
   padding: 0 !important;
 }
+
+.rooms .blog-post-image img,
+.rooms .portfolio-image img {
+  width: 100%;
+  height: 275px;
+}
+
+.room .architecture-overlap {
+  background: #000000c7;
+  margin: 1rem;
+  border-radius: 0px;
+}
+
+.room .tab-style-07 .nav-tabs > li.nav-item > a.nav-link {
+  color: #fff;
+  border-bottom: none;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.room .tab-style-07 .nav-tabs > li.nav-item > a.nav-link.active {
+  color: #fff;
+  border-bottom: 3px solid #393c42;
+  font-weight: bold;
+}
+
+.btn-link.text-parrot-green,
+.text-parrot-green,
+a.text-parrot-green-hover:hover {
+  color: #007bff;
+}
+
+.empty-content {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.room-read-content {
+  line-height: 1.5;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.room .white-move .swiper-slide,
+.room .white-move .swiper-wrapper {
+  height: 500px;
+}
+
+.py-md-0.overflow-visible.position-relative {
+  z-index: 2;
+}
+
+@media (max-width: 991px) {
+  .room {
+    background-color: #23262d;
+  }
+  .room .architecture-overlap {
+    background: none;
+    margin: 0rem;
+    border-radius: 0px;
+  }
+}
+
+@media (min-width: 990px) {
+  .room
+    .swiper-pagination.swiper-light-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+    margin-top: -58px;
+    text-align: left;
+    left: 3rem !important;
+  }
+
+  .room .alt-font.font-weight-300.text-white.margin-4-rem-bottom {
+    text-align: left;
+    margin-left: 2rem;
+    margin-bottom: 12rem;
+  }
+
+  .book-room-btn {
+    position: absolute;
+    left: 7rem;
+  }
+}
+
+.slider-navigation-style-07.swiper-button-next,
+.slider-navigation-style-07.swiper-button-prev {
+  background-color: rgba(23, 23, 23, 0.5);
+  color: #fff;
+  z-index: 900000;
+  pointer-events: all;
+  cursor: pointer;
+}
+.slider-navigation-style-05.swiper-button-next,
+.slider-navigation-style-05.swiper-button-prev {
+  z-index: 900000;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.booking-form-open {
+  overflow: hidden !important;
+}
+
+.booking-form-open .mfp-container.mfp-inline-holder {
+  background: #fff;
+  /* overflow-y: scroll; */
+  top: 200px;
+}
+
+.booking-form-open .mfp-content {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: left;
+  z-index: 1045;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 5rem !important;
+}
+
+.notify-form-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.newsletter-email input {
+  padding-right: 130px;
+  background: #f5f5f50a;
+  border-width: 2px !important;
+  height: 50px;
+}
+.newsletter-email .required.error {
+  border: 2px solid red !important;
+}
+
+.animate__fadeIn.show-out {
+  display: none !important;
+}
+
+.animate__fadeIn.show-in {
+  display: block !important;
+}
+/* 
+.pointer-events {
+  pointer-events: all !important;
+  cursor: pointer !important;
+  position: relative !important;
+  background: red !important;
+  z-index: 9000000000;
+} */

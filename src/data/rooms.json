@@ -1,0 +1,94 @@
+[
+  {
+    "name": "Premium",
+    "price": "750",
+    "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
+    "category": "female",
+    "image": "../rbk/pexels-rachel-claire-4992487.jpg",
+    "location": "Karmu, Abuja",
+    "media": [
+      {
+        "title": "Beautiful Apartment",
+        "image": "../rbk/pexels-rachel-claire-4992487.jpg"
+      },
+      {
+        "title": "Standard Room",
+        "image": "../rbk/pexels-ivan-samkov-7620569.jpg"
+      }
+    ],
+    "contents": [
+      {
+        "name": "Overview",
+        "icon": "feather icon-feather-home",
+        "content": "At Wrace we believe your accommodation should be more than just a room. This is why we ensure we provide facilities to ensure you can live, study, socialize and enjoy your stay.<br/><br/>In addition, the property features its own reception area and maintenance service, in case any assistance is required. Your safety is extremely important to us, and so all of our sites are fitted with CCTV and secure entry systems. We also employ our own fully-trained accommodation team during office opening times, in case any issues arise or you have any queries."
+      },
+      {
+        "name": "Facilities",
+        "icon": "feather icon-feather-gift",
+        "content": "Executive room features a study space and ample storage space<br/>Attached bathroom<br/>2. A double bed & 2 nightstands<br/>3. Single comfy chair<br/>4. Double wardrobe<br/>5. TV with DSTV subscription"
+      },
+      {
+        "name": "Extras",
+        "icon": "feather icon-feather-plus-circle",
+        "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
+      }
+    ]
+  },
+  {
+    "name": "Premium Plus (+)",
+    "price": "800",
+    "rooms": "A5,A6-B5,B6 (can be shared ) | A7,B7",
+    "category": "female",
+    "image": "../rbk/pexels-artem-2249063.jpg",
+    "location": "Karmu, Abuja",
+    "media": [
+      {
+        "title": "Beautiful Apartment",
+        "image": "../rbk/pexels-artem-2249063.jpg"
+      },
+      {
+        "title": "Standard Room",
+        "image": "../rbk/pexels-ivan-samkov-7620569.jpg"
+      }
+    ],
+    "content": "At Wrace we believe your accommodation should be more than just a room. This is why we ensure we provide facilities to ensure you can live, study, socialize and enjoy your stay.<br/><br/>In addition, the property features its own reception area and maintenance service, in case any assistance is required. Your safety is extremely important to us, and so all of our sites are fitted with CCTV and secure entry systems. We also employ our own fully-trained accommodation team during office opening times, in case any issues arise or you have any queries."
+  },
+  {
+    "name": "Executive",
+    "price": "850",
+    "rooms": "A8-B8",
+    "category": "female",
+    "image": "../rbk/pexels-ivan-samkov-7620569.jpg",
+    "location": "Karmu, Abuja",
+    "media": [
+      {
+        "title": null,
+        "image": "../rbk/pexels-ivan-samkov-7620569.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/pexels-m&w-studios-90317.jpg"
+      }
+    ],
+    "content": "At Wrace we believe your accommodation should be more than just a room. This is why we ensure we provide facilities to ensure you can live, study, socialize and enjoy your stay.<br/><br/>In addition, the property features its own reception area and maintenance service, in case any assistance is required. Your safety is extremely important to us, and so all of our sites are fitted with CCTV and secure entry systems. We also employ our own fully-trained accommodation team during office opening times, in case any issues arise or you have any queries."
+  },
+  {
+    "name": "Executive X",
+    "price": "950",
+    "rooms": "A9-B9",
+    "category": "female",
+    "image": "../rbk/pexels-m&w-studios-90317.jpg",
+    "location": "Karmu, Abuja",
+    "media": [
+      {
+        "title": null,
+        "image": "../rbk/pexels-m&w-studios-90317.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/pexels-m&w-studios-90317.jpg"
+      }
+    ],
+    "content": "At Wrace we believe your accommodation should be more than just a room. This is why we ensure we provide facilities to ensure you can live, study, socialize and enjoy your stay.<br/><br/>In addition, the property features its own reception area and maintenance service, in case any assistance is required. Your safety is extremely important to us, and so all of our sites are fitted with CCTV and secure entry systems. We also employ our own fully-trained accommodation team during office opening times, in case any issues arise or you have any queries."
+  }
+]

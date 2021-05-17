@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { About } from "./pages/About";
 import { Career } from "./pages/Career";
 import { Contact } from "./pages/Contact";
+import { Gallery } from "./pages/Gallery";
 import { Home } from "./pages/HomeInterior";
 import { Landing } from "./pages/Landing";
+import { Rooms } from "./pages/Rooms";
 import { Services } from "./pages/Services";
 function App() {
   // const [loading, setloading] = useState(true);
@@ -23,6 +25,9 @@ function App() {
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/solutions" component={Services} />
         <Route exact path="/about" component={About} />
+        <Route exact path="/rooms" component={Rooms} />
+        <Route exact path="/gallery" component={Gallery} />
+        <Route exact path="/:type" component={Home} />
       </Switch>
     </Router>
   );

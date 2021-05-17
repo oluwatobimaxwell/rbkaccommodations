@@ -10,11 +10,16 @@ const data = {
 
 const { site } = data;
 
-export const TopNavigation = () => {
+export const TopNavigation = ({ boxheader }) => {
   return (
     <header>
       {/* start navigation */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-transparent header-light fixed-top navbar-boxed header-reverse-scroll">
+      <nav
+        className={
+          boxheader ||
+          "navbar navbar-expand-lg navbar-dark bg-transparent header-light fixed-top navbar-boxed header-reverse-scroll"
+        }
+      >
         <div className="container-fluid nav-header-container">
           <div className="col-auto col-sm-6 col-lg-2 mr-auto pl-lg-0">
             <a className="navbar-brand" href="/">

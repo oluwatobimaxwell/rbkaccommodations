@@ -1,15 +1,17 @@
 import React from "react";
 import { Layout } from "../components/Layout";
+import { ModalBox, SingleRoom } from "./Rooms";
 
 export const Home = ({ match }) => {
+  const type = (match?.params?.type || "").replace(/home/g, "");
   const source = require("../data/home.json");
-  const data = source[match?.params?.type];
-  let {
-    carousel = [],
-    fancy = [],
-    slider = [],
-    features = [],
-  } = data || source.female;
+  const data = source[type];
+  let { fancy = [], slider = [], features = [] } = data || source.female;
+
+  const carousel = require("../data/rooms.json").filter(
+    (r) => r.category === type
+  );
+
   return (
     <Layout>
       <section className="p-0 sm-border-bottom border-color-medium-gray mobile-height">
@@ -94,7 +96,7 @@ export const Home = ({ match }) => {
                   hello@rbkaccommodation.com
                 </a>
                 <a
-                  href="/contact"
+                  href="#rooms-in-here"
                   className="btn btn-fancy btn-small btn-transparent-dark-gray margin-2-rem-top d-table"
                 >
                   Book Now
@@ -164,7 +166,10 @@ export const Home = ({ match }) => {
       {/* end section */}
 
       {/* start section */}
-      <section className="bg-penguin-white position-relative padding-thirteen-top lg-padding-nine-top">
+      <section
+        id="rooms-in-here"
+        className="bg-penguin-white position-relative padding-thirteen-top lg-padding-nine-top"
+      >
         <div className="container">
           <div className="row justify-content-lg-center">
             <div
@@ -201,14 +206,17 @@ export const Home = ({ match }) => {
                       >
                         <div className="portfolio-box text-center">
                           <div className="portfolio-image bg-parrot-green">
-                            <a href={item.link}>
+                            <a
+                              href={"#view-room-" + i}
+                              className="popup-with-form"
+                            >
                               <img src={item.image} alt="" />
                             </a>
                             <div className="portfolio-hover align-items-center justify-content-center d-flex">
                               <div className="portfolio-icon">
                                 <a
-                                  href={item.link}
-                                  className="border-all border-width-2px rounded-circle border-color-white bg-white"
+                                  href={"#view-room-" + i}
+                                  className="popup-with-form border-all border-width-2px rounded-circle border-color-white bg-white"
                                 >
                                   <i className="ti-arrow-right text-extra-dark-gray" />
                                 </a>
@@ -217,16 +225,19 @@ export const Home = ({ match }) => {
                           </div>
                           <div className="portfolio-caption padding-30px-tb sm-padding-15px-tb">
                             <a
-                              href={item.link}
-                              className="alt-font text-black font-weight-800 text-uppercase d-inline-block margin-5px-bottom"
+                              href={"#view-room-" + i}
+                              className="popup-with-form alt-font text-black font-weight-800 text-uppercase d-inline-block margin-5px-bottom"
                             >
                               {item.name}
                             </a>
                             <span className="d-block text-medium-gray text-small line-height-18px text-uppercase">
-                              {item.desc}
+                              NGN {item.price}K
                             </span>
                           </div>
                         </div>
+                        <ModalBox id={"view-room-" + i}>
+                          <SingleRoom room={item} revId={"view-room-" + i} />
+                        </ModalBox>
                       </div>
                     );
                   })}
