@@ -74,5 +74,20 @@
       }
     ],
     "content": "At Wrace we believe your accommodation should be more than just a room. This is why we ensure we provide facilities to ensure you can live, study, socialize and enjoy your stay.<br/><br/>In addition, the property features its own reception area and maintenance service, in case any assistance is required. Your safety is extremely important to us, and so all of our sites are fitted with CCTV and secure entry systems. We also employ our own fully-trained accommodation team during office opening times, in case any issues arise or you have any queries."
+  },
+  {
+    "name": "Two in a Room",
+    "price": "950",
+    "rooms": "Male Hostel",
+    "category": "male",
+    "image": "../rbk/sa/IMG_8738.JPG",
+    "location": "Karmu, Abuja",
+    "media": [
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG_8738.JPG"
+      }
+    ],
+    "content": "At Wrace we believe your accommodation should be more than just a room. This is why we ensure we provide facilities to ensure you can live, study, socialize and enjoy your stay.<br/><br/>In addition, the property features its own reception area and maintenance service, in case any assistance is required. Your safety is extremely important to us, and so all of our sites are fitted with CCTV and secure entry systems. We also employ our own fully-trained accommodation team during office opening times, in case any issues arise or you have any queries."
   }
 ]

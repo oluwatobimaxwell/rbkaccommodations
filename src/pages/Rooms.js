@@ -3,99 +3,104 @@ import React, { useEffect, useState } from "react";
 import { Layout } from "../components/Layout";
 
 export const Rooms = () => {
-  const roomsavailable = require("../data/rooms.json");
-  const [current, setcurrent] = useState();
   return (
     <Layout
       subtitle={"Rooms"}
       title={"RBK Rooms"}
       boxheader={`navbar top-space navbar-expand-lg navbar-light bg-white header-light fixed-top header-reverse-scroll navbar-boxed`}
     >
-      {/* start section */}
-      <section class="border-top border-width-1px border-color-medium-gray padding-six-lr lg-no-padding-lr">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 text-center">
-              {/* start filter navigation */}
-              <ul className="blog-filter grid-filter nav nav-tabs justify-content-center border-0 text-uppercase font-weight-500 alt-font padding-6-rem-bottom md-padding-4-half-rem-bottom sm-padding-2-rem-bottom">
-                <li className="nav active">
-                  <a data-filter="*" href="#">
-                    All
-                  </a>
-                </li>
-                <li className="nav">
-                  <a data-filter=".male" href="#">
-                    Male
-                  </a>
-                </li>
-                <li className="nav">
-                  <a data-filter=".female" href="#">
-                    Female
-                  </a>
-                </li>
-              </ul>
-              {/* end filter navigation */}
-            </div>
-          </div>
-        </div>
-        <div className="container-fluid rooms">
-          <div className="row">
-            <div className="col-12 blog-content">
-              <ul className="blog-clean blog-wrapper grid grid-loading grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large">
-                <li className="grid-sizer" />
-                {roomsavailable.map((item, i) => {
-                  return (
-                    <li
-                      className={`grid-item ${item.category} wow animate__fadeIn`}
-                      key={"room-items-" + i}
-                    >
-                      <div className="blog-post text-center border-radius-6px bg-white box-shadow box-shadow-large-hover">
-                        <div className="blog-post-image bg-gradient-fast-blue-purple">
-                          <a
-                            href={"#view-room-" + i}
-                            className="popup-with-form"
-                            // onClick={() => setcurrent(item)}
-                          >
-                            <img src={item.image} alt="" />
-                            <div className="blog-rounded-icon bg-white border-color-white absolute-middle-center">
-                              <i className="feather  icon-feather-maximize-2  text-extra-dark-gray icon-extra-small" />
-                            </div>
-                          </a>
-                        </div>
-                        <div className="post-details padding-30px-all xl-padding-25px-lr position-sticky">
-                          <div className="bg-primary text-small alt-font text-white text-uppercase position-absolute font-weight-500 top-minus-15px right-0px padding-5px-tb padding-20px-lr">
-                            NGN {item.price}k
-                          </div>
-                          <a
-                            href={"#view-room-" + i}
-                            className="popup-with-form text-extra-dark-gray text-uppercase font-weight-700 alt-font d-block"
-                            style={{ fontSize: "1.5rem" }}
-                            // onClick={() => setcurrent(item)}
-                          >
-                            {item.name}
-                          </a>
-                          <a
-                            href={"#view-room-" + i}
-                            className="popup-with-form post-author text-medium text-uppercase"
-                            // onClick={() => setcurrent(item)}
-                          >
-                            {item.rooms}
-                          </a>
-                        </div>
-                      </div>
-                      <ModalBox id={"view-room-" + i}>
-                        <SingleRoom room={item} revId={"view-room-" + i} />
-                      </ModalBox>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* end section */}
+      <RoomsInner />
     </Layout>
+  );
+};
+
+export const RoomsInner = () => {
+  const roomsavailable = require("../data/rooms.json");
+  const [current, setcurrent] = useState();
+
+  return (
+    <section class="border-top border-width-1px border-color-medium-gray padding-six-lr lg-no-padding-lr">
+      <div className="container">
+        <div className="row">
+          <div className="col-12 text-center">
+            {/* start filter navigation */}
+            <ul className="blog-filter grid-filter nav nav-tabs justify-content-center border-0 text-uppercase font-weight-500 alt-font padding-6-rem-bottom md-padding-4-half-rem-bottom sm-padding-2-rem-bottom">
+              <li className="nav active">
+                <a data-filter="*" href="#">
+                  All
+                </a>
+              </li>
+              <li className="nav">
+                <a data-filter=".male" href="#">
+                  Male
+                </a>
+              </li>
+              <li className="nav">
+                <a data-filter=".female" href="#">
+                  Female
+                </a>
+              </li>
+            </ul>
+            {/* end filter navigation */}
+          </div>
+        </div>
+      </div>
+      <div className="container-fluid rooms">
+        <div className="row">
+          <div className="col-12 blog-content">
+            <ul className="blog-clean blog-wrapper grid grid-loading grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large">
+              <li className="grid-sizer" />
+              {roomsavailable.map((item, i) => {
+                return (
+                  <li
+                    className={`grid-item ${item.category} wow animate__fadeIn`}
+                    key={"room-items-" + i}
+                  >
+                    <div className="blog-post text-center border-radius-6px bg-white box-shadow box-shadow-large-hover">
+                      <div className="blog-post-image bg-gradient-fast-blue-purple">
+                        <a
+                          href={"#view-room-" + i}
+                          className="popup-with-form"
+                          // onClick={() => setcurrent(item)}
+                        >
+                          <img src={item.image} alt="" />
+                          <div className="blog-rounded-icon bg-white border-color-white absolute-middle-center">
+                            <i className="feather  icon-feather-maximize-2  text-extra-dark-gray icon-extra-small" />
+                          </div>
+                        </a>
+                      </div>
+                      <div className="post-details padding-30px-all xl-padding-25px-lr position-sticky">
+                        <div className="bg-primary text-small alt-font text-white text-uppercase position-absolute font-weight-500 top-minus-15px right-0px padding-5px-tb padding-20px-lr">
+                          NGN {item.price}k
+                        </div>
+                        <a
+                          href={"#view-room-" + i}
+                          className="popup-with-form text-extra-dark-gray text-uppercase font-weight-700 alt-font d-block"
+                          style={{ fontSize: "1.5rem" }}
+                          // onClick={() => setcurrent(item)}
+                        >
+                          {item.name}
+                        </a>
+                        <a
+                          href={"#view-room-" + i}
+                          className="popup-with-form post-author text-medium text-uppercase"
+                          // onClick={() => setcurrent(item)}
+                        >
+                          {item.rooms}
+                        </a>
+                      </div>
+                    </div>
+                    <ModalBox id={"view-room-" + i}>
+                      <SingleRoom room={item} revId={"view-room-" + i} />
+                    </ModalBox>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
