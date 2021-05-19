@@ -26,7 +26,7 @@ export const HomeLanding = () => {
     {
       name: {
         line1: "RBK Female",
-        line2: "Hostel",
+        line2: "Accommodation",
       },
       location: "Ochacho Real-Homes, Karmo,Abuja",
       image: "https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg",
@@ -35,7 +35,7 @@ export const HomeLanding = () => {
     {
       name: {
         line1: "RBK Male",
-        line2: "Hostel",
+        line2: "Accommodation",
       },
       location: "Gwarinpa, Abuja",
       image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg",
