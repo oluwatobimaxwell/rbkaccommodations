@@ -89,6 +89,9 @@ export const HomeLanding = () => {
           data-slider-options='{ "slidesPerView": 1, "spaceBetween": 0, "direction": "vertical", "autoplay": { "delay": 5000, "disableOnInteraction": false }, "pagination": { "el": ".swiper-vertical-pagination", "clickable": true }, "allowTouchMove": true, "mousewheel": true, "loop": true, "iOSEdgeSwipeThreshold": 200, "keyboard": { "enabled": true, "onlyInViewport": true } }'
           data-slider-md-direction="horizontal"
           data-slider-number-pagination={1}
+
+          // className="swiper-container full-screen md-landscape-h-600px white-move   "
+          // data-slider-options='{ "slidesPerView": 1, "loop": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav" }, "autoplay": { "delay": 5500, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'
         >
           <div className="swiper-wrapper">
             {/* start swiper slide */}
@@ -144,9 +147,22 @@ export const HomeLanding = () => {
           </div>
           {/* end slider number pagination */}
         </div>
+        <div className="scroll-down-bottom">
+          <a
+            href="#welcome"
+            className="section-link d-block w-2px h-35px bg-white mx-auto right-0px left-0px position-absolute"
+          >
+            <span class="scroll-down-text alt-font font-weight-600 text-white-gray letter-spacing-minus-1-half margin-5px-bottom">
+              scroll
+            </span>
+          </a>
+        </div>
       </section>
 
-      <section className="padding-90px-tb border-bottom border-color-medium-gray md-padding-75px-tb sm-padding-50px-tb">
+      <section
+        id="welcome"
+        className="padding-90px-tb border-bottom border-color-medium-gray md-padding-75px-tb sm-padding-50px-tb"
+      >
         <div className="container">
           <div className="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center">
             {features.map((item, i) => {
