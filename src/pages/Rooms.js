@@ -341,7 +341,8 @@ export const SwiperSlide = ({ slides = {}, book }) => {
           <div className="swiper-wrapper">
             {/* start slider item */}
             {/* end slider item */}
-            {slides?.media &&
+            {(slides?.media &&
+              slides?.media.length > 0 &&
               slides?.media.map((media, i) => {
                 return (
                   <div
@@ -382,7 +383,25 @@ export const SwiperSlide = ({ slides = {}, book }) => {
                     </div>
                   </div>
                 );
-              })}
+              })) || (
+              <div
+                className="swiper-slide cover-background"
+                style={{
+                  backgroundImage: `url("${slides.image}")`,
+                }}
+              >
+                <div className="opacity-light opacity-4 bg-extra-dark-gray" />
+                <div className="container h-100">
+                  <div className="row justify-content-center h-100">
+                    <div className="col-12 col-lgxl-10 col-lg-12 d-flex flex-column justify-content-center h-100 text-center">
+                      <h2 className="alt-font font-weight-300 text-white margin-4-rem-bottom">
+                        <span className="font-weight-600">{slides.name}</span>{" "}
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
           {/* start slider arrow */}
 
