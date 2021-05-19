@@ -20,6 +20,30 @@ export const HomeLanding = () => {
       link: "/home/male",
     },
   ];
+
+  const features = [
+    {
+      title: "Air Conditioned",
+      desc: "All rooms with AC",
+      icon: "  icon-simple-line-loop  icon-very-medium text-primary",
+    },
+    {
+      title: "24/7 Power & Security",
+      desc: "100% Electricity guarantee",
+      icon: " icon-simple-line-bulb  icon-very-medium text-primary",
+    },
+
+    {
+      title: "Free Wi-Fi",
+      desc: "Fast speed internet",
+      icon: " icon-simple-line-globe   icon-very-medium text-primary",
+    },
+    {
+      title: "Complementary Breakfast",
+      desc: "Bonus Package",
+      icon: " icon-simple-line-cup  icon-very-medium text-primary",
+    },
+  ];
   return (
     <Layout
     // boxheader={`navbar top-space navbar-expand-lg navbar-light bg-white header-light fixed-top header-reverse-scroll navbar-boxed`}
@@ -92,98 +116,31 @@ export const HomeLanding = () => {
       <section className="padding-90px-tb border-bottom border-color-medium-gray md-padding-75px-tb sm-padding-50px-tb">
         <div className="container">
           <div className="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center">
-            {/* start feature box item */}
-            <div
-              className="col md-margin-35px-bottom wow animate__fadeIn"
-              data-wow-delay="0.2s"
-              style={{
-                visibility: "visible",
-                animationDelay: "0.2s",
-                animationName: "fadeIn",
-              }}
-            >
-              <div className="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
-                <div className="feature-box-icon margin-30px-right line-height-0px lg-margin-25px-right">
-                  <i className="line-icon-Headset icon-very-medium text-primary" />
-                </div>
-                <div className="feature-box-content line-height-22px">
-                  <div className="text-extra-dark-gray font-weight-500 text-extra-medium line-height-20px margin-5px-bottom">
-                    Expert support
+            {features.map((item, i) => {
+              return (
+                <div
+                  className="col md-margin-35px-bottom wow animate__fadeIn"
+                  data-wow-delay="0.2s"
+                  style={{
+                    visibility: "visible",
+                    animationDelay: "0.2s",
+                    animationName: "fadeIn",
+                  }}
+                >
+                  <div className="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
+                    <div className="feature-box-icon margin-30px-right line-height-0px lg-margin-25px-right">
+                      <i className={item.icon} />
+                    </div>
+                    <div className="feature-box-content line-height-22px">
+                      <div className="text-extra-dark-gray font-weight-500 text-extra-medium line-height-20px margin-5px-bottom">
+                        {item.title}
+                      </div>
+                      <span>{item.desc}</span>
+                    </div>
                   </div>
-                  <span>Contact support team</span>
                 </div>
-              </div>
-            </div>
-            {/* end feature box item */}
-            {/* start feature box item */}
-            <div
-              className="col md-margin-35px-bottom wow animate__fadeIn"
-              data-wow-delay="0.4s"
-              style={{
-                visibility: "visible",
-                animationDelay: "0.4s",
-                animationName: "fadeIn",
-              }}
-            >
-              <div className="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
-                <div className="feature-box-icon margin-30px-right line-height-0px lg-margin-25px-right">
-                  <span className="line-icon-Like-2 icon-very-medium text-primary" />
-                </div>
-                <div className="feature-box-content line-height-22px">
-                  <div className="text-extra-dark-gray font-weight-500 text-extra-medium line-height-20px margin-5px-bottom">
-                    Perfect quality
-                  </div>
-                  <span>Perfect design quality</span>
-                </div>
-              </div>
-            </div>
-            {/* end feature box item */}
-            {/* start feature box item */}
-            <div
-              className="col xs-margin-35px-bottom wow animate__fadeIn"
-              data-wow-delay="0.6s"
-              style={{
-                visibility: "visible",
-                animationDelay: "0.6s",
-                animationName: "fadeIn",
-              }}
-            >
-              <div className="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
-                <div className="feature-box-icon margin-30px-right line-height-0px lg-margin-25px-right">
-                  <i className="line-icon-Shield icon-very-medium text-primary" />
-                </div>
-                <div className="feature-box-content line-height-22px">
-                  <div className="text-extra-dark-gray font-weight-500 text-extra-medium line-height-20px margin-5px-bottom">
-                    Security checkout
-                  </div>
-                  <span>Safe and trustworthy</span>
-                </div>
-              </div>
-            </div>
-            {/* end feature box item */}
-            {/* start feature box item */}
-            <div
-              className="col wow animate__fadeIn"
-              data-wow-delay="0.8s"
-              style={{
-                visibility: "visible",
-                animationDelay: "0.8s",
-                animationName: "fadeIn",
-              }}
-            >
-              <div className="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
-                <div className="feature-box-icon margin-30px-right line-height-0px lg-margin-25px-right">
-                  <i className="line-icon-Coin icon-very-medium text-primary" />
-                </div>
-                <div className="feature-box-content line-height-22px">
-                  <div className="text-extra-dark-gray font-weight-500 text-extra-medium line-height-20px margin-5px-bottom">
-                    Instant discounts
-                  </div>
-                  <span>Use your coupon now</span>
-                </div>
-              </div>
-            </div>
-            {/* end feature box item */}
+              );
+            })}
           </div>
         </div>
       </section>
