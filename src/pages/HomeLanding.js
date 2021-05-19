@@ -29,7 +29,8 @@ export const HomeLanding = () => {
         line2: "Accommodation",
       },
       location: "Ochacho Real-Homes, Karmo,Abuja",
-      image: "https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg",
+      image: require("../media/rbk/sa/EA42832D-8B27-44DB-B366-00BA96F963AD.JPG")
+        .default,
       link: "/home/female",
     },
     {
@@ -38,7 +39,8 @@ export const HomeLanding = () => {
         line2: "Accommodation",
       },
       location: "Gwarinpa, Abuja",
-      image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg",
+      image: require("../media/rbk/sa/EA42832D-8B27-44DB-B366-00BA96F963AD.JPG")
+        .default,
       link: "/home/male",
     },
   ];
