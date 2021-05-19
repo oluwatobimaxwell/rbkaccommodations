@@ -1,0 +1,39 @@
+{
+  "structure": [
+    {
+      "name": "id",
+      "type": "integer",
+      "autoincrement": true
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "price",
+      "type": "integer"
+    },
+    {
+      "name": "type",
+      "type": "string"
+    },
+    {
+      "name": "location",
+      "type": "string"
+    }
+  ],
+  "relationship": [
+    {
+      "rooms": "samplemodel2-hostel"
+    }
+  ],
+  "data": [
+    {
+      "id": "",
+      "name": "",
+      "price": "",
+      "type": "",
+      "location": ""
+    }
+  ]
+}

@@ -70,7 +70,7 @@ export const Layout = ({
           </div>
         </section>
       )}
-      {children}
+      <div class="main-content">{children}</div>
 
       <Footer />
     </>
