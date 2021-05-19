@@ -39,7 +39,7 @@ export const HomeLanding = () => {
         line2: "Accommodation",
       },
       location: "Gwarinpa, Abuja",
-      image: require("../media/rbk/sa/EA42832D-8B27-44DB-B366-00BA96F963AD.JPG")
+      image: require("../media/rbk/sa/D15E089B-B790-481A-882A-60E6749DF197.JPG")
         .default,
       link: "/home/male",
     },
