@@ -48,6 +48,7 @@ export const RoomsInner = () => {
       <div className="container-fluid rooms">
         <div className="row">
           <div className="col-12 blog-content">
+          
             <ul className="blog-clean blog-wrapper grid grid-loading grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large">
               <li className="grid-sizer" />
               {roomsavailable.map((item, i) => {
@@ -56,7 +57,7 @@ export const RoomsInner = () => {
                     className={`grid-item ${item.category} wow animate__fadeIn`}
                     key={"room-items-" + i}
                   >
-                    <div className="blog-post text-center border-radius-6px bg-white box-shadow box-shadow-large-hover">
+                    {/* <div className="blog-post text-center border-radius-6px bg-white box-shadow box-shadow-large-hover">
                       <div className="blog-post-image bg-gradient-fast-blue-purple">
                         <a
                           href={"#view-room-" + i}
@@ -89,8 +90,79 @@ export const RoomsInner = () => {
                           {item.rooms}
                         </a>
                       </div>
+                    </div> */}
+
+                    {/* <div className="col col-sm-8 padding-5px-all order-md-1 order-lg-0 wow animate__fadeIn" data-wow-delay="0.2s"> */}
+                    <div
+                      className="position-relative h-100 d-flex align-items-center cover-background text-center"
+                      style={{
+                        backgroundImage: `url("${item.image}")`,
+                        borderRadius: 8,
+                      }}
+                    >
+                      <div className="opacity-extra-medium-2 bg-extra-dark-gray" />
+                      <div className="position-relative z-index-1 w-100 padding-4-rem-tb lg-padding-5-rem-tb">
+                        <span className="d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
+                          NGN {item.price}k
+                        </span>
+                        <h3 className="alt-font text-white text-uppercase w-90 lg-w-85 mx-auto margin-35px-bottom font-weight-400">
+                          {item.name}
+                        </h3>
+
+                        <div
+                          style={{
+                            borderRadius: "8px",
+                            display: "flex",
+                            width: "max-content",
+                            margin: "auto",
+                            marginBottom: "15px",
+                          }}
+                        >
+                          <div
+                            className="padding-3-half-rem-lr padding-10px-tb border-right border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-20px-bottom xs-no-border-right"
+                            style={{
+                              display: "flex",
+                              flexDirection: "row",
+                              alignItems: "center",
+                            }}
+                          >
+                            <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom margin-5px-right">
+                              <i className="feather  icon-feather-user   " />
+                            </span>
+                            <span className="alt-font text-medium text-uppercase d-inline-block d-sm-block" style={{color: "#c9c7c5"}}>
+                              {item.category}
+                            </span>
+                          </div>
+                          <div
+                            className="padding-3-half-rem-lr padding-10px-tb border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-30px-bottom xs-no-border-right"
+                            style={{
+                              display: "flex",
+                              flexDirection: "row",
+                              alignItems: "center",
+                            }}
+                          >
+                            <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom margin-5px-right">
+                              <i className="feather icon-feather-map-pin " />
+                            </span>
+                            <span className="alt-font text-medium text-uppercase d-inline-block d-sm-block" style={{color: "#c9c7c5"}}>
+                              {item.location}
+                            </span>
+                          </div>
+                        </div>
+
+                        <a
+                          href={"#view-room-" + i}
+                          className={
+                            "popup-with-form btn btn-medium btn-fancy btn-round-edge-small btn-box-shadow btn-white section-link"
+                          }
+                        >
+                          View Room
+                        </a>
+                      </div>
                     </div>
-                    <ModalBox id={"view-room-" + i}>
+                    {/* </div> */}
+
+                    <ModalBox id={"view-room-" + i} width={7}>
                       <SingleRoom room={item} revId={"view-room-" + i} />
                     </ModalBox>
                   </li>
@@ -181,11 +253,11 @@ export const SingleRoom = ({ room = {}, revId = "" }) => {
       </section>
       {/* end revolution slider section */}
       {/* start section */}
-      <section className="py-md-0 overflow-visible position-relative">
+      {/* <section className="py-md-0 overflow-visible position-relative">
         <div className="overlay-box"></div>
         <div className="container-fluid">
           <div className="row justify-content-end">
-            <div className="col-12 col-xl-9 col-lg-7 col-md-10 position-absolute bottom-0px right-0px d-flex flex-column flex-sm-row padding-1-half-rem-tb padding-2-rem-lr xl-padding-2-rem-lr lg-padding-3-rem-tb sm-position-relative sm-no-padding-top text-center text-sm-left architecture-overlap">
+            <div className="col-12 col-xl-5 col-lg-7 col-md-10 position-absolute bottom-0px right-0px d-flex flex-column flex-sm-row padding-1-half-rem-tb padding-2-rem-lr xl-padding-2-rem-lr lg-padding-3-rem-tb sm-position-relative sm-no-padding-top text-center text-sm-left architecture-overlap" style={{borderRadius: 8, right: 100}}>
               <div className="padding-3-half-rem-lr padding-10px-tb border-right border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-20px-bottom xs-no-border-right">
                 <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom">
                   <i className="feather  icon-feather-user   " />
@@ -194,7 +266,7 @@ export const SingleRoom = ({ room = {}, revId = "" }) => {
                   {data?.category}
                 </span>
               </div>
-              <div className="padding-3-half-rem-lr padding-10px-tb border-right border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-30px-bottom xs-no-border-right">
+              <div className="padding-3-half-rem-lr padding-10px-tb border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-30px-bottom xs-no-border-right">
                 <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom">
                   <i className="feather icon-feather-map-pin " />
                 </span>
@@ -213,7 +285,7 @@ export const SingleRoom = ({ room = {}, revId = "" }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* end section */}
       {/* start section */}
       <section
@@ -222,33 +294,60 @@ export const SingleRoom = ({ room = {}, revId = "" }) => {
       >
         <div className="containerx">
           <div className="row justify-content-center">
+
+            {/* <div className="col-12 col-lg-5 col-lg-6  bottom-0px right-0px d-flex flex-column flex-sm-row padding-1-half-rem-tb padding-2-rem-lr xl-padding-2-rem-lr lg-padding-3-rem-tb sm-position-relative sm-no-padding-top text-center text-sm-left architecture-overlap" style={{borderRadius: 8}}>
+              
+            </div>
+
+       */}
             <div
-              className="col-12 col-lg-4 col-md-6 architecture fancy-text-box-style-01 text-center text-md-left md-margin-50px-bottom sm-margin-50px-bottom wow animate__fadeIn"
+              className="col-12 col-lg-6 col-md-6 architecture fancy-text-box-style-01 text-center text-md-left md-margin-50px-bottom sm-margin-50px-bottom wow animate__fadeIn"
               data-wow-delay="0.1s"
             >
-              <div className="fancy-text-box padding-2-half-rem-all md-padding-4-rem-all xs-padding-30px-all">
-                <div className="fancy-text-box-border-left border-color-white-transparent" />
+              <div className="architecture-overlap"  style={{borderRadius: 8, display: "flex", margin: 0, marginBottom: 15}}>
+              <div className="padding-3-half-rem-lr padding-10px-tb border-right border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-20px-bottom xs-no-border-right">
+                <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom">
+                  <i className="feather  icon-feather-user   " />
+                </span>
+                <span className="alt-font text-medium text-uppercase d-inline-block d-sm-block">
+                  {data?.category}
+                </span>
+              </div>
+              <div className="padding-3-half-rem-lr padding-10px-tb border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-30px-bottom xs-no-border-right">
+                <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom">
+                  <i className="feather icon-feather-map-pin " />
+                </span>
+                <span className="alt-font text-medium text-uppercase d-inline-block d-sm-block">
+                  {data?.location}
+                </span>
+              </div>
+              </div>
+           
+
+              <div className="fancy-text-box padding-2-half-rem-all md-padding-4-rem-all xs-padding-30px-all"  style={{minHeight: 300}} >
+                <div className="fancy-text-box-border-left border-color-white-transparent" style={{ borderRadius: 8 }} />
                 <h1
-                  className="alt-font fancy-text-content font-weight-600 text-parrot-green d-inline-block align-middle letter-spacing-minus-5px"
-                  style={{ fontSize: 50 }}
+                  className="alt-font w-100 text-center fancy-text-content font-weight-600 text-parrot-green d-inline-block align-middle letter-spacing-minus-5px"
+                  style={{ fontSize: 75, marginTop: 60 }}
                 >
                   N{data?.price}K
                 </h1>
-                <div className="alt-font text-extra-medium text-white text-left d-inline-block align-middle w-90px mx-auto line-height-24px position-relative top-minus-4px">
-                  Per Academic Semester
+                <div className="alt-font w-100 text-center text-extra-medium text-white text-left d-inline-block align-middle w-90px mx-auto line-height-24px position-relative top-minus-4px">
+                  Per Student Per Semester
                 </div>
-                <div className="fancy-text-box-border-right border-color-white-transparent" />
+                <div className="fancy-text-box-border-right border-color-white-transparent" style={{ borderRadius: 8 }}/>
               </div>
               <button
                 id={"bookbtn-" + revId}
                 className="bookbtn btn btn-large mt-4 btn-transparent-white w-100 d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr pointer-events"
+                style={{borderRadius: 8}}
               >
                 Book Now
               </button>
             </div>
 
             <div
-              className={`col-12 col-lg-8 col-md-10 text-center text-md-left wow animate__fadeIn show-out`}
+              className={`col-12 col-lg-6 col-md-10 text-center text-md-left wow animate__fadeIn show-out`}
               data-wow-delay="0.5s"
               id={"box-area-book-" + revId}
             >
@@ -256,7 +355,7 @@ export const SingleRoom = ({ room = {}, revId = "" }) => {
             </div>
 
             <div
-              className={`col-12 col-lg-8 col-md-10 text-center text-md-left wow animate__fadeIn show-in`}
+              className={`col-12 col-lg-6 col-md-10 text-center text-md-left wow animate__fadeIn show-in`}
               id={"box-area-" + revId}
               data-wow-delay="0.5s"
             >
@@ -361,7 +460,7 @@ export const SwiperSlide = ({ slides = {}, book }) => {
                     <div className="container h-100">
                       <div className="row justify-content-center h-100">
                         <div className="col-12 col-lgxl-10 col-lg-12 d-flex flex-column justify-content-center h-100 text-center">
-                          <h2 className="alt-font font-weight-300 text-white margin-4-rem-bottom">
+                          <h2 className="alt-font font-weight-300 text-white ">
                             <span className="font-weight-600">
                               {slides.name}
                             </span>{" "}

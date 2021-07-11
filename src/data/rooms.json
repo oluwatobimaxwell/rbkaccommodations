@@ -1,93 +1,154 @@
 [
   {
     "name": "Premium",
+    "price": "550",
+    "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
+    "category": "male",
+    "image": "../rbk/sa/IMG-20210711-WA0052.jpg",
+    "location": "Gwarinpa, Abuja",
+    "media": [
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210709-WA0007.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210709-WA0014.jpg"
+      }
+    ],
+    "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
+  },
+  {
+    "name": "Premium II",
+    "price": "600",
+    "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
+    "category": "male",
+    "image": "../rbk/sa/IMG-20210711-WA0053.jpg",
+    "location": "Gwarinpa, Abuja",
+    "media": [
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210709-WA0007.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210709-WA0014.jpg"
+      }
+    ],
+    "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
+  },
+  {
+    "name": "Executive II",
+    "price": "700",
+    "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
+    "category": "male",
+    "image": "../rbk/sa/IMG-20210709-WA0014.jpg",
+    "location": "Gwarinpa, Abuja",
+    "media": [
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210709-WA0007.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210709-WA0014.jpg"
+      }
+    ],
+    "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
+  },
+
+  {
+    "name": "Premium",
     "price": "750",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
     "category": "female",
-    "image": "../rbk/sa/3f61f522-aebf-4ae1-a076-028ffcd2e264.JPG",
-    "location": "Karmu, Abuja",
+    "image": "../rbk/sa/IMG-20210711-WA0006.jpg",
+    "location": "Gwarinpa, Abuja",
     "media": [
       {
         "title": null,
-        "image": "../rbk/sa/3f61f522-aebf-4ae1-a076-028ffcd2e264.JPG"
+        "image": "../rbk/sa/IMG-20210709-WA0007.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210709-WA0014.jpg"
       }
     ],
-    "contents": [
-      {
-        "name": "Overview",
-        "icon": "feather icon-feather-home",
-        "content": "At Wrace we believe your accommodation should be more than just a room. This is why we ensure we provide facilities to ensure you can live, study, socialize and enjoy your stay.<br/><br/>In addition, the property features its own reception area and maintenance service, in case any assistance is required. Your safety is extremely important to us, and so all of our sites are fitted with CCTV and secure entry systems. We also employ our own fully-trained accommodation team during office opening times, in case any issues arise or you have any queries."
-      },
-      {
-        "name": "Facilities",
-        "icon": "feather icon-feather-gift",
-        "content": "Executive room features a study space and ample storage space<br/>Attached bathroom<br/>2. A double bed & 2 nightstands<br/>3. Single comfy chair<br/>4. Double wardrobe<br/>5. TV with DSTV subscription"
-      },
-      {
-        "name": "Extras",
-        "icon": "feather icon-feather-plus-circle",
-        "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
-      }
-    ]
+    "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
   },
   {
-    "name": "Premium Plus (+)",
+    "name": "Premium II",
+    "price": "750",
+    "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
+    "note": "Private Balcony",
+    "category": "female",
+    "image": "../rbk/sa/IMG-20210711-WA0046.jpg",
+    "location": "Ochacho, Abuja",
+    "media": [
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210709-WA0007.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210709-WA0014.jpg"
+      }
+    ],
+    "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
+  },
+  {
+    "name": "Premium +",
     "price": "800",
-    "rooms": "A5,A6-B5,B6 (can be shared ) | A7,B7",
+    "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
+    "note": "Private Balcony",
     "category": "female",
-    "image": "../rbk/sa/3f61f522-aebf-4ae1-a076-028ffcd2e264.JPG",
-    "location": "Karmu, Abuja",
+    "image": "../rbk/sa/IMG-20210711-WA0004.jpg",
+    "location": "Ochacho, Abuja",
     "media": [
       {
         "title": null,
-        "image": "../rbk/sa/3f61f522-aebf-4ae1-a076-028ffcd2e264.JPG"
+        "image": "../rbk/sa/IMG-20210711-WA0004.jpg"
       }
     ],
-    "content": "At Wrace we believe your accommodation should be more than just a room. This is why we ensure we provide facilities to ensure you can live, study, socialize and enjoy your stay.<br/><br/>In addition, the property features its own reception area and maintenance service, in case any assistance is required. Your safety is extremely important to us, and so all of our sites are fitted with CCTV and secure entry systems. We also employ our own fully-trained accommodation team during office opening times, in case any issues arise or you have any queries."
+    "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
   },
   {
-    "name": "Executive",
+    "name": "Executive II",
+    "price": "700",
+    "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
+    "category": "female",
+    "image": "../rbk/sa/IMG-20210709-WA0007.jpg",
+    "location": "Ochacho, Abuja",
+    "media": [
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210709-WA0007.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210709-WA0007.jpg"
+      }
+    ],
+    "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
+  },
+  {
+    "name": "Executive I",
     "price": "850",
-    "rooms": "A8-B8",
+    "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
+    "note": "Private Balcony",
     "category": "female",
-    "image": "../rbk/sa/3f61f522-aebf-4ae1-a076-028ffcd2e264.JPG",
-    "location": "Karmu, Abuja",
+    "image": "../rbk/sa/IMG-20210709-WA0016.jpg",
+    "location": "Ochacho, Abuja",
     "media": [
       {
         "title": null,
-        "image": "../rbk/sa/3f61f522-aebf-4ae1-a076-028ffcd2e264.JPG"
-      }
-    ],
-    "content": "At Wrace we believe your accommodation should be more than just a room. This is why we ensure we provide facilities to ensure you can live, study, socialize and enjoy your stay.<br/><br/>In addition, the property features its own reception area and maintenance service, in case any assistance is required. Your safety is extremely important to us, and so all of our sites are fitted with CCTV and secure entry systems. We also employ our own fully-trained accommodation team during office opening times, in case any issues arise or you have any queries."
-  },
-  {
-    "name": "Executive X",
-    "price": "950",
-    "rooms": "A9-B9",
-    "category": "female",
-    "image": "../rbk/sa/3f61f522-aebf-4ae1-a076-028ffcd2e264.JPG",
-    "location": "Karmu, Abuja",
-    "media": [
+        "image": "../rbk/sa/IMG-20210709-WA0016.jpg"
+      },
       {
         "title": null,
-        "image": "../rbk/sa/3f61f522-aebf-4ae1-a076-028ffcd2e264.JPG"
+        "image": "../rbk/sa/IMG-20210709-WA0016.jpg"
       }
     ],
-    "content": "At Wrace we believe your accommodation should be more than just a room. This is why we ensure we provide facilities to ensure you can live, study, socialize and enjoy your stay.<br/><br/>In addition, the property features its own reception area and maintenance service, in case any assistance is required. Your safety is extremely important to us, and so all of our sites are fitted with CCTV and secure entry systems. We also employ our own fully-trained accommodation team during office opening times, in case any issues arise or you have any queries."
-  },
-  {
-    "name": "Two in a Room",
-    "price": "550",
-    "rooms": "Male Hostel",
-    "category": "male",
-    "image": "../rbk/sa/IMG_8738.JPG",
-    "location": "Karmu, Abuja",
-    "media": [
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG_8738.JPG"
-      }
-    ],
-    "content": "At Wrace we believe your accommodation should be more than just a room. This is why we ensure we provide facilities to ensure you can live, study, socialize and enjoy your stay.<br/><br/>In addition, the property features its own reception area and maintenance service, in case any assistance is required. Your safety is extremely important to us, and so all of our sites are fitted with CCTV and secure entry systems. We also employ our own fully-trained accommodation team during office opening times, in case any issues arise or you have any queries."
+    "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
   }
 ]

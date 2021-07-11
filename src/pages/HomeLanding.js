@@ -3,24 +3,24 @@ import { Layout } from "../components/Layout";
 import { RoomsInner } from "./Rooms";
 
 export const HomeLanding = () => {
-  const sliders = [
-    {
-      title: `Welcome to <b>RBK Student Accommodation</b> `,
-      desc: "Welcome to RBK",
-      location: "Ochacho Real-Homes, Karmo,Abuja",
-      image: require("../media/rbk/sa/EA42832D-8B27-44DB-B366-00BA96F963AD.JPG")
-        .default,
-      link: "/home/female",
-    },
-    {
-      title: `The Best <b>Student Accommodation</b> in Abuja`,
-      desc: "Welcome to RBK",
-      location: "Gwarinpa, Abuja",
-      image: require("../media/rbk/sa/D15E089B-B790-481A-882A-60E6749DF197.JPG")
-        .default,
-      link: "/home/male",
-    },
-  ];
+  // const sliders = [
+  //   {
+  //     title: `Welcome to <b>RBK Student Accommodation</b> `,
+  //     desc: "Welcome to RBK",
+  //     location: "Ochacho Real-Homes, Karmo,Abuja",
+  //     image: require("../media/rbk/sa/IMG-20210709-WA0010.jpg")
+  //       .default,
+  //     link: "/home/female",
+  //   },
+  //   {
+  //     title: `The Best <b>Student Accommodation</b> in Abuja`,
+  //     desc: "Welcome to RBK",
+  //     location: "Gwarinpa, Abuja",
+  //     image: require("../media/rbk/sa/D15E089B-B790-481A-882A-60E6749DF197.JPG")
+  //       .default,
+  //     link: "/home/male",
+  //   },
+  // ];
 
   const accommodations = [
     {
@@ -28,9 +28,9 @@ export const HomeLanding = () => {
         line1: "RBK Female",
         line2: "Accommodation",
       },
-      location: "Ochacho Real-Homes, Karmo,Abuja",
-      image: require("../media/rbk/sa/EA42832D-8B27-44DB-B366-00BA96F963AD.JPG")
-        .default,
+      location: "Ochacho Real-Homes, Karmo, Abuja, Nigeria.",
+      image: require("../media/rbk/sa/IMG-20210711-WA0006.jpg").default,
+      // image: "https://lithohtml.themezaa.com/images/home-creative-agency-bg-img-02.jpg",
       link: "/home/female",
     },
     {
@@ -38,9 +38,9 @@ export const HomeLanding = () => {
         line1: "RBK Male",
         line2: "Accommodation",
       },
-      location: "Gwarinpa, Abuja",
-      image: require("../media/rbk/sa/D15E089B-B790-481A-882A-60E6749DF197.JPG")
-        .default,
+      location: "Gwarinpa, Abuja, Nigeria.",
+      image: require("../media/rbk/sa/IMG-20210711-WA0052.jpg").default,
+      // image: "https://lithohtml.themezaa.com/images/home-creative-agency-bg-img-03.jpg",
       link: "/home/male",
     },
   ];
@@ -75,6 +75,7 @@ export const HomeLanding = () => {
   ];
 
   const menus = require("../data/header.json");
+
   return (
     <Layout
     // boxheader={`navbar top-space navbar-expand-lg navbar-light bg-white header-light fixed-top header-reverse-scroll navbar-boxed`}
@@ -85,10 +86,14 @@ export const HomeLanding = () => {
       {/* start slider section */}
       <section className="home-vertical-portfolio p-0 full-screen w-100 position-relative">
         <div
-          className="swiper-container vertical-white-move slider-vertical swiper-container-vertical"
-          data-slider-options='{ "slidesPerView": 1, "spaceBetween": 0, "direction": "vertical", "autoplay": { "delay": 5000, "disableOnInteraction": false }, "pagination": { "el": ".swiper-vertical-pagination", "clickable": true }, "allowTouchMove": true, "mousewheel": true, "loop": true, "iOSEdgeSwipeThreshold": 200, "keyboard": { "enabled": true, "onlyInViewport": true } }'
+          // className="swiper-container vertical-white-move slider-vertical swiper-container-vertical"
+          // data-slider-options='{ "slidesPerView": 1, "spaceBetween": 0, "direction": "vertical", "autoplay": { "delay": 5000, "disableOnInteraction": false }, "pagination": { "el": ".swiper-vertical-pagination", "clickable": true }, "allowTouchMove": true, "mousewheel": true, "loop": true, "iOSEdgeSwipeThreshold": 200, "keyboard": { "enabled": true, "onlyInViewport": true } }'
+          // data-slider-md-direction="horizontal"
+          // data-slider-number-pagination={1}
+
+          className="swiper-container vertical-white-move slider-vertical"
+          data-slider-options='{ "slidesPerView": 1, "spaceBetween": 0, "direction": "vertical", "autoplay": { "delay": 2000, "disableOnInteraction": false }, "pagination": { "el": ".swiper-vertical-pagination", "clickable": true }, "autoplay": { "delay": 5500, "disableOnInteraction": true }, "loop": false, "iOSEdgeSwipeThreshold": 200, "keyboard": { "enabled": true, "onlyInViewport": true }, "touchReleaseOnEdges": true }'
           data-slider-md-direction="horizontal"
-          data-slider-number-pagination={1}
 
           // className="swiper-container full-screen md-landscape-h-600px white-move   "
           // data-slider-options='{ "slidesPerView": 1, "loop": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav" }, "autoplay": { "delay": 5500, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'
@@ -141,13 +146,13 @@ export const HomeLanding = () => {
           <div className="swiper-pagination swiper-vertical-pagination swiper-pagination-medium swiper-light-pagination d-flex flex-column align-items-center margin-3-half-rem-right lg-margin-1-rem-right" />
           {/* end slider pagination */}
           {/* start slider number pagination */}
-          <div className="swiper-number-pagination">
+          {/* <div className="swiper-number-pagination">
             <div className="swiper-pagination-current" />
             <div className="swiper-pagination-total" />
-          </div>
+          </div> */}
           {/* end slider number pagination */}
         </div>
-        <div className="scroll-down-bottom">
+        {/* <div className="scroll-down-bottom">
           <a
             href="#welcome"
             className="section-link d-block w-2px h-35px bg-white mx-auto right-0px left-0px position-absolute"
@@ -156,7 +161,7 @@ export const HomeLanding = () => {
               scroll
             </span>
           </a>
-        </div>
+        </div> */}
       </section>
 
       <section
@@ -240,11 +245,20 @@ export const HomeLanding = () => {
               <h4 className="alt-font text-extra-dark-gray font-weight-600 w-85 margin-35px-bottom lg-w-100 sm-margin-25px-bottom">
                 Classic, beautiful and modern decor
               </h4>
-              <p className="w-80 lg-w-100">
-                Lorem ipsum dolor sit amet consectetur adipiscing do eiusmod
-                tempor incididunt ut labore dolore magna enim veniam nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
+              <p 
+              // className="w-80 lg-w-100"
+              className="text-large line-height-38px w-90 lg-w-100 md-w-80 sm-w-100 wow animate__fadeIn"
+              data-wow-delay="0.4s"
+              style={{
+                visibility: "visible",
+                animationDelay: "0.4s",
+                animationName: "fadeIn",
+              }}
+              >
+                RKB Male Students Accomodation is located at 46, 35 Road,
+                Gwarinpa, Abuja. The facility is located in the heart of
+                Gwarinpa Model City in Abuja where everything(Shopping Malls,
+                Services, Restaurants, H- medics) is within reach.
               </p>
               <a
                 href="#accommdations"
@@ -256,6 +270,86 @@ export const HomeLanding = () => {
           </div>
         </div>
       </section>
+      <section className="position-relative overflow-visible p-0">
+        <div className="container-fluid">
+          <div className="row">
+            <div
+              className="absolute-middle-center z-index-1 top-0px left-0px lg-w-250px d-none d-md-block wow animate__fadeIn"
+              style={{ visibility: "visible", animationName: "fadeIn" }}
+            >
+              <img
+                src="images/home-digital-agency-img-01.png"
+                alt=""
+                data-no-retina
+              />
+            </div>
+            <div
+              className="col-12 col-xl-7 col-lg-6 bg-extra-dark-gray padding-10-rem-tb padding-nine-lr xl-padding-six-all md-padding-ten-all sm-padding-ten-lr sm-padding-fifteen-tb wow animate__fadeIn"
+              style={{ visibility: "visible", animationName: "fadeIn" }}
+            >
+              <span
+                className="alt-font font-weight-500 text-primary letter-spacing-2px text-uppercase d-block margin-2-half-rem-bottom wow animate__fadeIn"
+                data-wow-delay="0.4s"
+                style={{
+                  visibility: "visible",
+                  animationDelay: "0.4s",
+                  animationName: "fadeIn",
+                }}
+              >
+                25minutes Drive
+              </span>
+              <h4
+                className="alt-font font-weight-600 text-white letter-spacing-minus-1-half w-90 margin-3-rem-bottom xl-w-100 md-w-90 sm-w-100 wow animate__fadeIn"
+                data-wow-delay="0.4s"
+                style={{
+                  visibility: "visible",
+                  animationDelay: "0.4s",
+                  animationName: "fadeIn",
+                }}
+              >
+                The male acommodation is about 25minutes drive to  Nile University  and  Baze University. 
+              </h4>
+              <p
+                className="text-large line-height-38px w-90 lg-w-100 md-w-80 sm-w-100 wow animate__fadeIn"
+                data-wow-delay="0.4s"
+                style={{
+                  visibility: "visible",
+                  animationDelay: "0.4s",
+                  animationName: "fadeIn",
+                }}
+              >
+                Our services covers wide range of opportunities for prospective and current students who wants to have conveniency with academic endeavors.
+
+We follows universal hygiene guidelines and a strict sanitisation protocol with 24hours up to date security.
+              </p>
+              <a
+                href="#room-list"
+                className="section-link btn btn-link scroll-down-text btn-extra-large text-white margin-15px-top letter-spacing-1px wow animate__fadeIn"
+                data-wow-delay="0.6s"
+                style={{
+                  visibility: "visible",
+                  animationDelay: "0.6s",
+                  animationName: "fadeIn",
+                }}
+              >
+                Check the rooms
+              </a>
+            </div>
+       
+            <div
+              className="col-12 col-xl-5 col-lg-6 cover-background md-h-500px sm-h-350px wow animate__fadeIn"
+              data-wow-delay="0.1s"
+              style={{
+                backgroundImage: `url("${require("../media/rbk/sa/D15E089B-B790-481A-882A-60E6749DF197.JPG").default}")`,
+                visibility: "visible",
+                animationDelay: "0.1s",
+                animationName: "fadeIn",
+              }}
+            />
+          </div>
+        </div>
+      </section>
+            <div id="room-list" />
       <RoomsInner />
       {/* <section
         id="accommdations"

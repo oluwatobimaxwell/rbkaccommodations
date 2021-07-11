@@ -346,3 +346,12 @@ a.text-parrot-green-hover:hover {
   color: #007bff;
   font-weight: bold;
 }
+
+.bg-extra-medium-slate-blue {
+	background-color: #00152b !important;
+}
+
+.btn.btn-box-shadow.btn-white:hover, .btn.btn-white:focus {
+	background: #fff0;
+	color: #fff;
+}

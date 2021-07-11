@@ -145,7 +145,7 @@ export const Footer = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div
-              className="col-12 col-xl-5 col-lg-4 md-margin-50px-bottom sm-margin-30px-bottom last-paragraph-no-margin wow animate__fadeIn"
+              className="col-12 col-xl-4 col-lg-4 md-margin-50px-bottom sm-margin-30px-bottom last-paragraph-no-margin wow animate__fadeIn"
               data-wow-delay="0.6s"
             >
               <h5 className="alt-font font-weight-500 text-dark w-70 d-inline-block letter-spacing-minus-1px m-0 lg-w-100 md-w-50 xs-w-70">
@@ -174,7 +174,7 @@ export const Footer = () => {
             {/* end feature box item */}
             {/* start feature box item */}
             <div
-              className="col-12 col-xl-3 offset-xl-1 col-lg-4 col-sm-6 last-paragraph-no-margin wow animate__fadeInRight"
+              className="col-12 col-xl-4 offset-xl-1 col-lg-4 col-sm-6 last-paragraph-no-margin wow animate__fadeInRight"
               data-wow-delay="0.6s"
             >
               <div className="feature-box feature-box-left-icon">
@@ -194,10 +194,10 @@ export const Footer = () => {
                     </a>
                     <br />
                     <a
-                      href="tel:+2348123456789"
+                      href="tel:+234 807 376 9560"
                       className="text-salmon-rose-hover"
                     >
-                      +2348123456789
+                      +234 807 376 9560
                     </a>
                   </p>
                 </div>
