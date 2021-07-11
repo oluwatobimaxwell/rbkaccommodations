@@ -211,7 +211,7 @@ export const HomeLanding = () => {
               <div className="w-70 margin-4-rem-bottom sm-no-margin-bottom">
                 <img
                   src={`${
-                    require("../media/rbk/sa/EA42832D-8B27-44DB-B366-00BA96F963AD.JPG")
+                    require("../media/rbk/sa/IMG-20210711-WA0029.jpg")
                       .default
                   }`}
                   alt=""
@@ -223,7 +223,7 @@ export const HomeLanding = () => {
               >
                 <img
                   src={`${
-                    require("../media/rbk/sa/1f47ef9c-64b2-4368-b2e0-cd0e219f0d90.JPG")
+                    require("../media/rbk/sa/IMG-20210711-WA0023.jpg")
                       .default
                   }`}
                   alt=""
@@ -260,12 +260,12 @@ export const HomeLanding = () => {
                 Gwarinpa Model City in Abuja where everything(Shopping Malls,
                 Services, Restaurants, H- medics) is within reach.
               </p>
-              <a
+              {/* <a
                 href="#accommdations"
                 className="btn btn-fancy btn-medium btn-dark-gray margin-20px-top section-link"
               >
                 Our Accommodations
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -340,7 +340,7 @@ We follows universal hygiene guidelines and a strict sanitisation protocol with 
               className="col-12 col-xl-5 col-lg-6 cover-background md-h-500px sm-h-350px wow animate__fadeIn"
               data-wow-delay="0.1s"
               style={{
-                backgroundImage: `url("${require("../media/rbk/sa/D15E089B-B790-481A-882A-60E6749DF197.JPG").default}")`,
+                backgroundImage: `url("${require("../media/rbk/sa/IMG-20210711-WA0043.jpg").default}")`,
                 visibility: "visible",
                 animationDelay: "0.1s",
                 animationName: "fadeIn",
