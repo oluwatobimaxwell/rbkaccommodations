@@ -391,3 +391,10 @@ a.text-parrot-green-hover:hover {
 .grid.gutter-extra-large li {
 	padding: 10px;
 }
+.buy-theme.sm-display-none.whatsapp {
+	border-bottom-left-radius: 8px;
+}
+
+.all-demo.email {
+	border-top-left-radius: 8px;
+}

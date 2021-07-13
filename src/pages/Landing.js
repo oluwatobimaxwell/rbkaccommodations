@@ -4,7 +4,7 @@ export const Landing = () => {
   const accommodations = [
     {
       name: {
-        line1: "RBK Female",
+        line1: "RKB Female",
         line2: "Hostel",
       },
       location: "Ochacho Real-Homes, Karmo,Abuja",
@@ -13,7 +13,7 @@ export const Landing = () => {
     },
     {
       name: {
-        line1: "RBK Male",
+        line1: "RKB Male",
         line2: "Hostel",
       },
       location: "Gwarinpa, Abuja",

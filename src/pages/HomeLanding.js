@@ -22,15 +22,6 @@ export const HomeLanding = () => {
   //   },
   // ];
 
-  // Free Wifi,
-  // School shuttles;
-  // En suite & air conditioned  rooms.
-  // 24/7 Power & Security.
-  // Gym & outdoor games,
-  // Friendly staff & 24/7 support 
-  // Private Balconies,
-  // Complimentary Breakfast,
-
   const accommodations = [
     {
       name: {
@@ -38,7 +29,7 @@ export const HomeLanding = () => {
         line2: "Accommodation",
       },
       location: "Ochacho Real-Homes, Karmo, Abuja, Nigeria.",
-      image: require("../media/rbk/sa/IMG-20210711-WA0006.jpg").default,
+      image: require("../media/rbk/sa/IMG-20210709-WA0010.jpg").default,
       // image: "https://lithohtml.themezaa.com/images/home-creative-agency-bg-img-02.jpg",
       link: "/home/female",
     },
@@ -48,7 +39,7 @@ export const HomeLanding = () => {
         line2: "Accommodation",
       },
       location: "Gwarinpa, Abuja, Nigeria.",
-      image: require("../media/rbk/sa/IMG-20210711-WA0052.jpg").default,
+      image: require("../media/rbk/sa/D15E089B-B790-481A-882A-60E6749DF197.JPG").default,
       // image: "https://lithohtml.themezaa.com/images/home-creative-agency-bg-img-03.jpg",
       link: "/home/male",
     },
@@ -265,7 +256,7 @@ export const HomeLanding = () => {
                 <span className="w-40px h-1px bg-primary opacity-7 align-self-center margin-20px-right" />
                 <div className="media-body">
                   <span className="text-primary text-uppercase">
-                    About RBK Student Accommodation
+                    About RKB Student Accommodation
                   </span>
                 </div>
               </div>

@@ -1,10 +1,11 @@
 {
   "female": {
+    "location": "Gwarinpa, Abuja",
     "slider": [
       {
         "image": "/rbk/sa/EA42832D-8B27-44DB-B366-00BA96F963AD.JPG",
         "title": "Female Hostels",
-        "desc": "Welcome to RBK"
+        "desc": "Welcome to RKB"
       },
       {
         "image": "/rbk/sa/3b80f70c-1685-4841-ad1d-7a839c08c47d.JPG",
@@ -86,9 +87,11 @@
         "icon": "https://i.pinimg.com/originals/c0/df/03/c0df037c5852ccb78ae6007d9b670264.jpg",
         "title": "Automated Tap & CCTV"
       }
-    ]
+    ],
+    "about": "<p class=\"w-85 xl-w-100\">RKB Students Accommodation(Female) located at Ochacho Real Homes Ltd, Karmo close to Nizamiye (Turkish) Hospital.    The facility is built in 202; has eighteen(18) air conditioned, en suite rooms. Rooms on the top come private kitchens. The facility has skylight(clear glass) restaurant. Gym and outdoor games are available.</p><p class=\"w-85 xl-w-100\">The female accommodation is  20minutes drive to both Nile &amp; Baze Universities.<br>RKB Female Students Accommodation is not far from a filling station, restaurant, grocery stores and a farmers' market.</p>"
   },
   "male": {
+    "location": "Ochacho, Abuja",
     "slider": [
       {
         "image": "/rbk/sa/D15E089B-B790-481A-882A-60E6749DF197.JPG",
@@ -175,5 +178,7 @@
         "title": "Automated Tap & CCTV"
       }
     ]
+    ,
+    "about": "<p class=\"w-85 xl-w-100\"> The facility is located in the heart of  Gwarinpa Model City in Abuja where everything(Shopping Malls, Services, Restaurants, H- medics)  is within reach.<br>The male acommodation is about 25minutes drive to  Nile University  and  Baze University. </p><p class=\"w-85 xl-w-100\">Our services covers wide range of opportunities for prospective and current students who wants to have conveniency with academic endeavors.<br>We follows universal hygiene guidelines and a strict sanitisation protocol with 24hours up to date security.</p>"
   }
 }

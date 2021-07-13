@@ -274,7 +274,7 @@
   "name": "Executive II",
   "price": "550",
   "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-  "category": "female",
+  "category": "male",
   "image": "../rbk/sa/IMG-20210711-WA0056.jpg",
   "location": "Ochacho, Abuja",
   "option_prices": {

@@ -23,6 +23,7 @@ export const SingleRoomView = ({match}) => {
         return previous
     }
 
+    const testimonials = require("../data/testimonials.json") 
     const rooms = require("../data/rooms.json") 
     const room = rooms.find(e => e.name === roomName && e.location === location)
     const roomIndex = rooms.findIndex(e => e.name === roomName && e.location === location)
@@ -183,47 +184,24 @@ export const SingleRoomView = ({match}) => {
         <div className="swiper-container black-move" data-slider-options="{ &quot;loop&quot;: true, &quot;slidesPerView&quot;: 1, &quot;observer&quot;: true, &quot;observeParents&quot;: true, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.swiper-button-next-nav-02&quot;, &quot;prevEl&quot;: &quot;.swiper-button-previous-nav-02&quot; }, &quot;autoplay&quot;: { &quot;delay&quot;: 4500, &quot;disableOnInteraction&quot;: false }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;effect&quot;: &quot;slide&quot; }">
           <div className="swiper-wrapper">
             {/* start testimonial item */}
-            <div className="swiper-slide">
-              <span className="alt-font text-large line-height-38px md-line-height-32px letter-spacing-minus-1-half d-block margin-3-rem-bottom">This theme has a wide variety of options and a really good customer support. Some of the customizations are limited but even so the theme still gives a lot of features while prioritizing web speed.</span>
+            
+            {/* end testimonial item */}
+            {testimonials.map((item, i) => {
+              return (
+                <div className="swiper-slide" key={"xsdhdht-testim"+i}>
+              <span className="alt-font text-large line-height-38px md-line-height-32px letter-spacing-minus-1-half d-block margin-3-rem-bottom">{item.comment}</span>
               <div className="feature-box feature-box-left-icon-middle">
                 <div className="feature-box-icon margin-25px-right">
-                  <img className="rounded-circle w-85px h-85px" src="../images/avtar29.jpg" alt="" />
+                  <img className="rounded-circle w-85px h-85px" src={item.image || require("../media/no-image-resulta.jpg").default} alt="" />
                 </div>
                 <div className="feature-box-content">
-                  <div className="text-extra-dark-gray text-large alt-font line-height-20px text-gradient-peacock-blue-crome-yellow-2 text-uppercase d-inline-block"><span className="font-weight-600">Alexander</span> harvard</div>
-                  <span className="alt-font text-medium d-block text-uppercase margin-5px-top">Creative director</span>
+                  <div className="text-extra-dark-gray text-large alt-font line-height-20px text-gradient-peacock-blue-crome-yellow-2 text-uppercase d-inline-block"><span className="font-weight-600">{item.firstname}</span> {item.lastname}</div>
+                  <span className="alt-font text-medium d-block text-uppercase margin-5px-top">{item.school}</span>
                 </div>
               </div>
             </div>
-            {/* end testimonial item */}
-            {/* start testimonial item */}
-            <div className="swiper-slide">
-              <span className="alt-font text-large line-height-38px md-line-height-32px letter-spacing-minus-1-half d-block margin-3-rem-bottom">I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy. I wanted to hire the best and after looking at several other companies.</span>
-              <div className="feature-box feature-box-left-icon-middle">
-                <div className="feature-box-icon margin-25px-right">
-                  <img className="rounded-circle w-85px h-85px" src="../images/avtar28.jpg" alt="" />
-                </div>
-                <div className="feature-box-content">
-                  <div className="text-extra-dark-gray text-large alt-font line-height-20px text-gradient-peacock-blue-crome-yellow-2 text-uppercase d-inline-block"><span className="font-weight-600">Lindsay</span> swanson</div>
-                  <span className="alt-font text-medium d-block text-uppercase margin-5px-top">Creative director</span>
-                </div>
-              </div>
-            </div>
-            {/* end testimonial item */}
-            {/* start testimonial item */}
-            <div className="swiper-slide">
-              <span className="alt-font text-large line-height-38px md-line-height-32px letter-spacing-minus-1-half d-block margin-3-rem-bottom">Absolutely amazing theme, flexible and awesome design with possibilities. It's so easy to use and to customize. Simply the great designs and best theme for WooCommerce.</span>
-              <div className="feature-box feature-box-left-icon-middle">
-                <div className="feature-box-icon margin-25px-right">
-                  <img className="rounded-circle w-85px h-85px" src="../images/avtar27.jpg" alt="" />
-                </div>
-                <div className="feature-box-content">
-                  <div className="text-extra-dark-gray text-large alt-font line-height-20px text-gradient-peacock-blue-crome-yellow-2 text-uppercase d-inline-block"><span className="font-weight-600">Jeremy</span> dupont</div>
-                  <span className="alt-font text-medium d-block text-uppercase margin-5px-top">Creative director</span>
-                </div>
-              </div>
-            </div>
-            {/* end testimonial item */}
+              )
+            })}
           </div> 
         </div>
       </div>

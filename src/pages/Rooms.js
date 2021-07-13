@@ -6,7 +6,7 @@ export const Rooms = () => {
   return (
     <Layout
       subtitle={"Rooms"}
-      title={"RBK Rooms"}
+      title={"RKB Rooms"}
       boxheader={`navbar top-space navbar-expand-lg navbar-light bg-white header-light fixed-top header-reverse-scroll navbar-boxed`}
     >
       <RoomsInner />
@@ -53,137 +53,7 @@ export const RoomsInner = () => {
               <li className="grid-sizer" />
               {roomsavailable.sort( () => .5 - Math.random() ).map((item, i) => {
                 return (
-                  <li
-                    className={`grid-item ${item.category} wow animate__fadeIn`}
-                    key={"room-items-" + i}
-                  >
-                    {/* <div className="blog-post text-center border-radius-6px bg-white box-shadow box-shadow-large-hover">
-                      <div className="blog-post-image bg-gradient-fast-blue-purple">
-                        <a
-                          href={"#view-room-" + i}
-                          className="popup-with-form"
-                          // onClick={() => setcurrent(item)}
-                        >
-                          <img src={item.image} alt="" />
-                          <div className="blog-rounded-icon bg-white border-color-white absolute-middle-center">
-                            <i className="feather  icon-feather-maximize-2  text-extra-dark-gray icon-extra-small" />
-                          </div>
-                        </a>
-                      </div>
-                      <div className="post-details padding-30px-all xl-padding-25px-lr position-sticky">
-                        <div className="bg-primary text-small alt-font text-white text-uppercase position-absolute font-weight-500 top-minus-15px right-0px padding-5px-tb padding-20px-lr">
-                          NGN {item.price}k
-                        </div>
-                        <a
-                          href={"#view-room-" + i}
-                          className="popup-with-form text-extra-dark-gray text-uppercase font-weight-700 alt-font d-block"
-                          style={{ fontSize: "1.5rem" }}
-                          // onClick={() => setcurrent(item)}
-                        >
-                          {item.name}
-                        </a>
-                        <a
-                          href={"#view-room-" + i}
-                          className="popup-with-form post-author text-medium text-uppercase"
-                          // onClick={() => setcurrent(item)}
-                        >
-                          {item.rooms}
-                        </a>
-                      </div>
-                    </div> */}
-
-                    {/* <div className="col col-sm-8 padding-5px-all order-md-1 order-lg-0 wow animate__fadeIn" data-wow-delay="0.2s"> */}
-                    <div
-                      className="position-relative h-100 d-flex align-items-center cover-background text-center"
-                      style={{
-                        backgroundImage: `url("${item.image}")`,
-                        borderRadius: 8,
-                      }}
-                    >
-                      <div className="opacity-extra-medium-2 bg-extra-dark-gray" />
-                      <div className="position-relative z-index-1 w-100 padding-4-rem-tb lg-padding-5-rem-tb">
-                        <div style={{display: "flex", margin: "auto", width: "60%"}}>
-                          <span className="w-50 d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
-                            <div className="option-price-value">N{item.option_prices.option1}k</div>
-                            <label className="option-price-label">
-                              Option 1
-                            </label>
-                          </span>
-                          <span className="w-50 d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
-                            <div className="option-price-value">N{item.option_prices.option2}k</div>
-                            <label className="option-price-label">
-                              Option 2
-                            </label>
-                          </span>
-                        </div>
-                        <h4 className="alt-font text-white text-uppercase w-90 lg-w-85 mx-auto margin-35px-bottom font-weight-500">
-                          {item.name}
-                        </h4>
-
-                        <div
-                          style={{
-                            borderRadius: "8px",
-                            display: "flex",
-                            width: "max-content",
-                            margin: "auto",
-                            marginBottom: "15px",
-                          }}
-                        >
-                          <div
-                            className="padding-3-half-rem-lr padding-10px-tb border-right border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-20px-bottom xs-no-border-right"
-                            style={{
-                              display: "flex",
-                              flexDirection: "row",
-                              alignItems: "center",
-                            }}
-                          >
-                            <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom margin-5px-right">
-                              <i className="feather  icon-feather-user   " />
-                            </span>
-                            <span
-                              className="alt-font text-medium text-uppercase d-inline-block d-sm-block"
-                              style={{ color: "#c9c7c5" }}
-                            >
-                              {item.category}
-                            </span>
-                          </div>
-                          <div
-                            className="padding-3-half-rem-lr padding-10px-tb border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-30px-bottom xs-no-border-right"
-                            style={{
-                              display: "flex",
-                              flexDirection: "row",
-                              alignItems: "center",
-                            }}
-                          >
-                            <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom margin-5px-right">
-                              <i className="feather icon-feather-map-pin " />
-                            </span>
-                            <span
-                              className="alt-font text-medium text-uppercase d-inline-block d-sm-block"
-                              style={{ color: "#c9c7c5" }}
-                            >
-                              {item.location}
-                            </span>
-                          </div>
-                        </div>
-
-                        <a
-                          // href={"#view-room-" + i}
-                          href={`/single-room/${item.name}?location=${item.location}`}
-                          className={
-                            "btn btn-medium btn-fancy btn-round-edge-small btn-box-shadow btn-white section-link"
-                          }
-                        >
-                          View Room
-                        </a>
-                      </div>
-                    </div>
-                    {/* </div> */}
-{/* 
-                    <ModalBox id={"view-room-" + i} width={7}>
-                      <SingleRoom room={item} revId={"view-room-" + i} />
-                    </ModalBox> */}
-                  </li>
+                   <RoomItemCard item={item} key={"shhshs-wehe-"+i} />
                 );
               })}
             </ul>
@@ -193,6 +63,102 @@ export const RoomsInner = () => {
     </section>
   );
 };
+
+
+export const RoomItemCard = ({item}) => {
+  return (
+    <li
+    className={`grid-item ${item.category} wow animate__fadeIn`}
+  >
+     <div
+      className="position-relative h-100 d-flex align-items-center cover-background text-center"
+      style={{
+        backgroundImage: `url("${item.image}")`,
+        borderRadius: 8,
+      }}
+    >
+      <div className="opacity-extra-medium-2 bg-extra-dark-gray" />
+      <div className="position-relative z-index-1 w-100 padding-4-rem-tb lg-padding-5-rem-tb">
+        <div style={{display: "flex", margin: "auto", width: "60%"}}>
+          <span className="w-50 d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
+            <div className="option-price-value">N{item.option_prices.option1}k</div>
+            <label className="option-price-label">
+              Option 1
+            </label>
+          </span>
+          <span className="w-50 d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
+            <div className="option-price-value">N{item.option_prices.option2}k</div>
+            <label className="option-price-label">
+              Option 2
+            </label>
+          </span>
+        </div>
+        <h4 className="alt-font text-white text-uppercase w-90 lg-w-85 mx-auto margin-35px-bottom font-weight-500">
+          {item.name}
+        </h4>
+
+        <div
+          style={{
+            borderRadius: "8px",
+            display: "flex",
+            width: "max-content",
+            margin: "auto",
+            marginBottom: "15px",
+          }}
+        >
+          <div
+            className="padding-3-half-rem-lr padding-10px-tb border-right border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-20px-bottom xs-no-border-right"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+            }}
+          >
+            <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom margin-5px-right">
+              <i className="feather  icon-feather-user   " />
+            </span>
+            <span
+              className="alt-font text-medium text-uppercase d-inline-block d-sm-block"
+              style={{ color: "#c9c7c5" }}
+            >
+              {item.category}
+            </span>
+          </div>
+          <div
+            className="padding-3-half-rem-lr padding-10px-tb border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-30px-bottom xs-no-border-right"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+            }}
+          >
+            <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom margin-5px-right">
+              <i className="feather icon-feather-map-pin " />
+            </span>
+            <span
+              className="alt-font text-medium text-uppercase d-inline-block d-sm-block"
+              style={{ color: "#c9c7c5" }}
+            >
+              {item.location}
+            </span>
+          </div>
+        </div>
+
+        <a
+          // href={"#view-room-" + i}
+          href={`/single-room/${item.name}?location=${item.location}`}
+          className={
+            "btn btn-medium btn-fancy btn-round-edge-small btn-box-shadow btn-white section-link"
+          }
+        >
+          View Room
+        </a>
+      </div>
+    </div>
+  </li>
+  )
+}
+
 
 export const ModalBox = ({ children, id, width }) => {
   return (

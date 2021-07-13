@@ -1,12 +1,12 @@
 import React from "react";
 import { Layout } from "../components/Layout";
-import { ModalBox, SingleRoom } from "./Rooms";
+import { ModalBox, RoomItemCard, SingleRoom } from "./Rooms";
 
 export const Home = ({ match }) => {
   const type = (match?.params?.type || "").replace(/home/g, "");
   const source = require("../data/home.json");
   const data = source[type];
-  let { fancy = [], slider = [], features = [] } = data || source.female;
+  let { fancy = [], slider = [], features = [], about, location } = data || source.female;
 
   const carousel = require("../data/rooms.json").filter(
     (r) => r.category === type
@@ -32,8 +32,8 @@ export const Home = ({ match }) => {
                         backgroundImage: `url("${item.image}")`,
                       }}
                     >
-                      <div className="d-flex flex-column justify-content-end ml-auto w-600px h-100 xl-w-550px sm-w-70 sm-w-100">
-                        <div className="bg-white padding-7-rem-tb padding-8-rem-lr xl-padding-5-rem-tb xl-padding-6-rem-lr xs-padding-2-half-rem-all">
+                      <div className="d-flex flex-column justify-content-end ml-auto w-600px h-100 xl-w-550px sm-w-70 sm-w-100" >
+                        <div className="bg-transparent-white padding-7-rem-tb padding-8-rem-lr xl-padding-5-rem-tb xl-padding-6-rem-lr xs-padding-2-half-rem-all" style={{borderRadius: 8, margin: 20, }}>
                           <div className="col-12 p-0 margin-25px-bottom d-md-inline-block align-items-center justify-content-center">
                             <span className="alt-font text-yellow-ochre-light d-inline-block font-weight-500 align-middle">
                               0{i + 1}
@@ -50,8 +50,8 @@ export const Home = ({ match }) => {
                               </h3>
                               <span className="align-self-center text-center margin-30px-left">
                                 <a
-                                  href="#"
-                                  className="d-inline-block line-height-65px rounded-circle bg-extra-dark-gray w-60px h-60px"
+                                  href="#rooms-in-here"
+                                  className="section-link d-inline-block line-height-65px rounded-circle bg-extra-dark-gray w-60px h-60px"
                                 >
                                   <i className="feather icon-feather-arrow-right text-extra-large text-white" />
                                 </a>
@@ -86,18 +86,19 @@ export const Home = ({ match }) => {
           <div className="row justify-content-md-center">
             <div className="col-12 col-lg-4 col-md-6 col-sm-7 d-flex flex-column md-margin-6-rem-bottom sm-margin-5-rem-bottom wow animate__fadeIn">
               <h6 className="alt-font text-uppercase w-80 text-extra-dark-gray font-weight-700 margin-20px-bottom lg-w-90 md-w-75 md-margin-10px-bottom">
-                Accommodation at DAMAC Maison Mall Street
+                Accommodation at RKB Students Accommodations, {location}
               </h6>
               <div className="mt-auto w-70 mx-lg-0">
                 <a
-                  href="mailto:hello@rbkaccommodation.com"
+                  href="mailto:hello@RKBaccommodation.com"
                   className="alt-font text-yellow-ochre-light text-extra-dark-gray-hover text-decoration-line-bottom font-weight-500"
                 >
-                  hello@rbkaccommodation.com
+                  hello@RKBaccommodation.com
                 </a>
                 <a
                   href="#rooms-in-here"
                   className="btn btn-fancy btn-small btn-transparent-dark-gray margin-2-rem-top d-table"
+                  style={{borderRadius: 8}}
                 >
                   Book Now
                 </a>
@@ -111,22 +112,9 @@ export const Home = ({ match }) => {
               <div className="alt-font text-uppercase text-extra-medium font-weight-600 text-extra-dark-gray margin-25px-bottom sm-margin-15px-bottom">
                 Situated at the heart of ABuja
               </div>
-              <p className="w-85 xl-w-100">
-                Set in the heart of the bustling Downtown Area of Dubai, the
-                DAMAC Maison Mall Street offers dynamic city living with
-                personalized service and ultimate privacy. It is just a short
-                walk to the world’s largest shopping complex, the Dubai Mall,
-                with views across the Dubai skyline and the famous Dubai
-                Fountains.
-              </p>
-              <p className="w-85 xl-w-100">
-                Crafted for total tranquillity, our luxurious suites provide a
-                private Dubai accommodation, where lavish furnishings,
-                state-of-the-art entertainment systems, world-class amenities,
-                stellar service and stunning views of Dubai entice you to relax
-                and unwind. This lush hotel in Downtown Dubai provides the
-                perfect location for work and play.
-              </p>
+              <div
+                dangerouslySetInnerHTML={{__html: about}}
+              />
             </div>
             <div className="col-12 col-lg-4 last-paragraph-no-margin">
               <div className="outside-box-bottom position-relative">
@@ -138,11 +126,13 @@ export const Home = ({ match }) => {
                   className="wow animate__fadeIn"
                   data-wow-delay="0.5s"
                   alt=""
+                  style={{borderRadius: 8}}
                 />
                 <a
                   href="https://www.youtube.com/watch?v=g0f_BRYJLJE"
                   className="bg-penguin-white position-absolute right-0px bottom-minus-25px padding-2-half-rem-all popup-youtube video-icon-box video-icon-medium position-relative wow animate__fadeIn"
                   data-wow-delay="0.5s"
+                  style={{borderRadius: 8}}
                 >
                   <span>
                     <span className="video-icon bg-extra-dark-gray margin-15px-right">
@@ -152,7 +142,7 @@ export const Home = ({ match }) => {
                       </span>
                     </span>
                     <span className="video-icon-text alt-font text-extra-dark-gray text-medium text-uppercase font-weight-600">
-                      About RBK
+                      About RKB
                       <br />
                       Accommodation
                     </span>
@@ -195,61 +185,35 @@ export const Home = ({ match }) => {
             >
               <div
                 className="swiper-container portfolio-classic position-relative"
-                data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav" }, "autoplay": { "delay": 3000, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 4 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 } }, "effect": "slide" }'
+                data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav" }, "autoplay": { "delay": 3000, "disableOnInteraction": true }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 3 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 } }, "effect": "slide" }'
               >
                 <div className="swiper-wrapper">
+              {/* <li className="grid-sizer" /> */}
                   {carousel.map((item, i) => {
                     return (
                       <div
                         className="swiper-slide overflow-hidden"
                         key={"sshh-shshs-s" + i}
                       >
-                        <div className="portfolio-box text-center">
-                          <div className="portfolio-image bg-parrot-green">
-                            <a
-                              href={"#view-room-" + i}
-                              className="popup-with-form"
-                            >
-                              <img src={item.image} alt="" />
-                            </a>
-                            <div className="portfolio-hover align-items-center justify-content-center d-flex">
-                              <div className="portfolio-icon">
-                                <a
-                                  href={"#view-room-" + i}
-                                  className="popup-with-form border-all border-width-2px rounded-circle border-color-white bg-white"
-                                >
-                                  <i className="ti-arrow-right text-extra-dark-gray" />
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="portfolio-caption padding-30px-tb sm-padding-15px-tb">
-                            <a
-                              href={"#view-room-" + i}
-                              className="popup-with-form alt-font text-black font-weight-800 text-uppercase d-inline-block margin-5px-bottom"
-                            >
-                              {item.name}
-                            </a>
-                            <span className="d-block text-medium-gray text-small line-height-18px text-uppercase">
-                              NGN {item.price}K
-                            </span>
-                          </div>
-                        </div>
-                        <ModalBox id={"view-room-" + i}>
-                          <SingleRoom room={item} revId={"view-room-" + i} />
-                        </ModalBox>
+                      <RoomItemCard item={item} key={"sh93nshhsw-"+i} />
                       </div>
                     );
                   })}
+
                 </div>
               </div>
             </div>
+              <div className="swiper-pagination swiper-vertical-pagination swiper-pagination-medium swiper-light-pagination d-flex flex-column align-items-center margin-3-half-rem-right lg-margin-1-rem-right" />
+              <div className="swiper-number-pagination">
+              <div className="swiper-pagination-current" />
+              <div className="swiper-pagination-total" />
+              </div>
           </div>
         </div>
       </section>
       {/* end section */}
       {/* start section */}
-      <section
+      {/* <section
         className="overflow-visible cover-background wow animate__fadeIn"
         style={{
           backgroundImage: `url("${
@@ -316,10 +280,11 @@ export const Home = ({ match }) => {
           </div>
         </div>
       </section>
+       */}
       {/* end section */}
 
       {/* start section */}
-      <section
+      {/* <section
         className="bg-extra-dark-gray fancy-box-background big-section cover-background p-0 wow animate__fadeIn"
         style={{
           backgroundImage: `url("${
@@ -330,12 +295,9 @@ export const Home = ({ match }) => {
         <div className="opacity-very-light opacity-3 bg-extra-dark-gray" />
         <div className="container-fluid">
           <div className="row row-cols-2 row-cols-xl-4 row-cols-sm-2 align-items-center justify-content-center">
-            {/* start fancy text box item */}
-            {/* end fancy text box item */}
 
             {fancy.map((item, i) => {
               return (
-                // <div className="swiper-slide">
                 <div
                   className="col p-0 fancy-box-item border-right border-color-dark-white-transparent lg-border-bottom xs-no-border-right wow animate__fadeIn"
                   data-wow-delay="0.2s"
@@ -372,12 +334,12 @@ export const Home = ({ match }) => {
                     </div>
                   </div>
                 </div>
-                // </div>
               );
             })}
           </div>
         </div>
       </section>
+      */}
       {/* end section */}
 
       <section id="features" className="bg-white">
@@ -388,7 +350,7 @@ export const Home = ({ match }) => {
               style={{ visibility: "visible", animationName: "fadeIn" }}
             >
               <span className="text-yellow-ochre-light text-uppercase">
-                RBK Accommodation Features
+                RKB Accommodation Features
               </span>
               <h4 className="alt-font font-weight-700 text-uppercase text-extra-dark-gray letter-spacing-minus-1px m-0">
                 Other features & facilities

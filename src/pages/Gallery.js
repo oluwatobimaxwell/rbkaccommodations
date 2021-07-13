@@ -6,7 +6,7 @@ export const Gallery = () => {
   return (
     <Layout
       subtitle={"Gallery"}
-      title={"RBK Gallery"}
+      title={"RKB Gallery"}
       boxheader={`navbar top-space navbar-expand-lg navbar-light bg-white header-light fixed-top header-reverse-scroll navbar-boxed`}
     >
       {/* <section className="wow animate__fadeIn py-0">

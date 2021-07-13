@@ -163,7 +163,7 @@ export const Footer = () => {
                 </div>
                 <div className="feature-box-content">
                   <span className="text-white text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
-                    RBK Accommodation
+                    RKB Accommodation
                   </span>
                   <p className="m-0">
                     401 Broadway, 24th Floor, Orchard View, Abuja
@@ -187,10 +187,10 @@ export const Footer = () => {
                   </span>
                   <p className="m-0">
                     <a
-                      href="mailto:info@rbkaccommodation.com"
+                      href="mailto:info@RKBaccommodation.com"
                       className="text-salmon-rose-hover"
                     >
-                      info@rbkaccommodation.com
+                      info@RKBaccommodation.com
                     </a>
                     <br />
                     <a
@@ -227,7 +227,7 @@ export const Footer = () => {
             </div>
             <div className="col-12 col-md-6 text-center last-paragraph-no-margin sm-margin-20px-bottom">
               <p>
-                © {new Date().getFullYear()} RBK Student Accommodations Ltd.{" "}
+                © {new Date().getFullYear()} RKB Student Accommodations Ltd.{" "}
               </p>
             </div>
             <div className="col-12 col-md-3 text-center text-md-right text-white">

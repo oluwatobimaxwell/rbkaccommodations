@@ -1621,7 +1621,7 @@
     `
     <div class="theme-demos">
         <div class="all-demo email">
-          <a href="mailto:info@rbkaccommodations.com" target="_blank">
+          <a href="mailto:info@RKBaccommodations.com" target="_blank">
             <i class="feather icon-feather-x align-middle"></i>
             <div class="theme-wrapper">
               <div>
@@ -1632,7 +1632,7 @@
           </a>
         </div>
         <div class="all-demo call">
-          <a href="tel:+234801RBK" target="_blank">
+          <a href="tel:+234801RKB" target="_blank">
             <i class="feather icon-feather-x align-middle"></i>
             <div class="theme-wrapper">
               <div>
