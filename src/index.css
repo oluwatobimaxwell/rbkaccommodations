@@ -380,3 +380,14 @@ a.text-parrot-green-hover:hover {
 	font-weight: initial;
   font-style: italic;
 }
+
+
+.portfolio-box .portfolio-image {
+	position: relative;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.grid.gutter-extra-large li {
+	padding: 10px;
+}

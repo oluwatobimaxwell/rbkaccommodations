@@ -43,12 +43,18 @@ export const SingleRoomView = ({match}) => {
 <style>
 {`.section-link {
 	display: none;
-}`}
+}
+
+.parallax{
+    background-repeat: round;
+}
+
+`}
 </style>
 <section className="overflow-visible pb-0">
   <div className="container">
     <div className="row align-items-center" >
-      <div className="col-12 text-center overlap-section" style={{marginTop: '-270px'}}>
+      <div className="col-12 text-center overlap-section">
         <div className="overlap-section-inner">
         <div className="container" style={{margin: 'auto', width: '100%', background: '#fff', padding: '30px 0 30px 0', borderRadius: '10px', border: '1px solid #eaeaea'}}>
  
@@ -85,7 +91,7 @@ export const SingleRoomView = ({match}) => {
   </div>
 </section>
 
-<section>
+<section  style={{ paddingBottom: `0px !important` }}>
   <div className="container">
     <div className="row justify-content-center">
       <div className="col-12 col-lg-11">
@@ -118,82 +124,50 @@ export const SingleRoomView = ({match}) => {
 </section>
 
 
-{/* <section className="p-0 position-relative overflow-visible wow animate__fadeIn" style={{visibility: 'visible', animationName: 'fadeIn'}}>
-  <div className="slider-blog-banner swiper-container black-move swiper-container-initialized swiper-container-horizontal" data-slider-options="{ &quot;loop&quot;: true, &quot;centeredSlides&quot;: true, &quot;slidesPerView&quot;: &quot;auto&quot;, &quot;speed&quot;: 1000, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;autoplay&quot;: { &quot;delay&quot;: 1500, &quot;disableOnInteraction&quot;: false }, &quot;pagination&quot;: { &quot;el&quot;: &quot;.swiper-pagination&quot;, &quot;clickable&quot;: true }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.swiper-button-next-nav&quot;, &quot;prevEl&quot;: &quot;.swiper-button-previous-nav&quot; } }">
-    <div className="swiper-wrapper" style={{transitionDuration: '0ms', transform: 'translate3d(-4428px, 0px, 0px)'}}>
-    <li className="grid-sizer"></li>
-      {room?.media.map((item, i) => {
-          return (
-            <>
-                <div className="swiper-slide w-55 sm-w-65" data-swiper-slide-index={0}>
-                <div className="w-100 padding-15px-lr sm-padding-10px-lr xs-padding-5px-lr">
-                <img src={item.image} alt="" data-no-retina style={{ }} />
-                </div>
-                </div>
-            </>
-          )
-      })}
-      
-      </div>
-    <span className="swiper-notification" aria-live="assertive" aria-atomic="true" /></div>  
-</section> */}
-
-<section className="wow animate__fadeIn">
-  <div className="container">
-    <div className="row justify-content-center">
-      <div className="col-12 col-xl-5 col-lg-6 col-sm-8 text-center margin-5-rem-bottom lg-margin-4-rem-bottom">
-        <span className="alt-font text-orange font-weight-500 d-block margin-15px-bottom sm-margin-5px-bottom">Other creative work for brands</span>
-        <h5 className="alt-font text-extra-dark-gray font-weight-500">Perfect design and code delivered for your projects</h5>
-      </div>
-    </div>
-  </div>
-  <div className="container-fluid padding-nine-lr xl-padding-three-lr sm-padding-15px-lr">
+<section className="padding-10-rem-lr md-no-padding-lr">
+  <div className="container-fluid">
     <div className="row">
-      <div className="col px-md-0">
-        <ul className="portfolio-overlay portfolio-wrapper grid grid-loading grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large text-center">
+      <div className="col-12">
+        <ul className="portfolio-overlay portfolio-wrapper grid grid-loading grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-large text-center">
           <li className="grid-sizer" />
-          {/* start lightbox gallery item */}
-          {/* <li className="grid-item wow animate__fadeIn">
-            <a href="images/single-project-page-01-img20.jpg" title="Lightbox gallery image title..." data-group="lightbox-gallery-2" className="lightbox-group-gallery-item">
-              <div className="portfolio-box">
-                <div className="portfolio-image bg-orange">
-                  <img src="../images/single-project-page-01-img20.jpg" alt="" />
-                  <div className="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
-                    <i className="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom" />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li> */}
-          {/* end lightbox gallery item */}
-          {/* start lightbox gallery item */}
-        
-          {room?.media.map((item, i) => {
-          return (
-            <>
-                <li className="grid-item wow animate__fadeIn" data-wow-delay={`0.${i * 2}s`}>
-            <a href={item.image} title="Lightbox gallery image title..." data-group="lightbox-gallery-2" className="lightbox-group-gallery-item">
-              <div className="portfolio-box">
-                <div className="portfolio-image bg-orange">
-                  <img src={item.image} alt="" style={{maxHeight: 605, minHeight: 250}} />
-                  <div className="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
-                    <i className="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom" />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-            </>
-          )
-      })}
-      
-       
-          {/* end lightbox gallery item */}
+          {
+              room?.media.map((item, i) => {
+                  return (
+                    <li className="grid-item grid-item-double wow animate__fadeIn" 
+                        style={{
+                            display: i > 3? "none":"", 
+                            width: window.screen.width > 900 ? (i > 1 ? `${25}%`: `${50}%`) : `100%` ,
+                            
+                        }}>
+                    <a href={item.image} title={roomName +" @"+location} data-group="lightbox-gallery" className="lightbox-group-gallery-item">
+                      <div className="portfolio-box"
+                      >
+                        <div className="portfolio-image bg-gradient-peacock-blue-crome-yellow"
+                            style={{
+                                backgroundImage: `url("${item.image}")`, 
+                                width: `100%`,
+                                height: window.screen.width > 900 ? ( i > 0 ? 250 : 520) : 250,
+                                borderRadius: 8,
+                                backgroundRepeat: "round"
+                            }}
+                        >
+                          {/* <img src={item.image} alt="" /> */}
+                          <div className="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
+                            <i className="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom" />
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  )
+              })
+          }
         </ul>
       </div>
     </div>
   </div>
 </section>
+
 
 
 <section className="big-section bg-light-gray wow animate__fadeIn" >
