@@ -51,7 +51,7 @@ export const RoomsInner = () => {
           
             <ul className="blog-clean blog-wrapper grid grid-loading grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large">
               <li className="grid-sizer" />
-              {roomsavailable.map((item, i) => {
+              {roomsavailable.sort( () => .5 - Math.random() ).map((item, i) => {
                 return (
                   <li
                     className={`grid-item ${item.category} wow animate__fadeIn`}
@@ -102,12 +102,23 @@ export const RoomsInner = () => {
                     >
                       <div className="opacity-extra-medium-2 bg-extra-dark-gray" />
                       <div className="position-relative z-index-1 w-100 padding-4-rem-tb lg-padding-5-rem-tb">
-                        <span className="d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
-                          NGN {item.price}k
-                        </span>
-                        <h3 className="alt-font text-white text-uppercase w-90 lg-w-85 mx-auto margin-35px-bottom font-weight-400">
+                        <div style={{display: "flex", margin: "auto", width: "60%"}}>
+                          <span className="w-50 d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
+                            <div className="option-price-value">N{item.option_prices.option1}k</div>
+                            <label className="option-price-label">
+                              Option 1
+                            </label>
+                          </span>
+                          <span className="w-50 d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
+                            <div className="option-price-value">N{item.option_prices.option2}k</div>
+                            <label className="option-price-label">
+                              Option 2
+                            </label>
+                          </span>
+                        </div>
+                        <h4 className="alt-font text-white text-uppercase w-90 lg-w-85 mx-auto margin-35px-bottom font-weight-500">
                           {item.name}
-                        </h3>
+                        </h4>
 
                         <div
                           style={{
@@ -129,7 +140,10 @@ export const RoomsInner = () => {
                             <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom margin-5px-right">
                               <i className="feather  icon-feather-user   " />
                             </span>
-                            <span className="alt-font text-medium text-uppercase d-inline-block d-sm-block" style={{color: "#c9c7c5"}}>
+                            <span
+                              className="alt-font text-medium text-uppercase d-inline-block d-sm-block"
+                              style={{ color: "#c9c7c5" }}
+                            >
                               {item.category}
                             </span>
                           </div>
@@ -144,16 +158,20 @@ export const RoomsInner = () => {
                             <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom margin-5px-right">
                               <i className="feather icon-feather-map-pin " />
                             </span>
-                            <span className="alt-font text-medium text-uppercase d-inline-block d-sm-block" style={{color: "#c9c7c5"}}>
+                            <span
+                              className="alt-font text-medium text-uppercase d-inline-block d-sm-block"
+                              style={{ color: "#c9c7c5" }}
+                            >
                               {item.location}
                             </span>
                           </div>
                         </div>
 
                         <a
-                          href={"#view-room-" + i}
+                          // href={"#view-room-" + i}
+                          href={`/single-room/${item.name}?location=${item.location}`}
                           className={
-                            "popup-with-form btn btn-medium btn-fancy btn-round-edge-small btn-box-shadow btn-white section-link"
+                            "btn btn-medium btn-fancy btn-round-edge-small btn-box-shadow btn-white section-link"
                           }
                         >
                           View Room
@@ -161,10 +179,10 @@ export const RoomsInner = () => {
                       </div>
                     </div>
                     {/* </div> */}
-
+{/* 
                     <ModalBox id={"view-room-" + i} width={7}>
                       <SingleRoom room={item} revId={"view-room-" + i} />
-                    </ModalBox>
+                    </ModalBox> */}
                   </li>
                 );
               })}
@@ -192,6 +210,7 @@ export const ModalBox = ({ children, id, width }) => {
 export const SingleRoom = ({ room = {}, revId = "" }) => {
   const [data, setdata] = useState({});
   const [showbook, setshowbook] = useState(false);
+  const [option, setoption] = useState("option1")
 
   useEffect(() => {
     if (room?.name) {
@@ -231,6 +250,7 @@ export const SingleRoom = ({ room = {}, revId = "" }) => {
     }
   };
 
+
   if (!data?.name) return <div />;
   return (
     <div className="room">
@@ -251,43 +271,6 @@ export const SingleRoom = ({ room = {}, revId = "" }) => {
           </div>
         </article>
       </section>
-      {/* end revolution slider section */}
-      {/* start section */}
-      {/* <section className="py-md-0 overflow-visible position-relative">
-        <div className="overlay-box"></div>
-        <div className="container-fluid">
-          <div className="row justify-content-end">
-            <div className="col-12 col-xl-5 col-lg-7 col-md-10 position-absolute bottom-0px right-0px d-flex flex-column flex-sm-row padding-1-half-rem-tb padding-2-rem-lr xl-padding-2-rem-lr lg-padding-3-rem-tb sm-position-relative sm-no-padding-top text-center text-sm-left architecture-overlap" style={{borderRadius: 8, right: 100}}>
-              <div className="padding-3-half-rem-lr padding-10px-tb border-right border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-20px-bottom xs-no-border-right">
-                <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom">
-                  <i className="feather  icon-feather-user   " />
-                </span>
-                <span className="alt-font text-medium text-uppercase d-inline-block d-sm-block">
-                  {data?.category}
-                </span>
-              </div>
-              <div className="padding-3-half-rem-lr padding-10px-tb border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-30px-bottom xs-no-border-right">
-                <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom">
-                  <i className="feather icon-feather-map-pin " />
-                </span>
-                <span className="alt-font text-medium text-uppercase d-inline-block d-sm-block">
-                  {data?.location}
-                </span>
-              </div>
-              <div className="padding-3-half-rem-lr padding-10px-tb xl-padding-1-half-rem-left xl-no-padding-right sm-padding-3-rem-left xs-no-padding">
-                <span className="alt-font font-weight-500 text-parrot-green text-uppercase d-block margin-5px-bottom">
-                  Rooms
-                </span>
-                <span className="alt-font text-medium text-uppercase d-block lg-w-95 sm-w-100">
-                  {data?.rooms}
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* end section */}
-      {/* start section */}
       <section
         style={{ borderRadius: "0 0 6px 6px" }}
         className="sm-no-padding-top p-5 bg-extra-medium-slate-blue"
@@ -322,15 +305,21 @@ export const SingleRoom = ({ room = {}, revId = "" }) => {
                 </span>
               </div>
               </div>
-           
+              
+
 
               <div className="fancy-text-box padding-2-half-rem-all md-padding-4-rem-all xs-padding-30px-all"  style={{minHeight: 300}} >
                 <div className="fancy-text-box-border-left border-color-white-transparent" style={{ borderRadius: 8 }} />
+
+                <div className="w-100">
+                  <a onClick={() => setoption("option1")} href="#" className={`w-50 btn btn-large btn-${option === "option1"?"transparent-":""}white btn-slide-up-bg d-table d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr`}>Option 1<span className={option === "option1"?"bg-white":"bg-transparent"} /></a>
+                  <a onClick={() => alert("option2")} href="#" className={`w-50 btn btn-large btn-${option === "option2"?"transparent-":""}white btn-slide-up-bg d-table d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr`}>Option 2<span className={option === "option2"?"bg-white":"bg-transparent"} /></a>
+                </div>
                 <h1
                   className="alt-font w-100 text-center fancy-text-content font-weight-600 text-parrot-green d-inline-block align-middle letter-spacing-minus-5px"
                   style={{ fontSize: 75, marginTop: 60 }}
                 >
-                  N{data?.price}K
+                  N{data?.option_prices[option]}K
                 </h1>
                 <div className="alt-font w-100 text-center text-extra-medium text-white text-left d-inline-block align-middle w-90px mx-auto line-height-24px position-relative top-minus-4px">
                   Per Student Per Semester

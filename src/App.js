@@ -7,20 +7,17 @@ import { Gallery } from "./pages/Gallery";
 import { Home } from "./pages/HomeInterior";
 import { HomeLanding } from "./pages/HomeLanding";
 import { Landing } from "./pages/Landing";
+import { NotFound } from "./pages/NotFound";
 import { Rooms } from "./pages/Rooms";
 import { Services } from "./pages/Services";
+import { SingleRoomView } from "./pages/SingleRoomView";
 function App() {
-  // const [loading, setloading] = useState(true);
   const supportsHistory = "pushState" in window.history;
-
-  // useEffect(() => {
-  //   setloading(false);
-  // }, []);
-  // if (loading) return <div className="page-loader"></div>;
   return (
     <Router forceRefresh={!supportsHistory}>
       <Switch>
         <Route exact path="/" component={HomeLanding} />
+        <Route exact path="/single-room/:roomname" component={SingleRoomView} />
         {/* <Route exact path="/" component={Landing} /> */}
         <Route exact path="/home/:type" component={Home} />
         <Route exact path="/career" component={Career} />
@@ -29,7 +26,7 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/rooms" component={Rooms} />
         <Route exact path="/gallery" component={Gallery} />
-        <Route exact path="/:type" component={Home} />
+        <Route component={NotFound} />
       </Switch>
     </Router>
   );

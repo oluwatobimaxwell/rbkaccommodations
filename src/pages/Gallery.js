@@ -9,6 +9,39 @@ export const Gallery = () => {
       title={"RBK Gallery"}
       boxheader={`navbar top-space navbar-expand-lg navbar-light bg-white header-light fixed-top header-reverse-scroll navbar-boxed`}
     >
+
+
+<section className="wow animate__fadeIn py-0">
+  <div className="container-fluid">
+    <div className="row">
+      <div className="col-12 lightbox-portfolio p-0">
+        <div className="justified-gallery" data-justified-options="{ &quot;rowHeight&quot;: 500, &quot;maxRowHeight&quot;: false, &quot;captions&quot;: true, &quot;margins&quot;: 15, &quot;waitThumbnailsLoad&quot;: true }">
+          {/* start portfolio item */}
+          <div className="bg-gradient-fast-blue-purple wow animate__fadeIn">
+            <a href="images/portfolio-85.jpg" className="gallery-link" title="Armchair">
+              <img src="images/portfolio-85.jpg" alt="Armchair" />
+            </a>
+            <div className="caption"><div className="text-medium">Branding</div><span className="text-medium font-weight-500 text-uppercase alt-font text-extra-dark-gray">Armchair</span></div>
+          </div> 
+          {/* end portfolio item */}
+          {/* start portfolio item */}
+          <div className="bg-gradient-fast-blue-purple wow animate__fadeIn">
+            <a href="images/portfolio-131.jpg" className="gallery-link" title="Truenorth">
+              <img src="images/portfolio-131.jpg" alt="Truenorth" />
+            </a>
+            <div className="caption"><div className="text-medium">Photography</div><span className="text-medium font-weight-500 text-uppercase alt-font text-extra-dark-gray">Truenorth</span></div>
+          </div> 
+          {/* end portfolio item */}
+          {/* start portfolio item */}
+          <div className="bg-gradient-fast-blue-purple wow animate__fadeIn">
+            <a href="images/portfolio-70.jpg" className="gallery-link" title="Educamp">
+              <img src="images/portfolio-70.jpg" alt="Educamp" />
+            </a>
+            <div className="caption"><div className="text-medium">Branding</div><span className="text-medium font-weight-500 text-uppercase alt-font text-extra-dark-gray">Educamp</span></div>
+          </div>
+        </div></div></div></div></section>
+
+
       <section class="border-top border-width-1px border-color-medium-gray padding-six-lr lg-no-padding-lr">
         <div className="container-fluid">
           <div className="row justify-content-center">

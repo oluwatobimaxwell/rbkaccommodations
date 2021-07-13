@@ -141,14 +141,14 @@ export const Footer = () => {
 
   return (
     <>
-      <section className="padding-100px-tb md-padding-75px-tb sm-padding-50px-tb wow animate__fadeIn">
+      <section className="footer-dark bg-extra-dark-gray padding-100px-tb md-padding-75px-tb sm-padding-50px-tb wow animate__fadeIn">
         <div className="container">
           <div className="row justify-content-center">
             <div
               className="col-12 col-xl-4 col-lg-4 md-margin-50px-bottom sm-margin-30px-bottom last-paragraph-no-margin wow animate__fadeIn"
               data-wow-delay="0.6s"
             >
-              <h5 className="alt-font font-weight-500 text-dark w-70 d-inline-block letter-spacing-minus-1px m-0 lg-w-100 md-w-50 xs-w-70">
+              <h5 className="alt-font font-weight-500 text-white w-70 d-inline-block letter-spacing-minus-1px m-0 lg-w-100 md-w-50 xs-w-70">
                 Please feel free to get in touch with us
               </h5>
             </div>
@@ -162,7 +162,7 @@ export const Footer = () => {
                   <i className="line-icon-Geo2-Love icon-extra-medium text-salmon-rose d-block" />
                 </div>
                 <div className="feature-box-content">
-                  <span className="text-dark text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
+                  <span className="text-white text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
                     RBK Accommodation
                   </span>
                   <p className="m-0">
@@ -182,7 +182,7 @@ export const Footer = () => {
                   <i className="line-icon-Mail icon-extra-medium text-salmon-rose d-block" />
                 </div>
                 <div className="feature-box-content">
-                  <span className="text-dark text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
+                  <span className="text-white text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
                     How can we help?
                   </span>
                   <p className="m-0">
@@ -209,7 +209,7 @@ export const Footer = () => {
       </section>
       {/* end section */}
       {/* start footer */}
-      <footer className="footer-light border-top border-color-medium-gray padding-50px-tb">
+      <footer className="footer-dark bg-extra-dark-gray border-top border-color-medium-white padding-50px-tb">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-12 col-md-3 text-center text-md-left sm-margin-20px-bottom">
@@ -219,7 +219,8 @@ export const Footer = () => {
                     require("../media/images/logo-gradient-tan-geraldine.png")
                       .default
                   }
-                  data-at2x="images/logo-gradient-tan-geraldine@2x.png"
+                  data-at2x={require("../media/images/logo-gradient-tan-geraldine.png")
+                  .default}
                   alt=""
                 />
               </a>
@@ -229,16 +230,16 @@ export const Footer = () => {
                 © {new Date().getFullYear()} RBK Student Accommodations Ltd.{" "}
               </p>
             </div>
-            <div className="col-12 col-md-3 text-center text-md-right">
+            <div className="col-12 col-md-3 text-center text-md-right text-white">
               <div className="social-icon-style-12">
-                <ul className="extra-small-icon">
+                <ul className="extra-small-icon text-white">
                   <li>
                     <a
                       className="facebook"
                       href="https://www.facebook.com/"
                       target="_blank"
                     >
-                      <i className="fab fa-facebook-f" />
+                      <i className="fab fa-facebook-f text-white" />
                     </a>
                   </li>
                   <li>
@@ -247,7 +248,7 @@ export const Footer = () => {
                       href="http://www.dribbble.com/"
                       target="_blank"
                     >
-                      <i className="fab fa-dribbble" />
+                      <i className="fab fa-dribbble text-white" />
                     </a>
                   </li>
                   <li>
@@ -256,7 +257,7 @@ export const Footer = () => {
                       href="http://www.twitter.com/"
                       target="_blank"
                     >
-                      <i className="fab fa-twitter" />
+                      <i className="fab fa-twitter text-white"  />
                     </a>
                   </li>
                   <li>
@@ -265,7 +266,7 @@ export const Footer = () => {
                       href="http://www.instagram.com/"
                       target="_blank"
                     >
-                      <i className="fab fa-instagram" />
+                      <i className="fab fa-instagram text-white" />
                     </a>
                   </li>
                 </ul>

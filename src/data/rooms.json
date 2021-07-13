@@ -1,126 +1,292 @@
 [
   {
+    "name": "Executive",
+    "price": "550",
+    "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
+    "category": "female",
+    "image": "../rbk/sa/IMG-20210711-WA0007.jpg",
+    "location": "Ochacho, Abuja",
+    "option_prices": {
+      "option1": 500,
+      "option2": 600
+    },
+    "media": [
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210709-WA0013.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210709-WA0018.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0007.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0016.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0018.jpg"
+      }
+    ],
+    "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
+  },
+  {
     "name": "Premium",
     "price": "550",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "category": "male",
-    "image": "../rbk/sa/IMG-20210711-WA0052.jpg",
-    "location": "Gwarinpa, Abuja",
+    "category": "female",
+    "image": "../rbk/sa/IMG-20210711-WA0007.jpg",
+    "location": "Ochacho, Abuja",
+    "option_prices": {
+      "option1": 750,
+      "option2": 600
+    },
     "media": [
       {
         "title": null,
-        "image": "../rbk/sa/IMG-20210711-WA0052.jpg"
+        "image": "../rbk/sa/IMG-20210711-WA0007.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0016.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0018.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0013.jpg"
       }
     ],
     "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
   },
   {
     "name": "Premium II",
-    "price": "600",
+    "price": "550",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "category": "male",
-    "image": "../rbk/sa/IMG-20210711-WA0053.jpg",
-    "location": "Gwarinpa, Abuja",
+    "category": "female",
+    "image": "../rbk/sa/IMG-20210711-WA0007.jpg",
+    "location": "Ochacho, Abuja",
+    "option_prices": {
+      "option1": 600,
+      "option2": 450
+    },
     "media": [
       {
         "title": null,
-        "image": "../rbk/sa/IMG-20210711-WA0053.jpg"
+        "image": "../rbk/sa/IMG-20210711-WA0007.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0016.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0018.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0013.jpg"
       }
     ],
     "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
   },
   {
-    "name": "Executive II",
-    "price": "700",
+    "name": "Executive Plus II",
+    "price": "550",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "category": "male",
-    "image": "../rbk/sa/IMG-20210709-WA0014.jpg",
-    "location": "Gwarinpa, Abuja",
+    "category": "female",
+    "image": "../rbk/sa/IMG-20210711-WA0016.jpg",
+    "location": "Ochacho, Abuja",
+    "option_prices": {
+      "option1": 700,
+      "option2": 550
+    },
     "media": [
       {
         "title": null,
-        "image": "../rbk/sa/IMG-20210709-WA0014.jpg"
+        "image": "../rbk/sa/IMG-20210711-WA0016.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0012.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0015.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0017.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0021.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0022.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0030.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0008.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0009.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0010.jpg"
       }
     ],
     "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
   },
-
   {
-    "name": "Premium",
-    "price": "750",
+    "name": "Premium Plus",
+    "price": "550",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
     "category": "female",
     "image": "../rbk/sa/IMG-20210711-WA0006.jpg",
-    "location": "Gwarinpa, Abuja",
+    "location": "Ochacho, Abuja",
+    "option_prices": {
+      "option1": 800,
+      "option2": 650
+    },
     "media": [
       {
         "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0033.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0011.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0004.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0005.jpg"
+      },
+      {
+        "title": null,
         "image": "../rbk/sa/IMG-20210711-WA0006.jpg"
-      }
-    ],
-    "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
-  },
-  {
-    "name": "Premium II",
-    "price": "750",
-    "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "note": "Private Balcony",
-    "category": "female",
-    "image": "../rbk/sa/IMG-20210711-WA0046.jpg",
-    "location": "Ochacho, Abuja",
-    "media": [
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0011.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0024.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0026.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0028.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0029.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0030.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0037.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0038.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0039.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0040.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0041.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0042.jpg"
+      },
       {
         "title": null,
         "image": "../rbk/sa/IMG-20210711-WA0046.jpg"
       }
     ],
     "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
-  },
-  {
-    "name": "Premium +",
-    "price": "800",
-    "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "note": "Private Balcony",
-    "category": "female",
-    "image": "../rbk/sa/IMG-20210711-WA0004.jpg",
-    "location": "Ochacho, Abuja",
-    "media": [
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG-20210711-WA0004.jpg"
-      }
-    ],
-    "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
-  },
-  {
-    "name": "Executive II",
-    "price": "700",
-    "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "category": "female",
-    "image": "../rbk/sa/IMG-20210709-WA0007.jpg",
-    "location": "Ochacho, Abuja",
-    "media": [
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG-20210709-WA0007.jpg"
-      }
-    ],
-    "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
-  },
-  {
-    "name": "Executive I",
-    "price": "850",
-    "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "note": "Private Balcony",
-    "category": "female",
-    "image": "../rbk/sa/IMG-20210709-WA0016.jpg",
-    "location": "Ochacho, Abuja",
-    "media": [
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG-20210709-WA0016.jpg"
-      }
-    ],
-    "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
   }
+,
+{
+  "name": "Premium II",
+  "price": "550",
+  "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
+  "category": "male",
+  "image": "../rbk/sa/IMG-20210709-WA0007.jpg",
+  "location": "Gwarinpa, Abuja",
+  "option_prices": {
+    "option1": 450,
+    "option2": 600
+  },
+  "media": [
+    {
+      "title": null,
+      "image": "../rbk/sa/IMG-20210709-WA0007.jpg"
+    },
+    {
+      "title": null,
+      "image": "../rbk/sa/IMG-20210709-WA0009.jpg"
+    },
+    {
+      "title": null,
+      "image": "../rbk/sa/IMG-20210711-WA0052.jpg"
+    },
+    {
+      "title": null,
+      "image": "../rbk/sa/IMG-20210711-WA0053.jpg"
+    }
+  ],
+  "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
+},
+{
+  "name": "Executive II",
+  "price": "550",
+  "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
+  "category": "female",
+  "image": "../rbk/sa/IMG-20210711-WA0056.jpg",
+  "location": "Ochacho, Abuja",
+  "option_prices": {
+    "option1": 550,
+    "option2": 700
+  },
+  "media": [
+    {
+      "title": null,
+      "image": "../rbk/sa/IMG-20210711-WA0056.jpg"
+    }
+  ],
+  "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
+}
 ]

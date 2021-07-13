@@ -220,6 +220,7 @@ a.text-parrot-green-hover:hover {
 }
 
 @media (max-width: 991px) {
+
   .room {
     background-color: #23262d;
   }
@@ -354,4 +355,28 @@ a.text-parrot-green-hover:hover {
 .btn.btn-box-shadow.btn-white:hover, .btn.btn-white:focus {
 	background: #fff0;
 	color: #fff;
+}
+
+.option-price-label {
+	font-size: 10px;
+	text-transform: capitalize;
+	width: 100%;
+}
+
+.option-price-value {
+	margin-bottom: -10px !important;
+}
+
+.page.option-price-label {
+	font-size: 13px;
+	margin-top: -10px;
+  /* font-weight: bold; */
+
+
+}
+.page.option-price-label .inner-label {
+	font-size: 12px;
+	margin-top: -13px !important;
+	font-weight: initial;
+  font-style: italic;
 }

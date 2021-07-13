@@ -67,7 +67,28 @@ export const HomeLanding = () => {
       desc: "Bonus Package",
       icon: " icon-simple-line-cup  icon-very-medium text-primary",
     },
-    // {
+    {
+      title: "Air Conditioned",
+      desc: "All rooms with AC",
+      icon: "  icon-simple-line-loop  icon-very-medium text-primary",
+    },
+    {
+      title: "24/7 Power & Security",
+      desc: "100% Electricity guarantee",
+      icon: " icon-simple-line-bulb  icon-very-medium text-primary",
+    },
+
+    {
+      title: "Free Wi-Fi",
+      desc: "Fast speed internet",
+      icon: " icon-simple-line-globe   icon-very-medium text-primary",
+    },
+    {
+      title: "Complementary Breakfast",
+      desc: "Bonus Package",
+      icon: " icon-simple-line-cup  icon-very-medium text-primary",
+    },
+     // {
     //   title: "Complementary Breakfast",
     //   desc: "Bonus Package",
     //   icon: " icon-simple-line-cup  icon-very-medium text-primary",
@@ -173,7 +194,7 @@ export const HomeLanding = () => {
             {features.map((item, i) => {
               return (
                 <div
-                  className="col md-margin-35px-bottom wow animate__fadeIn"
+                  className="col md-margin-35px-bottom wow animate__fadeIn mt-5"
                   data-wow-delay="0.2s"
                   style={{
                     visibility: "visible",
@@ -215,6 +236,7 @@ export const HomeLanding = () => {
                       .default
                   }`}
                   alt=""
+                  style={{borderRadius: 8}}
                 />
               </div>
               <div
@@ -227,6 +249,7 @@ export const HomeLanding = () => {
                       .default
                   }`}
                   alt=""
+                  style={{borderRadius: 8}}
                 />
               </div>
             </div>
@@ -452,5 +475,4 @@ We follows universal hygiene guidelines and a strict sanitisation protocol with 
   );
 };
 
-// curl -X POST   https://api.instagram.com/oauth/access_token   -F client_secret=997f90b6e8736d132ab624477870f363   -F grant_type=authorization_code   -F client_id=292762305761987   -F redirect_uri=https://socialsizzle.herokuapp.com/auth/
-// curl -X POST   https://api.instagram.com/oauth/authorize   -F client_id=292762305761987 -F redirect_uri=https://socialsizzle.herokuapp.com/auth/ -F scope=user_profile,user_media -F response_type=code
+
