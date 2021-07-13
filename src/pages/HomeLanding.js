@@ -22,6 +22,15 @@ export const HomeLanding = () => {
   //   },
   // ];
 
+  // Free Wifi,
+  // School shuttles;
+  // En suite & air conditioned  rooms.
+  // 24/7 Power & Security.
+  // Gym & outdoor games,
+  // Friendly staff & 24/7 support 
+  // Private Balconies,
+  // Complimentary Breakfast,
+
   const accommodations = [
     {
       name: {
@@ -46,53 +55,48 @@ export const HomeLanding = () => {
   ];
 
   const features = [
-    {
-      title: "Air Conditioned",
-      desc: "All rooms with AC",
-      icon: "  icon-simple-line-loop  icon-very-medium text-primary",
-    },
-    {
-      title: "24/7 Power & Security",
-      desc: "100% Electricity guarantee",
-      icon: " icon-simple-line-bulb  icon-very-medium text-primary",
-    },
 
     {
       title: "Free Wi-Fi",
       desc: "Fast speed internet",
-      icon: " icon-simple-line-globe   icon-very-medium text-primary",
+      icon: " line-icon-Phone-Wifi    icon-very-medium text-primary",
     },
     {
-      title: "Complementary Breakfast",
-      desc: "Bonus Package",
-      icon: " icon-simple-line-cup  icon-very-medium text-primary",
+      title: "School Shuttles",
+      desc: "Ride to school",
+      icon: "  line-icon-Bus   icon-very-medium text-primary",
     },
     {
-      title: "Air Conditioned",
+      title: "En-suite & Air Conditioned",
       desc: "All rooms with AC",
-      icon: "  icon-simple-line-loop  icon-very-medium text-primary",
+      icon: " line-icon-Wind-Turbine   icon-very-medium text-primary",
     },
     {
       title: "24/7 Power & Security",
       desc: "100% Electricity guarantee",
-      icon: " icon-simple-line-bulb  icon-very-medium text-primary",
+      icon: " line-icon-Light-Bulb   icon-very-medium text-primary",
     },
-
     {
-      title: "Free Wi-Fi",
-      desc: "Fast speed internet",
-      icon: " icon-simple-line-globe   icon-very-medium text-primary",
+      title: "Gym & Outdoor games",
+      desc: "Fun and games",
+      icon: " line-icon-Gymnastics   icon-very-medium text-primary",
+    },
+    {
+      title: "24/7 Support",
+      desc: "Friendly staff & 24/7 support",
+      icon: " line-icon-Support   icon-very-medium text-primary",
+    },
+ 
+    {
+      title: "Private Balconies",
+      desc: "Study & enjoy privacy",
+      icon: " line-icon-Bridge   icon-very-medium text-primary",
     },
     {
       title: "Complementary Breakfast",
       desc: "Bonus Package",
-      icon: " icon-simple-line-cup  icon-very-medium text-primary",
-    },
-     // {
-    //   title: "Complementary Breakfast",
-    //   desc: "Bonus Package",
-    //   icon: " icon-simple-line-cup  icon-very-medium text-primary",
-    // },
+      icon: " line-icon-Teapot   icon-very-medium text-primary",
+    }
   ];
 
   const menus = require("../data/header.json");
