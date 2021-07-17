@@ -400,5 +400,5 @@ a.text-parrot-green-hover:hover {
 }
 
 .swiper-slide.cover-background.mb-0 {
-	background-repeat: round !important;
+	/* background-repeat: round !important; */
 }

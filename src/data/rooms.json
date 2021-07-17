@@ -1,40 +1,5 @@
 [
   {
-    "name": "Executive",
-    "price": "550",
-    "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "category": "female",
-    "image": "../rbk/sa/IMG-20210711-WA0007.jpg",
-    "location": "Ochacho, Abuja",
-    "option_prices": {
-      "option1": 700,
-      "option2": 850
-    },
-    "media": [
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG-20210709-WA0013.jpg"
-      },
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG-20210709-WA0018.jpg"
-      },
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG-20210711-WA0007.jpg"
-      },
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG-20210711-WA0016.jpg"
-      },
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG-20210711-WA0018.jpg"
-      }
-    ],
-    "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
-  },
-  {
     "name": "Premium",
     "price": "550",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
@@ -92,61 +57,6 @@
       {
         "title": null,
         "image": "../rbk/sa/IMG-20210711-WA0013.jpg"
-      }
-    ],
-    "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
-  },
-  {
-    "name": "Executive Plus II",
-    "price": "550",
-    "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "category": "female",
-    "image": "../rbk/sa/IMG-20210711-WA0016.jpg",
-    "location": "Ochacho, Abuja",
-    "option_prices": {
-      "option1": 550,
-      "option2": 700
-    },
-    "media": [
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG-20210711-WA0016.jpg"
-      },
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG-20210711-WA0012.jpg"
-      },
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG-20210711-WA0015.jpg"
-      },
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG-20210711-WA0017.jpg"
-      },
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG-20210711-WA0021.jpg"
-      },
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG-20210711-WA0022.jpg"
-      },
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG-20210711-WA0030.jpg"
-      },
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG-20210711-WA0008.jpg"
-      },
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG-20210711-WA0009.jpg"
-      },
-      {
-        "title": null,
-        "image": "../rbk/sa/IMG-20210711-WA0010.jpg"
       }
     ],
     "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
@@ -239,6 +149,97 @@
     "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
   }
 ,
+  {
+    "name": "Executive Plus",
+    "price": "550",
+    "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
+    "category": "female",
+    "image": "../rbk/sa/IMG-20210711-WA0007.jpg",
+    "location": "Ochacho, Abuja",
+    "option_prices": {
+      "option1": 700,
+      "option2": 850
+    },
+    "media": [
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210709-WA0013.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210709-WA0018.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0007.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0016.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0018.jpg"
+      }
+    ],
+    "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
+  },
+  {
+    "name": "Executive II",
+    "price": "550",
+    "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
+    "category": "female",
+    "image": "../rbk/sa/IMG-20210711-WA0016.jpg",
+    "location": "Ochacho, Abuja",
+    "option_prices": {
+      "option1": 550,
+      "option2": 700
+    },
+    "media": [
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0016.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0012.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0015.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0017.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0021.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0022.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0030.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0008.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0009.jpg"
+      },
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210711-WA0010.jpg"
+      }
+    ],
+    "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
+  },
+ 
 {
   "name": "Premium II",
   "price": "550",
