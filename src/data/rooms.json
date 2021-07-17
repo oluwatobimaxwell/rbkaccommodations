@@ -154,13 +154,17 @@
     "price": "550",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
     "category": "female",
-    "image": "../rbk/sa/IMG-20210711-WA0007.jpg",
+    "image": "../rbk/sa/IMG-20210709-WA0021.jpg",
     "location": "Ochacho, Abuja",
     "option_prices": {
       "option1": 700,
       "option2": 850
     },
     "media": [
+      {
+        "title": null,
+        "image": "../rbk/sa/IMG-20210709-WA0021.jpg"
+      },
       {
         "title": null,
         "image": "../rbk/sa/IMG-20210709-WA0013.jpg"
