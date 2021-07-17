@@ -398,3 +398,7 @@ a.text-parrot-green-hover:hover {
 .all-demo.email {
 	border-top-left-radius: 8px;
 }
+
+.swiper-slide.cover-background.mb-0 {
+	background-repeat: round !important;
+}
