@@ -29,7 +29,7 @@ export const HomeLanding = () => {
         line2: "Accommodation",
       },
       location: "Ochacho Real-Homes, Karmo, Abuja, Nigeria.",
-      image: require("../media/rbk/sa/IMG-20210709-WA0010.jpg").default,
+      image: require("../media/rbk/sa/EA42832D-8B27-44DB-B366-00BA96F963AD.JPG").default,
       // image: "https://lithohtml.themezaa.com/images/home-creative-agency-bg-img-02.jpg",
       link: "/home/female",
     },
