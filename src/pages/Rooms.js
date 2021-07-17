@@ -31,15 +31,16 @@ export const RoomsInner = () => {
                 </a>
               </li>
               <li className="nav">
-                <a data-filter=".male" href="#">
-                  Male
-                </a>
-              </li>
-              <li className="nav">
                 <a data-filter=".female" href="#">
                   Female
                 </a>
               </li>
+              <li className="nav">
+                <a data-filter=".male" href="#">
+                  Male
+                </a>
+              </li>
+            
             </ul>
             {/* end filter navigation */}
           </div>
@@ -51,7 +52,7 @@ export const RoomsInner = () => {
           
             <ul className="blog-clean blog-wrapper grid grid-loading grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large">
               <li className="grid-sizer" />
-              {roomsavailable.sort( () => .5 - Math.random() ).map((item, i) => {
+              {roomsavailable.map((item, i) => {
                 return (
                    <RoomItemCard item={item} key={"shhshs-wehe-"+i} />
                 );

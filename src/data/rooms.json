@@ -42,8 +42,8 @@
     "image": "../rbk/sa/IMG-20210711-WA0007.jpg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 750,
-      "option2": 600
+      "option1": 600,
+      "option2": 750
     },
     "media": [
       {
@@ -73,8 +73,8 @@
     "image": "../rbk/sa/IMG-20210711-WA0007.jpg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 600,
-      "option2": 450
+      "option1": 450,
+      "option2": 600
     },
     "media": [
       {
@@ -104,8 +104,8 @@
     "image": "../rbk/sa/IMG-20210711-WA0016.jpg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 700,
-      "option2": 550
+      "option1": 550,
+      "option2": 700
     },
     "media": [
       {
@@ -159,8 +159,8 @@
     "image": "../rbk/sa/IMG-20210711-WA0006.jpg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 800,
-      "option2": 650
+      "option1": 650,
+      "option2": 800
     },
     "media": [
       {
@@ -276,7 +276,7 @@
   "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
   "category": "male",
   "image": "../rbk/sa/IMG-20210711-WA0056.jpg",
-  "location": "Ochacho, Abuja",
+  "location": "Gwarinpa, Abuja",
   "option_prices": {
     "option1": 550,
     "option2": 700
