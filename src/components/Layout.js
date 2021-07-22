@@ -8,6 +8,8 @@ export const Layout = ({
   subtitle,
   bgimage,
   jumpto,
+  base,
+  home
 }) => {
   return (
     <>
@@ -18,7 +20,7 @@ export const Layout = ({
             <div className="row align-items-center justify-content-center">
               <div className="col-12 col-xl-8 col-lg-6">
                 {/* start page title */}
-                <h1 className="alt-font text-white font-weight-500 no-margin-bottom text-center text-lg-left">
+                <h1 className="alt-font text-white font-weight-500 no-margin-bottom text-center text-lg-left text-capitalize" >
                   {title}
                 </h1>
                 {/* end page title */}
@@ -26,13 +28,20 @@ export const Layout = ({
               <div className="col-12 col-xl-4 col-lg-6 breadcrumb justify-content-center justify-content-lg-end text-small alt-font md-margin-10px-top">
                 {/* start breadcrumb */}
                 <ul className="xs-text-center">
+                  {home && (
                   <li>
                     <a href="/" className="text-white-hover">
-                      Home
+                      {"Home"}
+                    </a>
+                  </li>
+                  )}
+                  <li>
+                    <a href="/" className="text-white-hover">
+                      {base || "Home"}
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-white-hover">
+                    <a href="#" className="text-white-hover text-capitalize">
                       {subtitle}
                     </a>
                   </li>

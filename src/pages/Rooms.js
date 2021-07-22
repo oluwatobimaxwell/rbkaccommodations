@@ -66,7 +66,7 @@ export const RoomsInner = () => {
 };
 
 
-export const RoomItemCard = ({item}) => {
+export const RoomItemCard = ({item, id}) => {
   return (
     <li
     className={`grid-item ${item.category} wow animate__fadeIn`}
@@ -146,14 +146,17 @@ export const RoomItemCard = ({item}) => {
         </div>
 
         <a
-          // href={"#view-room-" + i}
+          // href={"#view-room-" + id}
           href={`/single-room/${item.name}?location=${item.location}`}
           className={
-            "btn btn-medium btn-fancy btn-round-edge-small btn-box-shadow btn-white section-link"
+            " btn btn-medium btn-fancy btn-round-edge-small btn-box-shadow btn-white section-link"
           }
         >
           View Room
         </a>
+        <ModalBox id={"view-room-" + id}>
+          <SingleRoom room={item}  />
+        </ModalBox>
       </div>
     </div>
   </li>

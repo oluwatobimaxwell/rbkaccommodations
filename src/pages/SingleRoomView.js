@@ -1,5 +1,6 @@
 import React, {useEffect} from "react";
 import { Layout } from "../components/Layout";
+import { RoomSlider } from "./Comps/RoomSlider";
 import { NotFound } from "./NotFound";
 
 export const SingleRoomView = ({match}) => {
@@ -36,10 +37,15 @@ export const SingleRoomView = ({match}) => {
 
   return (
     <Layout
-      subtitle={room.location}
-      title={room.name}
-      bgimage={room.image}
-    //   boxheader={`navbar top-space navbar-expand-lg navbar-light bg-white header-light fixed-top header-reverse-scroll navbar-boxed`}
+      // subtitle={room.location}
+      // title={room.name}
+      // bgimage={room.image}
+      // boxheader={`navbar navbar-expand-lg navbar-dark bg-transparent border-bottom border-color-white-transparent header-light fixed-top navbar-boxed header-reverse-scroll`}
+      subtitle={room.category +" "+ room.name + " Room"}
+      title={room.category +" "+ room.name + " Room"}
+      boxheader={`navbar top-space navbar-expand-lg navbar-light bg-white header-light fixed-top header-reverse-scroll navbar-boxed`}
+      base={"Room"}
+      home={true}
     >
 <style>
 {`.section-link {
@@ -50,9 +56,14 @@ export const SingleRoomView = ({match}) => {
     background-repeat: round;
 }
 
+.navbar.navbar-expand-lg.navbar-dark.bg-transparent.border-bottom.border-color-white-transparent.header-light.fixed-top.navbar-boxed.header-reverse-scroll {
+	// background: #000 !important;
+}
+
 `}
 </style>
-<section className="overflow-visible pb-0">
+<RoomSlider media={room.media} />
+<section className="overflow-visible pb-0" style={{ display: "none" }}>
   <div className="container">
     <div className="row align-items-center" >
       <div className="col-12 text-center overlap-section">
@@ -125,49 +136,7 @@ export const SingleRoomView = ({match}) => {
 </section>
 
 
-<section className="padding-10-rem-lr md-no-padding-lr">
-  <div className="container-fluid">
-    <div className="row">
-      <div className="col-12">
-        <ul className="portfolio-overlay portfolio-wrapper grid grid-loading grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-large text-center">
-          <li className="grid-sizer" />
-          {
-              room?.media.map((item, i) => {
-                  return (
-                    <li className="grid-item grid-item-double wow animate__fadeIn" 
-                        style={{
-                            display: i > 3? "none":"", 
-                            width: window.screen.width > 900 ? (i > 1 ? `${25}%`: `${50}%`) : `100%` ,
-                            
-                        }}>
-                    <a href={item.image} title={roomName +" @"+location} data-group="lightbox-gallery" className="lightbox-group-gallery-item">
-                      <div className="portfolio-box"
-                      >
-                        <div className="portfolio-image bg-gradient-peacock-blue-crome-yellow"
-                            style={{
-                                backgroundImage: `url("${item.image}")`, 
-                                width: `100%`,
-                                height: window.screen.width > 900 ? ( i > 0 ? 250 : 520) : 250,
-                                borderRadius: 8,
-                                backgroundRepeat: "round"
-                            }}
-                        >
-                          {/* <img src={item.image} alt="" /> */}
-                          <div className="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
-                            <i className="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom" />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  )
-              })
-          }
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 
 
@@ -209,16 +178,6 @@ export const SingleRoomView = ({match}) => {
   </div>
 </section>
 
-{/* <section className="pt-0 overlap-height padding-9-rem-lr xl-padding-3-rem-lr sm-padding-15px-lr xs-no-padding-lr" style={{ paddingBottom: 0 }} >
-  <div className="container-fluid">
-    <div className="row row-cols-1 row-cols-lg-4 row-cols-sm-2 overlap-gap-section">
-      <div className="col margin-8-rem-top md-margin-4-rem-top xs-no-margin-top xs-margin-15px-bottom wow animate__fadeIn" style={{visibility: 'visible', animationName: 'fadeIn'}}><img src="../images/single-project-page-04-img04.jpg" alt="" data-no-retina /></div>
-      <div className="col xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.2s" style={{visibility: 'visible', animationDelay: '0.2s', animationName: 'fadeIn'}}><img src="../images/single-project-page-04-img05.jpg" alt="" data-no-retina /></div>
-      <div className="col margin-8-rem-top md-margin-4-rem-top xs-no-margin-top xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.4s" style={{visibility: 'visible', animationDelay: '0.4s', animationName: 'fadeIn'}}><img src="../images/single-project-page-04-img06.jpg" alt="" data-no-retina /></div>
-      <div className="col wow animate__fadeIn" data-wow-delay="0.6s" style={{visibility: 'visible', animationDelay: '0.6s', animationName: 'fadeIn'}}><img src="../images/single-project-page-04-img07.jpg" alt="" data-no-retina /></div>
-    </div>
-  </div>
-</section> */}
 
 <section>
   <div className="container">

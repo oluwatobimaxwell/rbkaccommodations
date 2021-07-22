@@ -25,7 +25,7 @@ export const HomeLanding = () => {
   const accommodations = [
     {
       name: {
-        line1: "RBK Female",
+        line1: "RKB Female",
         line2: "Accommodation",
       },
       location: "Ochacho Real-Homes, Karmo, Abuja, Nigeria.",
@@ -35,7 +35,7 @@ export const HomeLanding = () => {
     },
     {
       name: {
-        line1: "RBK Male",
+        line1: "RKB Male",
         line2: "Accommodation",
       },
       location: "Gwarinpa, Abuja, Nigeria.",
@@ -84,9 +84,29 @@ export const HomeLanding = () => {
       icon: " line-icon-Bridge   icon-very-medium text-primary",
     },
     {
-      title: "Complementary Breakfast",
+      title: "Breakfast & Dinner",
       desc: "Bonus Package",
       icon: " line-icon-Teapot   icon-very-medium text-primary",
+    },
+    {
+      title: "Kitchen",
+      desc: "Shared & Private",
+      icon: " line-icon-Alarm-Clock2    icon-very-medium text-primary",
+    },
+    {
+      title: "Social Space",
+      desc: "Bonus Package",
+      icon: " line-icon-Eifel-Tower    icon-very-medium text-primary",
+    },
+    {
+      title: "Laundry",
+      desc: "Bonus Package",
+      icon: " line-icon-Polo-Shirt    icon-very-medium text-primary",
+    },
+    {
+      title: "CCTV & Fire Alarm",
+      desc: "Bonus Package",
+      icon: " line-icon-Fire-Flame    icon-very-medium text-primary",
     }
   ];
 
@@ -273,10 +293,9 @@ export const HomeLanding = () => {
                 animationName: "fadeIn",
               }}
               >
-                RKB Male Students Accomodation is located at 46, 35 Road,
-                Gwarinpa, Abuja. The facility is located in the heart of
-                Gwarinpa Model City in Abuja where everything(Shopping Malls,
-                Services, Restaurants, H- medics) is within reach.
+               At RBK Students accommodations,Abuja, we seek to create an  unmatched hostel solution as well as creating home away from home experience for  students.
+               <br/>
+               RBK also provides  serene environment for relaxation and creativity for academic pursuit.
               </p>
               {/* <a
                 href="#accommdations"
@@ -314,7 +333,7 @@ export const HomeLanding = () => {
                   animationName: "fadeIn",
                 }}
               >
-                25minutes Drive
+                RKB Services
               </span>
               <h4
                 className="alt-font font-weight-600 text-white letter-spacing-minus-1-half w-90 margin-3-rem-bottom xl-w-100 md-w-90 sm-w-100 wow animate__fadeIn"
@@ -324,10 +343,16 @@ export const HomeLanding = () => {
                   animationDelay: "0.4s",
                   animationName: "fadeIn",
                 }}
-              >
-                The male acommodation is about 25minutes drive to  Nile University  and  Baze University. 
+              > <span style={{ color: "transparent" }}>PP</span>We pride ourselves on top-notch facilities, 24/7 security &amp;  power, free internet access  and  quality welfare services to our esteemed residents. 
+                <br/>
+                <br/>
+                <span style={{ color: "transparent" }}>PP</span>Our services cover wide range of opportunities for students who want to have convenience with academic excellence.
+                <br/>
+                <br/>
+                <span style={{ color: "#007bff", fontStyle: "italic", fontFamily: "'Fuggles', cursive", fontSize: 50 }}>RKB -  Green & Smart Student Accommodations.</span>
               </h4>
-              <p
+
+              {/* <p
                 className="text-large line-height-38px w-90 lg-w-100 md-w-80 sm-w-100 wow animate__fadeIn"
                 data-wow-delay="0.4s"
                 style={{
@@ -336,10 +361,8 @@ export const HomeLanding = () => {
                   animationName: "fadeIn",
                 }}
               >
-                Our services covers wide range of opportunities for prospective and current students who wants to have conveniency with academic endeavors.
-
-We follows universal hygiene guidelines and a strict sanitisation protocol with 24hours up to date security.
-              </p>
+                
+              </p> */}
               <a
                 href="#room-list"
                 className="section-link btn btn-link scroll-down-text btn-extra-large text-white margin-15px-top letter-spacing-1px wow animate__fadeIn"
@@ -358,7 +381,7 @@ We follows universal hygiene guidelines and a strict sanitisation protocol with 
               className="col-12 col-xl-5 col-lg-6 cover-background md-h-500px sm-h-350px wow animate__fadeIn"
               data-wow-delay="0.1s"
               style={{
-                backgroundImage: `url("${require("../media/rbk/sa/IMG-20210711-WA0043.jpg").default}")`,
+                backgroundImage: `url("${require("../media/rbk/20210719_125009_new.jpg").default}")`,
                 visibility: "visible",
                 animationDelay: "0.1s",
                 animationName: "fadeIn",

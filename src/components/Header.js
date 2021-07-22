@@ -154,7 +154,7 @@ export const Footer = () => {
             </div>
             {/* start feature box item */}
             <div
-              className="col-12 col-xl-3 col-lg-4 col-sm-6 xs-margin-30px-bottom last-paragraph-no-margin wow animate__fadeInRight"
+              className="col-12 col-xl-4 col-lg-4 col-sm-6 xs-margin-30px-bottom last-paragraph-no-margin wow animate__fadeInRight"
               data-wow-delay="0.4s"
             >
               <div className="feature-box feature-box-left-icon">
@@ -162,11 +162,18 @@ export const Footer = () => {
                   <i className="line-icon-Geo2-Love icon-extra-medium text-salmon-rose d-block" />
                 </div>
                 <div className="feature-box-content">
-                  <span className="text-white text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
-                    RKB Accommodation
+                <span className="text-white text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
+                  RKB Female Accommodation 
                   </span>
                   <p className="m-0">
-                    401 Broadway, 24th Floor, Orchard View, Abuja
+                  Ochacho Real Homes LTD, Karmo, Close to Nizamiye Hospital.
+                  </p>
+                  <br/>
+                  <span className="text-white text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
+                  RKB Male Accommodation
+                  </span>
+                  <p className="m-0">
+                    46, 35 road, 3rd Avenue, Gwarinpa. 
                   </p>
                 </div>
               </div>
@@ -174,7 +181,7 @@ export const Footer = () => {
             {/* end feature box item */}
             {/* start feature box item */}
             <div
-              className="col-12 col-xl-4 offset-xl-1 col-lg-4 col-sm-6 last-paragraph-no-margin wow animate__fadeInRight"
+              className="col-12 col-xl-4 col-lg-4 col-sm-6 last-paragraph-no-margin wow animate__fadeInRight"
               data-wow-delay="0.6s"
             >
               <div className="feature-box feature-box-left-icon">
