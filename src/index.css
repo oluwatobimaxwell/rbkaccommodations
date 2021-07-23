@@ -222,7 +222,7 @@ a.text-parrot-green-hover:hover {
 @media (max-width: 991px) {
 
   .room {
-    background-color: #23262d;
+    /* background-color: #23262d; */
   }
   .room .architecture-overlap {
     background: none;
@@ -411,5 +411,6 @@ a.text-parrot-green-hover:hover {
 }
 
 .cursive-me{
-  font-style: italic;font-family: "Fuggles", cursive;font-size: 60px;text-transform: capitalize !important
+  font-style: italic;font-family: "Fuggles", cursive;font-size: 60px;text-transform: capitalize !important;
+  line-height: 0.75;
 }
