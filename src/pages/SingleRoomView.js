@@ -182,7 +182,7 @@ export const SingleRoomView = ({match}) => {
                       alt=""
                       data-no-retina
                     /> */}
-                    <div className="feature-box-icon margin-30px-right line-height-0px lg-margin-25px-right">
+                    <div className="feature-box-icon line-height-0px lg-margin-25px-right">
                       <i className={" line-icon-Bus   icon-very-medium text-primary mt-4 mb-4"} />
                     </div>
                     <span className="text-extra-medium font-weight-500 text-extra-dark-gray d-block w-90 mx-auto xs-w-100">
