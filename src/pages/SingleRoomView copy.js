@@ -1,7 +1,6 @@
 import React, {useEffect} from "react";
 import { Layout } from "../components/Layout";
 import { RoomSlider } from "./Comps/RoomSlider";
-import { RoomSlider2 } from "./Comps/RoomSlider2";
 import { NotFound } from "./NotFound";
 
 export const SingleRoomView = ({match}) => {
@@ -31,13 +30,10 @@ export const SingleRoomView = ({match}) => {
     const roomIndex = rooms.findIndex(e => e.name === roomName && e.location === location)
     const next = rooms[getNextIndex(roomIndex, rooms.length)]
     const previous = rooms[getPreviewIndex(roomIndex, rooms.length)]
-    const source = require("../data/home.json");
-    let { features = [], about } = source[room.category];
 
     if(roomIndex < 0) {
         return <NotFound pageName={roomName+" at "+location+" not found."} />
     }
-
 
   return (
     <Layout
@@ -66,135 +62,82 @@ export const SingleRoomView = ({match}) => {
 
 `}
 </style>
-<RoomSlider2 meida={room.media} />
-
-<section className="big-section wow animate__fadeIn" style={{visibility: 'visible', animationName: 'fadeIn'}}>
+<RoomSlider media={room.media} />
+<section className="overflow-visible pb-0" style={{ display: "none" }}>
   <div className="container">
-    <div className="row align-items-center justify-content-center">
+    <div className="row align-items-center" >
+      <div className="col-12 text-center overlap-section">
+        <div className="overlap-section-inner">
+        <div className="container" style={{margin: 'auto', width: '100%', background: '#fff', padding: '30px 0 30px 0', borderRadius: '10px', border: '1px solid #eaeaea'}}>
+ 
+  <div className="row row-cols-1 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 justify-content-center" >
+    {/* start feature box item */}
+    <div className="col text-center md-margin-50px-bottom wow animate__fadeIn" data-wow-delay="0.1s" style={{visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeIn'}}>
+      <a href="#" className="text-medium-gray text-fast-blue-hover cursor-default">
+        <i className=" line-icon-Remove  icon-large padding-20px-bottom" />
+        <span className="alt-font font-weight-600 text-extra-dark-gray text-uppercase d-block">NGN{room?.option_prices?.option1}k</span>
+        <div className="page option-price-label">Option 1
+        <br/>
+        <div className="inner-label">[Dinner & Laundry exclusive]</div>
+        </div>
+      </a>
+    </div>
+    {/* end feature box item */}
+    {/* start feature box item */}
+    <div className="col text-center md-margin-50px-bottom wow animate__fadeIn" data-wow-delay="0.2s" style={{visibility: 'visible', animationDelay: '0.2s', animationName: 'fadeIn'}}>
+      <a href="#" className="text-medium-gray text-fast-blue-hover cursor-default">
+        <i className="  line-icon-Add   icon-large padding-20px-bottom" />
+        <span className="alt-font font-weight-600 text-extra-dark-gray text-uppercase d-block">NGN{room?.option_prices?.option2}k</span>
+        <div className="page option-price-label">Option 2 
+        <br/>
+        <div className="inner-label">[Dinner & Laundry inclusive]</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
 
-      <div className="col-12 col-lg-6 offset-lg-1 text-center text-lg-left last-paragraph-no-margin wow animate__fadeIn" data-wow-delay="0.4s" style={{visibility: 'visible', animationDelay: '0.4s', animationName: 'fadeIn'}}>
-        <h5 className="alt-font text-extra-dark-gray font-weight-500 letter-spacing-minus-1px text-capitalize">{room.category +" "+ room.name + " Room"}</h5>
-        <p className="w-100 md-w-80 text-center text-lg-left md-margin-auto-lr"
-          dangerouslySetInnerHTML={{__html: about}}
-        />
+        </div>
       </div>
-      
     </div>
   </div>
 </section>
 
-<section className="big-section bg-light-gray wow animate__fadeIn" style={{visibility: 'visible', animationName: 'fadeIn'}}>
+<section  style={{ paddingBottom: `0px !important` }}>
   <div className="container">
-    <div className="row row-cols-1 row-cols-lg-3 align-items-center justify-content-center">
-      <div className="col col-md-8 text-center md-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.4s" style={{visibility: 'visible', animationDelay: '0.4s', animationName: 'fadeIn'}}>
-        {/* start pricing table */}
-        <div className="pricing-table d-flex flex-column justify-content-center border-radius-5px box-shadow-extra-large h-100 bg-white border-radius-5px padding-60px-lr padding-70px-tb lg-padding-50px-lr xs-padding-50px-tb xs-padding-40px-lr">
-          {/* start pricing header */}
-          <div className="pricing-header">
-            <div className="text-medium margin-10px-bottom d-block alt-font">Core features</div>
-            <div className="alt-font text-extra-dark-gray text-large font-weight-500 margin-3-rem-bottom text-uppercase">Option 1</div>
-            <h3 className="alt-font font-weight-500 text-fast-blue letter-spacing-minus-2px no-margin-bottom">₦{room?.option_prices?.option1}k</h3>
-            <span className="text-uppercase text-extra-dark-gray letter-spacing-1px font-weight-500 text-small">Per Student Per Semester</span>
-          </div>
-          {/* end pricing header */}
-          {/* start pricing body */}
-          <div className="pricing-body padding-3-rem-tb">
-            <ul className="list-style-03">
-              <li className="border-color-medium-gray">No Breakfast</li>
-              <li className="border-color-medium-gray">Paid Laundry</li>
+    <div className="row justify-content-center">
+      <div className="col-12 col-lg-11">
+        <div className="row">
+          <div className="col-lg-4 padding-five-right lg-padding-15px-right md-margin-50px-bottom wow animate__fadeIn" data-wow-delay="0.2s" style={{visibility: 'visible', animationDelay: '0.2s', animationName: 'fadeIn'}}>
+            <h5 className="alt-font text-extra-dark-gray font-weight-500 margin-4-rem-bottom letter-spacing-minus-1px">The room details</h5>
+            <ul className="list-unstyled">
+              <li className="border-bottom border-color-medium-gray padding-20px-bottom margin-20px-bottom text-capitalize">
+                  <span className="text-uppercase text-extra-dark-gray w-35 d-inline-block font-weight-500 alt-font text-medium">Gender</span>{room.category}
+            </li>
+              <li className="border-bottom border-color-medium-gray padding-20px-bottom margin-20px-bottom text-capitalize">
+                  <span className="text-uppercase text-extra-dark-gray w-35 d-inline-block font-weight-500 alt-font text-medium">Location</span>{room.location}
+            </li>
+              <li className="border-bottom border-color-medium-gray padding-20px-bottom margin-20px-bottom text-capitalize">
+                  <span className="text-uppercase text-extra-dark-gray w-35 d-inline-block font-weight-500 alt-font text-medium">Availability</span>{room.availability || "Available"}
+            </li>
             </ul>
           </div>
-          {/* end pricing body */}
-          {/* start pricing footer */}
-          <div className="pricing-footer">
-            <a className="btn btn-fancy btn-small btn-dark-gray" href="/contact">Choose Option</a>
+          <div className="col-lg-7 offset-lg-1 wow animate__fadeIn" data-wow-delay="0.4s" style={{visibility: 'visible', animationDelay: '0.4s', animationName: 'fadeIn'}}>
+            <span className="alt-font text-medium text-uppercase font-weight-500 margin-20px-bottom d-inline-block text-extra-dark-gray">More about • {roomName} @{location}</span>
+            <p
+                dangerouslySetInnerHTML={{__html: room.content}}
+            />
+            <a href="#" className="btn btn-link btn-large text-extra-dark-gray">Book Room</a>
           </div>
-          {/* end pricing footer */}
         </div>
-        {/* end pricing table */}
-      </div>
-      <div className="col col-md-8 text-center md-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.2s" style={{visibility: 'visible', animationDelay: '0.2s', animationName: 'fadeIn'}}>
-        {/* start pricing table */}
-        <div className="pricing-table d-flex flex-column justify-content-center h-100 bg-gradient-fast-blue-purple border-radius-5px padding-60px-lr padding-70px-tb lg-padding-50px-lr xs-padding-50px-tb xs-padding-40px-lr">
-          {/* start pricing header */}
-          <div className="pricing-header">
-            <div className="text-white text-medium margin-10px-bottom d-block alt-font opacity-7">Most popular</div>
-            <div className="alt-font text-white text-large font-weight-500 margin-3-rem-bottom text-uppercase">Option 2</div>
-            <h2 className="alt-font font-weight-500 text-white letter-spacing-minus-2px no-margin-bottom">₦{room?.option_prices?.option2}k</h2>
-            <span className="text-uppercase text-white letter-spacing-1px font-weight-500 text-small">Per Student Per Semester</span>
-          </div>
-          {/* end pricing header */}
-          {/* start pricing body */}
-          <div className="pricing-body padding-3-rem-tb">
-            <ul className="list-style-03 text-white">
-              <li className="border-color-dark-white-transparent">With Breakfast</li>
-              <li className="border-color-dark-white-transparent">Free Laundry</li>
-            </ul>
-          </div>
-          {/* end pricing body */}
-          {/* start pricing footer */}
-          <div className="pricing-footer">
-            <a className="btn btn-fancy btn-medium btn-white" href="/contact">Choose Option</a>
-          </div>
-          {/* end pricing footer */}
-        </div>
-        {/* end pricing table */}
       </div>
     </div>
   </div>
 </section>
 
 
-<section id="features" className="bg-white">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div
-              className="col-12 col-lg-5 col-sm-6 text-center margin-5-half-rem-bottom md-margin-3-rem-bottom wow animate__fadeIn"
-              style={{ visibility: "visible", animationName: "fadeIn" }}
-            >
-              <span className="text-yellow-ochre-light text-uppercase">
-                RKB Accommodation Features
-              </span>
-              <h4 className="alt-font font-weight-700 text-uppercase text-extra-dark-gray letter-spacing-minus-1px m-0">
-                Room Features
-              </h4>
-            </div>
-          </div>
-          <div className="row row-cols-2 row-cols-lg-5 row-cols-sm-2">
-            {/* start feature box item */}
-            {features.map((item, i) => {
-              return (
-                <div
-                  className="feature-item-holder col text-center border-radius-6px box-shadow-double-large-hover  transition wow animate__fadeIn"
-                  data-wow-delay="0.1s"
-                  style={{
-                    visibility: "visible",
-                    animationDelay: "0.1s",
-                    animationName: "fadeIn",
-                  }}
-                >
-                  <div className="w-100 h-100 feature-item padding-20px-tb border-radius-6px">
-                    {/* <img
-                      className="margin-25px-bottom mt-4"
-                      src={
-                        item.icon || "../images/litho-landing-page-icon-01.jpg"
-                      }
-                      alt=""
-                      data-no-retina
-                    /> */}
-                    <div className="feature-box-icon margin-30px-right line-height-0px lg-margin-25px-right">
-                      <i className={" line-icon-Bus   icon-very-medium text-primary mt-4 mb-4"} />
-                    </div>
-                    <span className="text-extra-medium font-weight-500 text-extra-dark-gray d-block w-90 mx-auto xs-w-100">
-                      {item.title}
-                    </span>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+
+
 
 
 <section className="big-section bg-light-gray wow animate__fadeIn" >
