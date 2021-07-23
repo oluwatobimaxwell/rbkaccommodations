@@ -68,13 +68,13 @@ export const SingleRoomView = ({match}) => {
 </style>
 <RoomSlider2 meida={room.media} />
 
-<section className="big-section wow animate__fadeIn" style={{visibility: 'visible', animationName: 'fadeIn'}}>
+<section className="big-section wow animate__fadeIn" style={{visibility: 'visible', animationName: 'fadeIn', padding: "50px 0"}}>
   <div className="container">
     <div className="row align-items-center justify-content-center">
 
-      <div className="col-12 col-lg-6 offset-lg-1 text-center text-lg-left last-paragraph-no-margin wow animate__fadeIn" data-wow-delay="0.4s" style={{visibility: 'visible', animationDelay: '0.4s', animationName: 'fadeIn'}}>
-        <h5 className="alt-font text-extra-dark-gray font-weight-500 letter-spacing-minus-1px text-capitalize">{room.category +" "+ room.name + " Room"}</h5>
-        <p className="w-100 md-w-80 text-center text-lg-left md-margin-auto-lr"
+      <div className="col-12 col-lg-12 offset-lg-1 text-center text-lg-left last-paragraph-no-margin wow animate__fadeIn" data-wow-delay="0.4s" style={{visibility: 'visible', animationDelay: '0.4s', animationName: 'fadeIn'}}>
+        <h5 className="alt-font text-extra-dark-gray font-weight-500 letter-spacing-minus-1px text-capitalize text-center text-primary">{room.category +" "+ room.name + " Room"} {room?.twoinroom && "(Two In A Room)"}</h5>
+        <p className="w-100 md-w-80 text-center text-lg-left md-margin-auto-lr text-align-center "
           dangerouslySetInnerHTML={{__html: about}}
         />
       </div>
@@ -83,25 +83,25 @@ export const SingleRoomView = ({match}) => {
   </div>
 </section>
 
-<section className="big-section bg-light-gray wow animate__fadeIn" style={{visibility: 'visible', animationName: 'fadeIn'}}>
+<section className="big-section bg-black wow animate__fadeIn" style={{visibility: 'visible', animationName: 'fadeIn'}}>
   <div className="container">
-    <div className="row row-cols-1 row-cols-lg-3 align-items-center justify-content-center">
-      <div className="col col-md-8 text-center md-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.4s" style={{visibility: 'visible', animationDelay: '0.4s', animationName: 'fadeIn'}}>
+    <div className="row row-cols-1 row-cols-lg-2 align-items-center justify-content-center">
+      <div className="col col-md-8 text-center  md-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.4s" style={{visibility: 'visible', animationDelay: '0.4s', animationName: 'fadeIn'}}>
         {/* start pricing table */}
-        <div className="pricing-table d-flex flex-column justify-content-center border-radius-5px box-shadow-extra-large h-100 bg-white border-radius-5px padding-60px-lr padding-70px-tb lg-padding-50px-lr xs-padding-50px-tb xs-padding-40px-lr">
+        <div className="pricing-table d-flex flex-column  justify-content-center border-radius-5px box-shadow-extra-large h-100 bg-white border-radius-5px padding-60px-lr padding-70px-tb lg-padding-50px-lr xs-padding-50px-tb xs-padding-40px-lr">
           {/* start pricing header */}
           <div className="pricing-header">
-            <div className="text-medium margin-10px-bottom d-block alt-font">Core features</div>
+            {/* <div className="text-medium margin-10px-bottom d-block alt-font">Core features</div> */}
             <div className="alt-font text-extra-dark-gray text-large font-weight-500 margin-3-rem-bottom text-uppercase">Option 1</div>
-            <h3 className="alt-font font-weight-500 text-fast-blue letter-spacing-minus-2px no-margin-bottom">₦{room?.option_prices?.option1}k</h3>
+            <h3 className="alt-font font-weight-500 text-primary letter-spacing-minus-2px no-margin-bottom">₦{room?.option_prices?.option1}k</h3>
             <span className="text-uppercase text-extra-dark-gray letter-spacing-1px font-weight-500 text-small">Per Student Per Semester</span>
           </div>
           {/* end pricing header */}
           {/* start pricing body */}
           <div className="pricing-body padding-3-rem-tb">
             <ul className="list-style-03">
-              <li className="border-color-medium-gray">No Breakfast</li>
-              <li className="border-color-medium-gray">Paid Laundry</li>
+              <li className="border-color-medium-gray">Excluded</li>
+              <li className="border-color-medium-gray">Dinner, laundry & printer </li>
             </ul>
           </div>
           {/* end pricing body */}
@@ -115,20 +115,20 @@ export const SingleRoomView = ({match}) => {
       </div>
       <div className="col col-md-8 text-center md-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.2s" style={{visibility: 'visible', animationDelay: '0.2s', animationName: 'fadeIn'}}>
         {/* start pricing table */}
-        <div className="pricing-table d-flex flex-column justify-content-center h-100 bg-gradient-fast-blue-purple border-radius-5px padding-60px-lr padding-70px-tb lg-padding-50px-lr xs-padding-50px-tb xs-padding-40px-lr">
+        <div className="pricing-table d-flex flex-column justify-content-center h-100 bg-primary border-radius-5px padding-60px-lr padding-70px-tb lg-padding-50px-lr xs-padding-50px-tb xs-padding-40px-lr">
           {/* start pricing header */}
           <div className="pricing-header">
-            <div className="text-white text-medium margin-10px-bottom d-block alt-font opacity-7">Most popular</div>
+            {/* <div className="text-white text-medium margin-10px-bottom d-block alt-font opacity-7">Most popular</div> */}
             <div className="alt-font text-white text-large font-weight-500 margin-3-rem-bottom text-uppercase">Option 2</div>
-            <h2 className="alt-font font-weight-500 text-white letter-spacing-minus-2px no-margin-bottom">₦{room?.option_prices?.option2}k</h2>
+            <h2 className="alt-font font-weight-500 text-black letter-spacing-minus-2px no-margin-bottom">₦{room?.option_prices?.option2}k</h2>
             <span className="text-uppercase text-white letter-spacing-1px font-weight-500 text-small">Per Student Per Semester</span>
           </div>
           {/* end pricing header */}
           {/* start pricing body */}
           <div className="pricing-body padding-3-rem-tb">
             <ul className="list-style-03 text-white">
-              <li className="border-color-dark-white-transparent">With Breakfast</li>
-              <li className="border-color-dark-white-transparent">Free Laundry</li>
+              <li className="border-color-dark-white-transparent">Included</li>
+              <li className="border-color-dark-white-transparent">Dinner, laundry & printer </li>
             </ul>
           </div>
           {/* end pricing body */}
@@ -152,17 +152,17 @@ export const SingleRoomView = ({match}) => {
               className="col-12 col-lg-5 col-sm-6 text-center margin-5-half-rem-bottom md-margin-3-rem-bottom wow animate__fadeIn"
               style={{ visibility: "visible", animationName: "fadeIn" }}
             >
-              <span className="text-yellow-ochre-light text-uppercase">
+              {/* <span className="text-yellow-ochre-light text-uppercase">
                 RKB Accommodation Features
-              </span>
+              </span> */}
               <h4 className="alt-font font-weight-700 text-uppercase text-extra-dark-gray letter-spacing-minus-1px m-0">
                 Room Features
               </h4>
             </div>
           </div>
-          <div className="row row-cols-2 row-cols-lg-5 row-cols-sm-2">
+          <div className="row row-cols-3 row-cols-lg-5 row-cols-sm-2">
             {/* start feature box item */}
-            {features.map((item, i) => {
+            {(room?.features ? [...room.features, ...features] : features).map((item, i) => {
               return (
                 <div
                   className="feature-item-holder col text-center border-radius-6px box-shadow-double-large-hover  transition wow animate__fadeIn"
@@ -173,19 +173,12 @@ export const SingleRoomView = ({match}) => {
                     animationName: "fadeIn",
                   }}
                 >
+                  {/* item.icon ||  */}
                   <div className="w-100 h-100 feature-item padding-20px-tb border-radius-6px">
-                    {/* <img
-                      className="margin-25px-bottom mt-4"
-                      src={
-                        item.icon || "../images/litho-landing-page-icon-01.jpg"
-                      }
-                      alt=""
-                      data-no-retina
-                    /> */}
-                    <div className="feature-box-icon line-height-0px lg-margin-25px-right">
-                      <i className={" line-icon-Bus   icon-very-medium text-primary mt-4 mb-4"} />
+                    <div className="feature-box-icon line-height-0px">
+                      <i className={`${" line-icon-Bus"} icon-very-medium text-primary mt-4 mb-4`} />
                     </div>
-                    <span className="text-extra-medium font-weight-500 text-extra-dark-gray d-block w-90 mx-auto xs-w-100">
+                    <span className="text-extra-medium font-weight-500 text-extra-dark-gray d-block w-90 mx-auto xs-w-100 text-capitalize">
                       {item.title}
                     </span>
                   </div>

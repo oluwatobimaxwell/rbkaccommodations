@@ -16,8 +16,8 @@ export const RoomSlider2 = ({ meida = [] }) => {
                   className="w-100"
                   alt
                   style={{
-                    height: 600,
-                    backgroundRepeat: "round"
+                    // height: 600,
+                    // backgroundRepeat: "round"
                   }}
                 />
               </div>

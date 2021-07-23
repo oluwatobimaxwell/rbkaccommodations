@@ -32,6 +32,7 @@
   },
   {
     "name": "Premium II",
+    "twoinroom": true,
     "price": "550",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
     "category": "female",
@@ -72,6 +73,12 @@
       "option1": 650,
       "option2": 800
     },
+    "features": [
+      {
+        "icon": null,
+        "title": "Private Balcony"
+      }
+    ],
     "media": [
       {
         "title": null,
@@ -160,6 +167,12 @@
       "option1": 700,
       "option2": 850
     },
+    "features": [
+      {
+        "icon": null,
+        "title": "Private Kitchen"
+      }
+    ],
     "media": [
       {
         "title": null,
@@ -190,6 +203,7 @@
   },
   {
     "name": "Executive II",
+    "twoinroom": true,
     "price": "550",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
     "category": "female",
@@ -199,6 +213,12 @@
       "option1": 550,
       "option2": 700
     },
+    "features": [
+      {
+        "icon": null,
+        "title": "Private Kitchen"
+      }
+    ],
     "media": [
       {
         "title": null,
@@ -246,6 +266,7 @@
  
 {
   "name": "Premium II",
+  "twoinroom": true,
   "price": "550",
   "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
   "category": "male",
@@ -277,6 +298,7 @@
 },
 {
   "name": "Executive II",
+  "twoinroom": true,
   "price": "550",
   "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
   "category": "male",
@@ -286,6 +308,12 @@
     "option1": 550,
     "option2": 700
   },
+  "features": [
+    {
+      "icon": null,
+      "title": "Private Kitchen"
+    }
+  ],
   "media": [
     {
       "title": null,

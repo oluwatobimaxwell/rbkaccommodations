@@ -6,7 +6,7 @@ export const Home = ({ match }) => {
   const type = (match?.params?.type || "").replace(/home/g, "");
   const source = require("../data/home.json");
   const data = source[type];
-  let { fancy = [], slider = [], features = [], about, location } = data || source.female;
+  let { fancy = [], slider = [], features = [], about, video, image, title, blacktitle } = data || source.female;
 
   const carousel = require("../data/rooms.json").filter(
     (r) => r.category === type
@@ -86,7 +86,7 @@ export const Home = ({ match }) => {
           <div className="row justify-content-md-center">
             <div className="col-12 col-lg-4 col-md-6 col-sm-7 d-flex flex-column md-margin-6-rem-bottom sm-margin-5-rem-bottom wow animate__fadeIn">
               <h6 className="alt-font text-uppercase w-80 text-extra-dark-gray font-weight-700 margin-20px-bottom lg-w-90 md-w-75 md-margin-10px-bottom">
-                Accommodation at RKB Students Accommodations, {location}
+                {blacktitle}
               </h6>
               <div className="mt-auto w-70 mx-lg-0">
                 <a
@@ -110,7 +110,7 @@ export const Home = ({ match }) => {
               data-wow-duration="0.3"
             >
               <div className="alt-font text-uppercase text-extra-medium font-weight-600 text-extra-dark-gray margin-25px-bottom sm-margin-15px-bottom">
-                Situated at the heart of ABuja
+                {title}
               </div>
               <div
                 dangerouslySetInnerHTML={{__html: about}}
@@ -119,17 +119,14 @@ export const Home = ({ match }) => {
             <div className="col-12 col-lg-4 last-paragraph-no-margin">
               <div className="outside-box-bottom position-relative">
                 <img
-                  src={
-                    require("../media/rbk/pexels-catherine-augustin-3049121.jpg")
-                      .default
-                  }
+                  src={image}
                   className="wow animate__fadeIn"
                   data-wow-delay="0.5s"
                   alt=""
                   style={{borderRadius: 8}}
                 />
                 <a
-                  href="https://www.youtube.com/watch?v=g0f_BRYJLJE"
+                  href={video}
                   className="bg-penguin-white position-absolute right-0px bottom-minus-25px padding-2-half-rem-all popup-youtube video-icon-box video-icon-medium position-relative wow animate__fadeIn"
                   data-wow-delay="0.5s"
                   style={{borderRadius: 8}}
@@ -371,15 +368,18 @@ export const Home = ({ match }) => {
                   }}
                 >
                   <div className="w-100 h-100 feature-item padding-20px-tb border-radius-6px">
-                    <img
+                    {/* <img
                       className="margin-25px-bottom mt-4"
                       src={
                         item.icon || "../images/litho-landing-page-icon-01.jpg"
                       }
                       alt=""
                       data-no-retina
-                    />
-                    <span className="text-extra-medium font-weight-500 text-extra-dark-gray d-block w-90 mx-auto xs-w-100">
+                    /> */}
+                    <div className="feature-box-icon line-height-0px lg-margin-25px-right">
+                      <i className={`${item.icon || " line-icon-Bus"} icon-very-medium text-primary mt-4 mb-4`} />
+                    </div>
+                    <span className="text-extra-medium font-weight-500 text-extra-dark-gray d-block w-90 mx-auto xs-w-100 text-capitalize">
                       {item.title}
                     </span>
                   </div>

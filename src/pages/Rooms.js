@@ -94,8 +94,14 @@ export const RoomItemCard = ({item, id}) => {
             </label>
           </span>
         </div>
-        <h4 className="alt-font text-white text-uppercase w-90 lg-w-85 mx-auto margin-35px-bottom font-weight-500">
+        <h4 className="alt-font text-white text-uppercase w-90 lg-w-85 mx-auto margin-35px-bottom font-weight-500 " style={item?.twoinroom ? { marginBottom: 0 }:{}}>
           {item.name}
+          {item.twoinroom && (
+            <>
+            <br/>
+          <div style={{fontSize: 14, marginTop: -12}}>[Two In A Room]</div>
+            </>
+          )}
         </h4>
 
         <div
