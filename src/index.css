@@ -409,3 +409,7 @@ a.text-parrot-green-hover:hover {
 .bg-black{
   background-color: #000 !important;
 }
+
+.cursive-me{
+  font-style: italic;font-family: "Fuggles", cursive;font-size: 60px;text-transform: capitalize !important
+}

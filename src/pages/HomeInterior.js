@@ -6,7 +6,7 @@ export const Home = ({ match }) => {
   const type = (match?.params?.type || "").replace(/home/g, "");
   const source = require("../data/home.json");
   const data = source[type];
-  let { fancy = [], slider = [], features = [], about, video, image, title, blacktitle } = data || source.female;
+  let { fancy = [], slider = [], features = [], about, video, image, title, blacktitle, map, bottombg, privatefeatures=[] } = data || source.female;
 
   const carousel = require("../data/rooms.json").filter(
     (r) => r.category === type
@@ -85,7 +85,8 @@ export const Home = ({ match }) => {
         <div className="container">
           <div className="row justify-content-md-center">
             <div className="col-12 col-lg-4 col-md-6 col-sm-7 d-flex flex-column md-margin-6-rem-bottom sm-margin-5-rem-bottom wow animate__fadeIn">
-              <h6 className="alt-font text-uppercase w-80 text-extra-dark-gray font-weight-700 margin-20px-bottom lg-w-90 md-w-75 md-margin-10px-bottom">
+              <h6 className="alt-font text-uppercase w-80 text-extra-dark-gray font-weight-700 margin-20px-bottom lg-w-90 md-w-75 md-margin-10px-bottom cursive-me"
+              >
                 {blacktitle}
               </h6>
               <div className="mt-auto w-70 mx-lg-0">
@@ -139,7 +140,7 @@ export const Home = ({ match }) => {
                       </span>
                     </span>
                     <span className="video-icon-text alt-font text-extra-dark-gray text-medium text-uppercase font-weight-600">
-                      About RKB
+                      About RKB {type}
                       <br />
                       Accommodation
                     </span>
@@ -163,7 +164,7 @@ export const Home = ({ match }) => {
               className="col-12 overflow-hidden alt-font font-weight-600 text-white text-overlap-style-02 d-none d-xl-block wow animate__fadeInDown"
               data-wow-delay="0.2s"
             >
-              RBK
+              RKB
             </div>
             <div className="col-12 col-lg-6 col-sm-8 text-lg-center margin-6-rem-bottom lg-margin-4-rem-bottom md-margin-3-rem-bottom xs-margin-5-rem-bottom wow animate__fadeIn">
               <span className="alt-font font-weight-500 text-yellow-ochre-light text-uppercase d-block margin-20px-bottom">
@@ -350,13 +351,13 @@ export const Home = ({ match }) => {
                 RKB Accommodation Features
               </span>
               <h4 className="alt-font font-weight-700 text-uppercase text-extra-dark-gray letter-spacing-minus-1px m-0">
-                Other features & facilities
+                features & facilities
               </h4>
             </div>
           </div>
-          <div className="row row-cols-2 row-cols-lg-5 row-cols-sm-2">
+          <div className="row row-cols-3 row-cols-lg-5 row-cols-sm-2">
             {/* start feature box item */}
-            {features.map((item, i) => {
+            {([...privatefeatures, ...features]).map((item, i) => {
               return (
                 <div
                   className="feature-item-holder col text-center border-radius-6px box-shadow-double-large-hover  transition wow animate__fadeIn"
@@ -396,8 +397,9 @@ export const Home = ({ match }) => {
             <div className="col-xl-12 h-400px p-0 md-h-450px xs-h-300px">
               <iframe
                 className="w-100 h-100 filter-grayscale-100"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15761.04702017564!2d7.4723841!3d9.0398707!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a445dad6c5a0a80!2sThe%20Boolean%20Technologies%20Nig%20Ltd!5e0!3m2!1sen!2sng!4v1621033934847!5m2!1sen!2sng"
+                src={map}
               />
+
             </div>
           </div>
         </div>
@@ -407,9 +409,7 @@ export const Home = ({ match }) => {
         className="big-section parallax wow animate__fadeIn"
         data-parallax-background-ratio="0.1"
         style={{
-          backgroundImage: `url("${
-            require("../media/rbk/pexels-m&w-studios-90317.jpg").default
-          }")`,
+          backgroundImage: `url("${bottombg}")`,
         }}
       >
         <div className="opacity-full bg-extra-dark-gray" />
@@ -423,7 +423,7 @@ export const Home = ({ match }) => {
                 comfort enhances your study
               </span>
               <h2 className="alt-font font-weight-500 text-white letter-spacing-minus-2px margin-50px-bottom md-margin-40px-bottom">
-                With complementary breakfast & dinner
+                With breakfast & dinner
               </h2>
               <a
                 href="/contact"
