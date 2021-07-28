@@ -66,7 +66,7 @@ export const SingleRoomView = ({match}) => {
 
 `}
 </style>
-<RoomSlider2 meida={room.media} />
+<RoomSlider2 meida={room.media} media={room.mediadata} />
 
 <section className="big-section wow animate__fadeIn" style={{visibility: 'visible', animationName: 'fadeIn', padding: "50px 0"}}>
   <div className="container">
@@ -176,7 +176,7 @@ export const SingleRoomView = ({match}) => {
                   {/* item.icon ||  */}
                   <div className="w-100 h-100 feature-item padding-20px-tb border-radius-6px">
                     <div className="feature-box-icon line-height-0px">
-                      <i className={`${" line-icon-Bus"} icon-very-medium text-primary mt-4 mb-4`} />
+                      <i className={`${item.icon || " line-icon-Bus"} icon-very-medium text-primary mt-4 mb-4`} />
                     </div>
                     <span className="text-extra-medium font-weight-500 text-extra-dark-gray d-block w-90 mx-auto xs-w-100 text-capitalize">
                       {item.title}

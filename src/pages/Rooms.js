@@ -74,7 +74,7 @@ export const RoomItemCard = ({item, id}) => {
      <div
       className="position-relative h-100 d-flex align-items-center cover-background text-center"
       style={{
-        backgroundImage: `url("${item.image}")`,
+        backgroundImage: `url("${item?.mediadata ? item?.mediadata?.location+"/image-"+(item?.mediadata?.index || 0)+".jpg": item?.image}")`,
         borderRadius: 8,
       }}
     >

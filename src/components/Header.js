@@ -194,10 +194,10 @@ export const Footer = () => {
                   </span>
                   <p className="m-0">
                     <a
-                      href="mailto:info@RKBaccommodation.com"
+                      href="mailto:info@rkbaccommodation.com"
                       className="text-salmon-rose-hover"
                     >
-                      info@RKBaccommodation.com
+                      info@rkbaccommodation.com
                     </a>
                     <br />
                     <a

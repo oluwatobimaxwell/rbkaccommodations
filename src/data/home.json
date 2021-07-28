@@ -48,54 +48,54 @@
     "image": "/rbk/20210719_124545.jpg",
     "features": [
       {
-        "icon": null,
+        "icon": "  line-icon-Plates  ",
         "title": "skylight restaurant"
       },
       {
-        "icon": null,
+        "icon": " line-icon-Address-Book2 ",
         "title": "reading table and chair"
       },
       {
-        "icon": null,
+        "icon": "  line-icon-Bio-Hazard  ",
         "title": "refrigerator with freezer"
       },
       {
-        "icon": null,
+        "icon": " line-icon-Computer ",
         "title": "smart television"
       },
       {
-        "icon": null,
+        "icon": " line-icon-Big-Data ",
         "title": "wardrobe"
       },
       {
-        "icon": null,
+        "icon": " line-icon-Drop ",
         "title": "automated tap"
       },
       {
-        "icon": null,
+        "icon": " line-icon-Calendar-2 ",
         "title": "solar water heater"
       },
       {
-        "icon": null,
+        "icon": "  line-icon-Phone-3  ",
         "title": "intracom"
       },
       {
-        "icon": null,
-        "title": "printer with 1 rim of paper and toner"
+        "icon": " line-icon-Printer ",
+        "title": "printer with 1 ream of paper"
       }
     ],
     "privatefeatures": [
       {
-        "icon": null,
+        "icon": " line-icon-Alarm-Clock2 ",
         "title": "shared inverter microwave"
       },
       {
-        "icon": null,
+        "icon": " line-icon-Plug-In ",
         "title": "shared solar iron"
       }
     ],
     "video": "https://www.youtube.com/watch?v=8m971-dX-V4",
-    "title": "Beautifully designed to suite you.",
+    "title": "Beautifully designed to suit you.",
     "blacktitle": "RKB Female Students Accommodation at Ochacho Real Homes Ltd, Abuja.",
     "about": "<p class=\"w-85 xl-w-100\">RKB Female Students Accommodation is located at Ochacho Real Homes Ltd, Karmo close to Nizamiye (Turkish) Hospital.    The facility was built in 2021 has eighteen(18) fully furnished en suite  rooms. In addition, each room has its own air conditioner. Rooms on the topmost floor come private kitchens. The facility has skylight(clear glass) restaurant. Gym and outdoor games are available.<br/> <br/>The female accommodation is about 15minutes drive to both Nile & Baze Universities. <br/><br/>RKB Female Students Accommodation is not far from a filling station, restaurant, grocery stores and a farmers' market.</p>",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2425.396125514883!2d7.361628358944251!3d9.057643472406733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e75d8001878af%3A0x4a9e299b57c42545!2sOchacho%20Real-Homes%20LTD!5e0!3m2!1sen!2sng!4v1627063567593!5m2!1sen!2sng",
@@ -150,39 +150,35 @@
     "features": [
 
       {
-        "icon": null,
+        "icon": " line-icon-Address-Book2 ",
         "title": "reading table and chair"
       },
       {
-        "icon": null,
+        "icon": " line-icon-Bio-Hazard  ",
         "title": "refrigerator with freezer"
       },
       {
-        "icon": null,
+        "icon": " line-icon-Computer ",
         "title": "smart television"
       },
       {
-        "icon": null,
+        "icon": " line-icon-Big-Data ",
         "title": "wardrobe"
       },
       {
-        "icon": null,
+        "icon": " line-icon-Calendar-2 ",
         "title": "water heater"
       },
       {
-        "icon": null,
-        "title": "intracom"
-      },
-      {
-        "icon": null,
+        "icon": " line-icon-Printer ",
         "title": "shared printer"
       },
       {
-        "icon": null,
+        "icon": " line-icon-Blouse ",
         "title": "washing machine"
       },
       {
-        "icon": null,
+        "icon": " line-icon-Plate ",
         "title": "dinning area"
       }
     ]

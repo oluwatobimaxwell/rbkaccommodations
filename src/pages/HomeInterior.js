@@ -91,10 +91,10 @@ export const Home = ({ match }) => {
               </h6>
               <div className="mt-auto w-70 mx-lg-0">
                 <a
-                  href="mailto:hello@RKBaccommodation.com"
+                  href="mailto:info@rkbaccommodation.com"
                   className="alt-font text-yellow-ochre-light text-extra-dark-gray-hover text-decoration-line-bottom font-weight-500"
                 >
-                  hello@RKBaccommodation.com
+                  info@rkbaccommodation.com
                 </a>
                 <a
                   href="#rooms-in-here"
@@ -183,7 +183,8 @@ export const Home = ({ match }) => {
             >
               <div
                 className="swiper-container portfolio-classic position-relative"
-                data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav" }, "autoplay": { "delay": 3000, "disableOnInteraction": true }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 3 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 } }, "effect": "slide" }'
+                // data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav" }, "autoplay": { "delay": 3000, "disableOnInteraction": true }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 3 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 } }, "effect": "slide" }'
+                data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav" }, "autoplay": { "delay": 4500, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 3 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 } }, "effect": "slide" }'
               >
                 <div className="swiper-wrapper">
               {/* <li className="grid-sizer" /> */}
@@ -199,13 +200,17 @@ export const Home = ({ match }) => {
                   })}
 
                 </div>
+              {/* start slider pagination */}
+              <div className="swiper-pagination swiper-light-pagination" style={{ bottom: 15 }} />
+              {/* end slider pagination */}
+
               </div>
             </div>
-              <div className="swiper-pagination swiper-vertical-pagination swiper-pagination-medium swiper-light-pagination d-flex flex-column align-items-center margin-3-half-rem-right lg-margin-1-rem-right" />
+              {/* <div className="swiper-pagination swiper-vertical-pagination swiper-pagination-medium swiper-light-pagination d-flex flex-column align-items-center margin-3-half-rem-right lg-margin-1-rem-right" />
               <div className="swiper-number-pagination">
               <div className="swiper-pagination-current" />
               <div className="swiper-pagination-total" />
-              </div>
+              </div> */}
           </div>
         </div>
       </section>
@@ -377,7 +382,7 @@ export const Home = ({ match }) => {
                       alt=""
                       data-no-retina
                     /> */}
-                    <div className="feature-box-icon line-height-0px lg-margin-25px-right">
+                    <div className="feature-box-icon line-height-0px lg-margin-25px-right lg-margin-25px-left">
                       <i className={`${item.icon || " line-icon-Bus"} icon-very-medium text-primary mt-4 mb-4`} />
                     </div>
                     <span className="text-extra-medium font-weight-500 text-extra-dark-gray d-block w-90 mx-auto xs-w-100 text-capitalize">
