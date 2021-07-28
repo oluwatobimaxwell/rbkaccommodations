@@ -32,7 +32,7 @@ export const SingleRoomView = ({match}) => {
     const next = rooms[getNextIndex(roomIndex, rooms.length)]
     const previous = rooms[getPreviewIndex(roomIndex, rooms.length)]
     const source = require("../data/home.json");
-    let { features = [], about } = source[room.category];
+    let { features = [], about, video } = source[room.category];
 
     if(roomIndex < 0) {
         return <NotFound pageName={roomName+" at "+location+" not found."} />
@@ -190,7 +190,7 @@ export const SingleRoomView = ({match}) => {
       </section>
 
 
-<section className="big-section bg-light-gray wow animate__fadeIn" >
+{/* <section className="big-section bg-light-gray wow animate__fadeIn" >
   <div className="container">
   
     <div className="row overlap-gap-section">
@@ -202,9 +202,6 @@ export const SingleRoomView = ({match}) => {
       <div className="col-12 col-xl-5 col-lg-6 offset-lg-1 col-md-8 swiper-simple-arrow-style-1" data-wow-delay="0.2s">
         <div className="swiper-container black-move" data-slider-options="{ &quot;loop&quot;: true, &quot;slidesPerView&quot;: 1, &quot;observer&quot;: true, &quot;observeParents&quot;: true, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.swiper-button-next-nav-02&quot;, &quot;prevEl&quot;: &quot;.swiper-button-previous-nav-02&quot; }, &quot;autoplay&quot;: { &quot;delay&quot;: 4500, &quot;disableOnInteraction&quot;: false }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;effect&quot;: &quot;slide&quot; }">
           <div className="swiper-wrapper">
-            {/* start testimonial item */}
-            
-            {/* end testimonial item */}
             {testimonials.map((item, i) => {
               return (
                 <div className="swiper-slide" key={"xsdhdht-testim"+i}>
@@ -226,7 +223,32 @@ export const SingleRoomView = ({match}) => {
       </div>
     </div>
   </div>
+</section> */}
+
+<section className="big-section cover-background" 
+style={{
+  // backgroundImage: 'url("../images/home-business-parallax-bg.jpg")',
+  backgroundImage: `url("${room?.mediadata ? room?.mediadata?.location+"/image-"+(room?.mediadata?.index || 0)+".jpg": room?.image}")`,
+  }}>
+  <div className="opacity-extra-medium-2 bg-dark-slate-blue" />
+  <div className="container">
+    <div className="row justify-content-center">
+      <div className="col-12 col-xl-7 col-lg-8 col-md-10 text-center overlap-gap-section">
+        <a href={room?.video || video} className="popup-youtube video-icon-box video-icon-large position-relative d-inline-block margin-3-half-rem-bottom wow animate__bounceIn">
+          <span>
+            <span className="video-icon bg-neon-blue">
+              <i className="icon-simple-line-control-play text-white" />
+              <span className="video-icon-sonar"><span className="video-icon-sonar-afr bg-neon-blue" /></span>
+            </span>
+          </span>
+        </a>
+        <h4 className="alt-font text-white font-weight-600 margin-45px-bottom md-margin-35px-bottom xs-margin-25px-bottom wow animate__fadeIn text-capitalize">{room.category +" "+ room.name + " Room"}</h4>
+        <span className="text-white alt-font text-uppercase letter-spacing-1px wow animate__fadeIn">Video Clip</span>
+      </div>
+    </div>
+  </div>
 </section>
+
 
 
 <section>
