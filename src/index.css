@@ -414,3 +414,15 @@ a.text-parrot-green-hover:hover {
   font-style: italic;font-family: "Fuggles", cursive;font-size: 60px;text-transform: capitalize !important;
   line-height: 0.75;
 }
+
+.bg-neon-blue {
+	background-color: #218cff;
+}
+
+.bg-primary {
+	background-color: #1e8aff !important;
+}
+
+.text-primary {
+	color: #1e8aff !important;
+}

@@ -66,7 +66,7 @@ export const SingleRoomView = ({match}) => {
 
 `}
 </style>
-<RoomSlider2 meida={room.media} media={room.mediadata} />
+<RoomSlider2 meida={room.media} media={room.mediadata} selected={room.selectedmedia} />
 
 <section className="big-section wow animate__fadeIn" style={{visibility: 'visible', animationName: 'fadeIn', padding: "50px 0"}}>
   <div className="container">

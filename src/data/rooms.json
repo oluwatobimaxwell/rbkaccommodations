@@ -15,6 +15,14 @@
       "end": 7,
       "index": 1
     },
+    "selectedmedia": [
+      "../rbk/rooms/premium-female/image-0.jpg",
+      "../rbk/rooms/premium-female/image-1.jpg",
+      "../rbk/rooms/premium-female/image-2.jpg",
+      "../rbk/rooms/premium-female/image-3.jpg"
+    ],
+    "video": "https://www.youtube.com/watch?v=JS6JE3RhtrU",
+    
     "media": [
       {
         "title": null,
@@ -51,6 +59,10 @@
       "location": "../rbk/rooms/premium-ii-female",
       "end": 1
     },
+    "selectedmedia": [
+      "../rbk/rooms/premium-ii-female/image-0.jpg",
+      "../rbk/rooms/premium-ii-female/image-1.jpg"
+    ],
     "media": [
       {
         "title": null,
@@ -86,6 +98,12 @@
       "location": "../rbk/rooms/premium-plus-female",
       "end": 16
     },
+    "selectedmedia": [
+      "../rbk/rooms/premium-plus-female/image-2.jpg",
+      "../rbk/rooms/premium-plus-female/image-3.jpg",
+      "../rbk/rooms/premium-plus-female/image-4.jpg",
+      "../rbk/rooms/premium-plus-female/image-5.jpg"
+    ],
     "features": [
       {
         "icon": null,
@@ -191,6 +209,11 @@
       "location": "../rbk/rooms/executive-plus-female",
       "end": 6
     },
+    "selectedmedia": [
+      "../rbk/rooms/executive-plus-female/image-0.jpg",
+      "../rbk/rooms/executive-plus-female/image-3.jpg",
+      "../rbk/rooms/executive-plus-female/image-4.jpg"
+    ],
     "media": [
       {
         "title": null,
@@ -242,6 +265,12 @@
       "end": 14,
       "index": 2
     },
+    "selectedmedia": [
+      "../rbk/rooms/executive-ii-female/image-1.jpg",
+      "../rbk/rooms/executive-ii-female/image-2.jpg",
+      "../rbk/rooms/executive-ii-female/image-3.jpg",
+      "../rbk/rooms/executive-ii-female/image-6.jpg"
+    ],
     "media": [
       {
         "title": null,
@@ -303,6 +332,11 @@
     "location": "../rbk/rooms/premium-ii-male",
     "end": 4
   },
+  "selectedmedia": [
+    "../rbk/rooms/premium-ii-male/image-1.jpg",
+    "../rbk/rooms/premium-ii-male/image-3.jpg",
+    "../rbk/rooms/premium-ii-male/image-4.jpg"
+  ],
   "media": [
     {
       "title": null,
@@ -321,6 +355,7 @@
       "image": "../rbk/sa/IMG-20210711-WA0053.jpg"
     }
   ],
+  
   "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
 },
 {
@@ -340,6 +375,11 @@
       "icon": null,
       "title": "Private Kitchen"
     }
+  ],
+  "selectedmedia": [
+    "../rbk/rooms/premium-ii-male/image-0.jpg",
+    "../rbk/rooms/executive-ii-male/image-1.jpg",
+    "../rbk/rooms/executive-ii-male/image-2.jpg"
   ],
   "mediadata": {
     "location": "../rbk/rooms/executive-ii-male",

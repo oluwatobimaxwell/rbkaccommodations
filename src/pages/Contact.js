@@ -9,31 +9,31 @@ const { site } = data;
 
 const addresses = [
   {
-    name: "Abuja - Nigeria",
+    name: "RKB Female Accommodation",
     address:
-      "Suite SF03 Olive Plaza, Plot 913 Alexandra Crescent, Wuse II, Abuja",
-    phone: "07054545477",
-    email: "info@gankcoenergy.com",
+      "Ochacho Real Homes LTD, Karmo, Close to Nizamiye Hospital.",
+    phone: "+234 807 376 9560",
+    email: "info@rkbaccommodation.com",
     flag: "https://www.countryflags.com/wp-content/uploads/nigeria-flag-png-xl.png",
     bg: "images/contact-us-classic-bg-1.jpg",
   },
   {
-    name: "Lagos - Nigeria",
+    name: "RKB Male Accommodation",
     address:
-      "Gilgal Office Suites 1st Floor, Plot 23 Water Corporation Drive, Victoria Island Lagos.",
-    phone: "07054545477",
-    email: "info@gankcoenergy.com",
+      "46, 35 road, 3rd Avenue, Gwarinpa.",
+    phone: "+234 807 376 9560",
+    email: "info@rkbaccommodation.com",
     flag: "https://www.countryflags.com/wp-content/uploads/nigeria-flag-png-xl.png",
     bg: "images/contact-us-classic-bg-2.jpg",
   },
-  {
-    name: "New Jersey - USA",
-    address: "11 Kinder Drive Bloomfield, New Jersey 07003, United States",
-    phone: "07054545477",
-    email: "info@gankcoenergy.com",
-    flag: "https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png",
-    bg: "images/contact-us-classic-bg-3.jpg",
-  },
+  // {
+  //   name: "New Jersey - USA",
+  //   address: "11 Kinder Drive Bloomfield, New Jersey 07003, United States",
+  //   phone: "07054545477",
+  //   email: "info@gankcoenergy.com",
+  //   flag: "https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png",
+  //   bg: "images/contact-us-classic-bg-3.jpg",
+  // },
 ];
 
 export const Contact = () => {
@@ -254,11 +254,11 @@ export const Contact = () => {
                   </div>
                   <div className="feature-box feature-box-left-icon-middle feature-box-dark-hover padding-4-rem-lr padding-3-rem-tb bg-white border-radius-5px overflow-hidden lg-padding-3-rem-lr">
                     <div className="feature-box-icon margin-15px-right">
-                      <img
+                      {/* <img
                         src={item.flag}
                         className="w-35px d-block"
                         alt="contact us img flag-01"
-                      />
+                      /> */}
                     </div>
                     <div className="feature-box-content">
                       <span className="alt-font d-block font-weight-500 text-extra-dark-gray">

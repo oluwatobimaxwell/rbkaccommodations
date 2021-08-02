@@ -1,28 +1,44 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
 
-export const RoomSlider2 = ({ meida = [], media={} }) => {
+export const RoomSlider2 = ({ meida = [], media={}, selected }) => {
     return (
 <section className="py-0 position-relative">
-  <div className="slider-blog-banner swiper-container black-move" data-slider-options="{ &quot;loop&quot;: true, &quot;centeredSlides&quot;: true, &quot;slidesPerView&quot;: &quot;1&quot;, &quot;speed&quot;: 1000, &quot;pagination&quot;: { &quot;el&quot;: &quot;.swiper-pagination&quot;, &quot;clickable&quot;: true }, &quot;autoplay&quot;: { &quot;delay&quot;: 2000, &quot;disableOnInteraction&quot;: false }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.swiper-button-next-nav&quot;, &quot;prevEl&quot;: &quot;.swiper-button-previous-nav&quot; }, &quot;breakpoints&quot;: { &quot;992&quot;: { &quot;slidesPerView&quot;: &quot;auto&quot; } }, &quot;effect&quot;: &quot;slide&quot; }">
+  <div className="slider-blog-banner swiper-container black-move" data-slider-options="{ &quot;loop&quot;: true, &quot;centeredSlides&quot;: true, &quot;slidesPerView&quot;: &quot;1&quot;, &quot;speed&quot;: 1000, &quot;pagination&quot;: { &quot;el&quot;: &quot;.swiper-pagination&quot;, &quot;clickable&quot;: true }, &quot;autoplay&quot;: { &quot;delay&quot;: 3000, &quot;disableOnInteraction&quot;: false }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.swiper-button-next-nav&quot;, &quot;prevEl&quot;: &quot;.swiper-button-previous-nav&quot; }, &quot;breakpoints&quot;: { &quot;992&quot;: { &quot;slidesPerView&quot;: &quot;auto&quot; } }, &quot;effect&quot;: &quot;slide&quot; }">
     <div className="swiper-wrapper">
       {/* start slider item */}
-     
-        {(new Array(media.end + 1).fill(0)).map((item, i) => {
-            return (
-              <div key={"sshh-weeye-wueue-"+i} className="swiper-slide w-55">
-                <img
-                  src={media?.location+"/image-"+i+".jpg"}
-                  className="w-100"
-                  alt
-                  style={{
-                    // height: 600,
-                    // backgroundRepeat: "round"
-                  }}
-                />
-              </div>
-            );
-        })}
+        {selected && selected.map((item, i) => {
+              return (
+                <div key={"sshh-weeye-wueue-"+i} className="swiper-slide w-55">
+                  <img
+                    src={item}
+                    className="w-100"
+                    alt
+                    style={{
+                      // maxHeight: 600,
+                      // backgroundRepeat: "round"
+                    }}
+                  />
+                </div>
+              );
+            }
+        )|| 
+        (new Array(media.end + 1).fill(0)).map((item, i) => {
+          return (
+            <div key={"sshh-weeye-wueue-"+i} className="swiper-slide w-55">
+              <img
+                src={media?.location+"/image-"+i+".jpg"}
+                className="w-100"
+                alt
+                style={{
+                  // height: 600,
+                  // backgroundRepeat: "round"
+                }}
+              />
+            </div>
+          );
+      })
+        }
       {/* end slider item */}
     </div>
     {/* start slider pagination */}
