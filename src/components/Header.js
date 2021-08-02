@@ -24,21 +24,21 @@ export const TopNavigation = ({ boxheader }) => {
           <div className="col-auto col-sm-6 col-lg-2 mr-auto pl-lg-0">
             <a className="navbar-brand" href="/">
               <img
-                src={require("../media/images/logo-black.png").default}
-                data-at2x={require("../media/images/logo-black.png").default}
-                className="default-logo"
+                src={require("../media/logo.png").default}
+                data-at2x={require("../media/logo.png").default}
+                className="default-logo logo"
                 alt=""
               />
               <img
-                src={require("../media/images/logo-black.png").default}
-                data-at2x={require("../media/images/logo-black.png").default}
-                className="alt-logo"
+                src={require("../media/logo.png").default}
+                data-at2x={require("../media/logo.png").default}
+                className="alt-logo logo"
                 alt=""
               />
               <img
-                src={require("../media/images/logo-black.png").default}
-                data-at2x={require("../media/images/logo-black.png").default}
-                className="mobile-logo"
+                src={require("../media/logo.png").default}
+                data-at2x={require("../media/logo.png").default}
+                className="mobile-logo logo"
                 alt=""
               />
             </a>
@@ -223,12 +223,13 @@ export const Footer = () => {
               <a href="/" className="footer-logo">
                 <img
                   src={
-                    require("../media/images/logo-gradient-tan-geraldine.png")
+                    require("../media/logo.png")
                       .default
                   }
-                  data-at2x={require("../media/images/logo-gradient-tan-geraldine.png")
+                  data-at2x={require("../media/logo.png")
                   .default}
                   alt=""
+                  className="logo"
                 />
               </a>
             </div>

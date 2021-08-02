@@ -16,7 +16,7 @@
       "index": 1
     },
     "selectedmedia": [
-      "../rbk/rooms/premium-female/image-0.jpg",
+      "../rbk/rooms/premium-female/image-0.png",
       "../rbk/rooms/premium-female/image-1.jpg",
       "../rbk/rooms/premium-female/image-2.jpg",
       "../rbk/rooms/premium-female/image-3.jpg"
@@ -57,12 +57,12 @@
     },
     "mediadata": {
       "location": "../rbk/rooms/premium-ii-female",
-      "end": 1
+      "end": 1,
+      "index": 2
     },
     "selectedmedia": [
       "../rbk/rooms/premium-ii-female/image-4.jpg",
       "../rbk/rooms/premium-ii-female/image-2.jpg",
-      "../rbk/rooms/premium-ii-female/image-0.jpg",
       "../rbk/rooms/premium-ii-female/image-1.jpg"
     ],
     "media": [
@@ -101,14 +101,14 @@
       "end": 16
     },
     "selectedmedia": [
-      "../rbk/rooms/premium-plus-female/image-2.jpg",
       "../rbk/rooms/premium-plus-female/image-3.jpg",
       "../rbk/rooms/premium-plus-female/image-4.jpg",
-      "../rbk/rooms/premium-plus-female/image-5.jpg"
+      "../rbk/rooms/premium-plus-female/image-9.jpg",
+      "../rbk/rooms/premium-plus-female/image-8.jpg"
     ],
     "features": [
       {
-        "icon": null,
+        "icon": " line-icon-Home ",
         "title": "Private Balcony"
       }
     ],
@@ -203,7 +203,7 @@
     
     "features": [
       {
-        "icon": null,
+        "icon": "line-icon-Alarm-Clock2",
         "title": "Private Kitchen"
       }
     ],
@@ -213,8 +213,11 @@
     },
     "selectedmedia": [
       "../rbk/rooms/executive-plus-female/image-0.jpg",
-      "../rbk/rooms/executive-plus-female/image-3.jpg",
-      "../rbk/rooms/executive-plus-female/image-4.jpg"
+      "../rbk/rooms/executive-plus-female/image-4.jpg",
+      "../rbk/rooms/executive-ii-female/image-2.jpg",
+      "../rbk/rooms/executive-ii-female/image-6.jpg",
+      "../rbk/rooms/executive-ii-female/image-9.jpg",
+      "../rbk/rooms/executive-ii-female/image-1.jpg"
     ],
     "media": [
       {
@@ -258,7 +261,7 @@
     },
     "features": [
       {
-        "icon": null,
+        "icon": "line-icon-Alarm-Clock2",
         "title": "Private Kitchen"
       }
     ],
@@ -268,10 +271,9 @@
       "index": 2
     },
     "selectedmedia": [
-      "../rbk/rooms/executive-ii-female/image-1.jpg",
-      "../rbk/rooms/executive-ii-female/image-2.jpg",
-      "../rbk/rooms/executive-ii-female/image-3.jpg",
-      "../rbk/rooms/executive-ii-female/image-6.jpg"
+      "../rbk/rooms/executive-ii-female/image-4.jpg",
+      "../rbk/rooms/executive-ii-female/image-15.jpg",
+      "../rbk/rooms/executive-ii-female/image-14x.jpg"
     ],
     "media": [
       {
@@ -374,7 +376,7 @@
   },
   "features": [
     {
-      "icon": null,
+      "icon": "line-icon-Alarm-Clock2",
       "title": "Private Kitchen"
     }
   ],

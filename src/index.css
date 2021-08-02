@@ -426,3 +426,9 @@ a.text-parrot-green-hover:hover {
 .text-primary {
 	color: #1e8aff !important;
 }
+
+.logo {
+  border-radius: 5px;
+min-height: 70px !important;
+width: auto;
+}

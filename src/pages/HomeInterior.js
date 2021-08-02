@@ -362,7 +362,7 @@ export const Home = ({ match }) => {
           </div>
           <div className="row row-cols-3 row-cols-lg-5 row-cols-sm-2">
             {/* start feature box item */}
-            {([...privatefeatures, ...features]).map((item, i) => {
+            {([...features, ...privatefeatures]).map((item, i) => {
               return (
                 <div
                   className="feature-item-holder col text-center border-radius-6px box-shadow-double-large-hover  transition wow animate__fadeIn"

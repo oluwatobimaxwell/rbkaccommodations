@@ -60,11 +60,11 @@
         "title": "refrigerator with freezer"
       },
       {
-        "icon": " line-icon-Computer ",
+        "icon": " line-icon-Monitor-4 ",
         "title": "smart television"
       },
       {
-        "icon": " line-icon-Big-Data ",
+        "icon": " line-icon-Hanger ",
         "title": "wardrobe"
       },
       {
@@ -72,7 +72,7 @@
         "title": "automated tap"
       },
       {
-        "icon": " line-icon-Calendar-2 ",
+        "icon": "  line-icon-Solar  ",
         "title": "solar water heater"
       },
       {
@@ -158,11 +158,11 @@
         "title": "refrigerator with freezer"
       },
       {
-        "icon": " line-icon-Computer ",
+        "icon": " line-icon-Monitor-4 ",
         "title": "smart television"
       },
       {
-        "icon": " line-icon-Big-Data ",
+        "icon": " line-icon-Hanger ",
         "title": "wardrobe"
       },
       {
@@ -174,11 +174,11 @@
         "title": "shared printer"
       },
       {
-        "icon": " line-icon-Blouse ",
+        "icon": "  line-icon-Refresh-Window  ",
         "title": "washing machine"
       },
       {
-        "icon": " line-icon-Plate ",
+        "icon": " line-icon-Plates ",
         "title": "dinning area"
       }
     ]
