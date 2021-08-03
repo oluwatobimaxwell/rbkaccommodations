@@ -5,7 +5,7 @@ const data = {
   site: require("../data/site.json"),
 };
 
-const mailEndpoint = "http://localhost/projects/rkb/mailer.php";
+const mailEndpoint = "https://rbkstudentsaccommodation.com/rkb/mailer.php";
 
 const { site } = data;
 
@@ -347,7 +347,7 @@ export const ContactPop = ({ room, option, price }) => {
   <div className="padding-fifteen-all bg-white border-radius-6px xs-padding-six-all">
     <h6 className="text-extra-dark-gray font-weight-500 margin-35px-bottom xs-margin-15px-bottom text-capitalize">Selected Room: <br/><b>{room} [Option-{option}]</b></h6> 
     <div>
-      <input className="medium-input margin-25px-bottom xs-margin-10px-bottom required" type="hidden" name="name" value={`${(room || "").toUpperCase()} [Option-${option}]`} />
+      <input className="medium-input margin-25px-bottom xs-margin-10px-bottom required" type="hidden" name="booking" value={`${(room || "").toUpperCase()} [Option-${option}]`} />
       <input className="medium-input margin-25px-bottom xs-margin-10px-bottom required" type="text" name="name" placeholder="Your name" />
       <input className="medium-input margin-25px-bottom xs-margin-10px-bottom required" type="email" name="email" placeholder="Your email address" />
       <input className="medium-input margin-25px-bottom xs-margin-10px-bottom" type="tel" name="phone" placeholder="Your mobile" />
