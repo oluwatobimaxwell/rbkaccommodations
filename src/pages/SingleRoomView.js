@@ -2,9 +2,14 @@ import React, {useEffect} from "react";
 import { Layout } from "../components/Layout";
 import { RoomSlider } from "./Comps/RoomSlider";
 import { RoomSlider2 } from "./Comps/RoomSlider2";
+import { ContactPop } from "./Contact";
 import { NotFound } from "./NotFound";
 
+const { socials } = require("../data/site.json");
+
 export const SingleRoomView = ({match}) => {
+
+    const [selectedOption, setSelectedOption] = React.useState(1)
 
     const roomName = match?.params?.roomname;
     const location = new URLSearchParams(window.location.search).get("location")
@@ -46,6 +51,7 @@ export const SingleRoomView = ({match}) => {
       // bgimage={room.image}
       // boxheader={`navbar navbar-expand-lg navbar-dark bg-transparent border-bottom border-color-white-transparent header-light fixed-top navbar-boxed header-reverse-scroll`}
       subtitle={room.category +" "+ room.name + " Room"}
+      baseLink={"/rooms"}
       title={room.category +" "+ room.name + " Room"}
       boxheader={`navbar top-space navbar-expand-lg navbar-light bg-white header-light fixed-top header-reverse-scroll navbar-boxed`}
       base={"Room"}
@@ -107,7 +113,7 @@ export const SingleRoomView = ({match}) => {
           {/* end pricing body */}
           {/* start pricing footer */}
           <div className="pricing-footer">
-            <a className="btn btn-fancy btn-small btn-dark-gray" href="/contact">Choose Option</a>
+            <a onClick={() => setSelectedOption(1)} className="btn btn-fancy btn-small btn-dark-gray popup-with-form" href="#contact-form">Book Now</a>
           </div>
           {/* end pricing footer */}
         </div>
@@ -134,7 +140,7 @@ export const SingleRoomView = ({match}) => {
           {/* end pricing body */}
           {/* start pricing footer */}
           <div className="pricing-footer">
-            <a className="btn btn-fancy btn-medium btn-white" href="/contact">Choose Option</a>
+            <a onClick={() => setSelectedOption(2)} className="btn btn-fancy btn-medium btn-white popup-with-form" href="#contact-form">Book Now</a>
           </div>
           {/* end pricing footer */}
         </div>
@@ -142,6 +148,7 @@ export const SingleRoomView = ({match}) => {
       </div>
     </div>
   </div>
+  <ContactPop room={room.category +" "+ room.name + " Room"} option={selectedOption} price={500} />
 </section>
 
 
@@ -254,14 +261,13 @@ style={{
 <section>
   <div className="container">
     <div className="row align-items-center">
-      <div className="col-12 col-md col-sm-4 text-center text-sm-right alt-font text-extra-dark-gray text-uppercase text-medium font-weight-500 xs-margin-10px-bottom">Share this project</div>
+      <div className="col-12 col-md col-sm-4 text-center text-sm-right alt-font text-extra-dark-gray text-uppercase text-medium font-weight-500 xs-margin-10px-bottom">Share this room</div>
       <div className="col-12 col-md col-sm-2"><div className="w-100 h-1px bg-medium-gray xs-margin-15px-tb" /></div>
       <div className="col-12 col-sm text-center text-sm-left social-icon-style-02">
         <ul className="small-icon">
-          <li><a className="facebook" href="https://www.facebook.com/" target="_blank"><i className="fab fa-facebook-f" /></a></li>
-          <li><a className="dribbble" href="http://www.dribbble.com" target="_blank"><i className="fab fa-dribbble" /></a></li>
-          <li><a className="behance" href="http://www.behance.com/" target="_blank"><i className="fab fa-behance" /></a></li>
-          <li><a className="instagram" href="http://www.instagram.com" target="_blank"><i className="fab fa-instagram" /></a></li>
+          <li><a className="facebook" href={socials.facebook} target="_blank"><i className="fab fa-facebook-f" /></a></li>
+          <li><a className="instagram" href={socials.instagram} target="_blank"><i className="fab fa-instagram" /></a></li>
+          <li><a className="dribbble" href={socials.youtube} target="_blank"><i className="fab fa-youtube" /></a></li>
         </ul>
       </div>
     </div>
@@ -300,3 +306,4 @@ style={{
 </Layout>
   )
 }
+

@@ -1,12 +1,16 @@
 import React from "react";
 import { Layout } from "../components/Layout";
 
-export const Gallery = () => {
+const data = { female: 36, male: 29 }
+
+export const Gallery = ({ match }) => {
   const media = require("../data/gallery.json");
+  const type = match?.params?.type;
+
   return (
     <Layout
       subtitle={"Gallery"}
-      title={"RKB Gallery"}
+      title={"RKB "+type+" Accommdation Gallery"}
       boxheader={`navbar top-space navbar-expand-lg navbar-light bg-white header-light fixed-top header-reverse-scroll navbar-boxed`}
     >
       {/* <section className="wow animate__fadeIn py-0">
@@ -55,18 +59,18 @@ export const Gallery = () => {
                 data-backgroundcolor="#58bc4b,#d9a026,#813ea9,#82bc13,#214bdf,#e28e1a,#04c05c,#e52d8c,"
               >
                 <li className="grid-sizer" />
-                {media.map((item, i) => {
+                {(new Array(data[type])).fill(1).map((item, i) => {
                   return (
                     <li className="grid-item wow animate__fadeIn">
                       <a
-                        href={item.image}
+                        href={`../rbk/gallery/${type}/${i+1}.jpg`}
                         title={item.title}
                         data-group="lightbox-gallery-3"
                         className="lightbox-group-gallery-item"
                       >
                         <div className="portfolio-box">
                           <div className="portfolio-image bg-secondary">
-                            <img src={item.image} alt="" />
+                            <img src={`../rbk/gallery/${type}/${i+1}.jpg`} alt="" />
                             <div className="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
                               <i className="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom" />
                             </div>

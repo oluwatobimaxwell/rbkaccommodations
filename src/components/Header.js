@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
-import { Link } from "react-router-dom";
+
 
 const data = {
   header: require("../data/header.json"),
@@ -8,7 +8,7 @@ const data = {
   site: require("../data/site.json"),
 };
 
-const { site } = data;
+const { socials } = require("../data/site.json");
 
 export const TopNavigation = ({ boxheader }) => {
   return (
@@ -106,14 +106,14 @@ export const TopNavigation = ({ boxheader }) => {
           </div>
           <div className="col-auto col-lg-2 text-right pr-0 font-size-0">
             <div className="header-social-icon d-inline-block">
-              <a href="http://www.facebook.com/" target="_blank">
+              <a href={socials.facebook} target="_blank">
                 <i className="fab fa-facebook-f" />
               </a>
-              <a href="https://www.instagram.com/" target="_blank">
+              <a href={socials.instagram} target="_blank">
                 <i className="fab fa-instagram" />
               </a>
-              <a href="http://www.twitter.com/" target="_blank">
-                <i className="fab fa-twitter" />
+              <a href={socials.youtube} target="_blank">
+                <i className="fab fa-youtube" />
               </a>
             </div>
           </div>
@@ -138,6 +138,8 @@ export const Footer = () => {
       )
       .then((data) => console.log(data));
   }, []);
+
+  
 
   return (
     <>
@@ -244,7 +246,7 @@ export const Footer = () => {
                   <li>
                     <a
                       className="facebook"
-                      href="https://www.facebook.com/"
+                      href={socials.facebook}
                       target="_blank"
                     >
                       <i className="fab fa-facebook-f text-white" />
@@ -252,31 +254,23 @@ export const Footer = () => {
                   </li>
                   <li>
                     <a
-                      className="dribbble"
-                      href="http://www.dribbble.com/"
-                      target="_blank"
-                    >
-                      <i className="fab fa-dribbble text-white" />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="twitter"
-                      href="http://www.twitter.com/"
-                      target="_blank"
-                    >
-                      <i className="fab fa-twitter text-white"  />
-                    </a>
-                  </li>
-                  <li>
-                    <a
                       className="instagram"
-                      href="http://www.instagram.com/"
+                      href={socials.instagram}
                       target="_blank"
                     >
                       <i className="fab fa-instagram text-white" />
                     </a>
                   </li>
+                  <li>
+                    <a
+                      className="youtube"
+                      href={socials.youtube}
+                      target="_blank"
+                    >
+                      <i className="fab fa-youtube text-white" />
+                    </a>
+                  </li>
+               
                 </ul>
               </div>
             </div>

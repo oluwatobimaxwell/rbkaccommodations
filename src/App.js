@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { About } from "./pages/About";
 import { Career } from "./pages/Career";
@@ -6,7 +5,6 @@ import { Contact } from "./pages/Contact";
 import { Gallery } from "./pages/Gallery";
 import { Home } from "./pages/HomeInterior";
 import { HomeLanding } from "./pages/HomeLanding";
-import { Landing } from "./pages/Landing";
 import { NotFound } from "./pages/NotFound";
 import { Rooms } from "./pages/Rooms";
 import { Services } from "./pages/Services";
@@ -25,7 +23,7 @@ function App() {
         <Route exact path="/solutions" component={Services} />
         <Route exact path="/about" component={About} />
         <Route exact path="/rooms" component={Rooms} />
-        <Route exact path="/gallery" component={Gallery} />
+        <Route exact path="/gallery/:type" component={Gallery} />
         <Route component={NotFound} />
       </Switch>
     </Router>

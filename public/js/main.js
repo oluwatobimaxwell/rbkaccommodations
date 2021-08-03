@@ -1621,7 +1621,7 @@
     `
     <div class="theme-demos">
         <div class="all-demo email">
-          <a href="mailto:info@RKBaccommodations.com" target="_blank">
+          <a href="mailto:info@rkbaccommodations.com" target="_blank">
             <i class="feather icon-feather-x align-middle"></i>
             <div class="theme-wrapper">
               <div>
@@ -1632,7 +1632,7 @@
           </a>
         </div>
         <div class="all-demo call">
-          <a href="tel:+234801RKB" target="_blank">
+          <a href="tel:+2348073769560" target="_blank">
             <i class="feather icon-feather-x align-middle"></i>
             <div class="theme-wrapper">
               <div>
@@ -1643,7 +1643,7 @@
           </a>
         </div>
         <div class="buy-theme sm-display-none whatsapp">
-          <a href="https://wa.link/52x0mg" target="_blank">
+          <a href="https://wa.me/+2348073769560?text=Hello,%20I'm%20interested%20in%20your%20accommodation." target="_blank">
             <i class="feather icon-feather-shopping-bag align-middle"></i>
             <div class="theme-wrapper">
               <div>

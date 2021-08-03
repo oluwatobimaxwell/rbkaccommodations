@@ -23,7 +23,17 @@
   },
   {
     "name": "Gallery",
-    "link": "/gallery"
+    "link": "#",
+    "items": [
+      {
+        "name": "Female Accommodation Gallery",
+        "link": "/gallery/female"
+      },
+      {
+        "name": "Male Accommodation Gallery",
+        "link": "/gallery/male"
+      }
+    ]
   },
   {
     "name": "Contact",

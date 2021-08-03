@@ -9,7 +9,8 @@ export const Layout = ({
   bgimage,
   jumpto,
   base,
-  home
+  home,
+  baseLink
 }) => {
   return (
     <>
@@ -36,7 +37,7 @@ export const Layout = ({
                   </li>
                   )}
                   <li>
-                    <a href="/" className="text-white-hover">
+                    <a href={baseLink || "/"} className="text-white-hover">
                       {base || "Home"}
                     </a>
                   </li>

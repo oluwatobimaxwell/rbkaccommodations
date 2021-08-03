@@ -5,6 +5,8 @@ const data = {
   site: require("../data/site.json"),
 };
 
+const mailEndpoint = "http://localhost/projects/rkb/mailer.php";
+
 const { site } = data;
 
 const addresses = [
@@ -41,7 +43,7 @@ export const Contact = () => {
     <Layout
       subtitle={"Get in-touch with us"}
       title={"Contact us Today."}
-      bgimage={require("../media/pexels-mohammad-danish-891059.jpg").default}
+      bgimage={require("../media/rbk/20210719_125009new.jpg").default}
       jumpto="contact"
     >
       <section id="contact" className="bg-light-gray">
@@ -99,32 +101,7 @@ export const Contact = () => {
               </div>
             </div>
             {/* end fancy text box item */}
-            {/* start fancy text box item */}
-            <div className="col col-sm-8">
-              <div className="feature-box feature-box-hide-show-hover bg-white border-radius-6px overflow-hidden box-shadow-large box-shadow-extra-large-hover">
-                <div className="feature-box-move-bottom-top padding-5-rem-lr padding-15px-tb lg-padding-2-half-rem-lr md-padding-4-half-rem-lr">
-                  <div className="feature-box-icon">
-                    <i className="line-icon-Approved-Window d-block icon-medium text-fast-blue margin-25px-bottom" />
-                  </div>
-                  <div className="feature-box-content last-paragraph-no-margin">
-                    <span className="text-extra-dark-gray text-extra-medium d-block alt-font font-weight-500">
-                      Ready to request a quote?
-                    </span>
-                    <a
-                      href="#project"
-                      className="alt-font text-decoration-underline section-link"
-                    >
-                      Describe your project
-                    </a>
-                  </div>
-                  <div className="move-bottom-top margin-10px-top last-paragraph-no-margin">
-                    <p>Submit the form below, we will contact you back asap</p>
-                  </div>
-                </div>
-                <div className="feature-box-overlay" />
-              </div>
-            </div>
-            {/* end fancy text box item */}
+ 
           </div>
         </div>
       </section>
@@ -146,7 +123,7 @@ export const Contact = () => {
                 <div className="col-12">
                   {/* start contact form */}
                   <form
-                    action="https://lithohtml.themezaa.com/email-templates/contact-form.php"
+                    action={mailEndpoint}
                     method="post"
                   >
                     <div className="row row-cols-1 row-cols-md-2">
@@ -203,7 +180,7 @@ export const Contact = () => {
                         </label>
                       </div>
                       <div className="col text-center text-md-right">
-                        <input type="hidden" name="redirect" defaultValue />
+                        {/* <input type="hidden" name="redirect" defaultValue /> */}
                         <button
                           className="btn btn-medium btn-gradient-light-purple-light-orange mb-0 submit"
                           type="submit"
@@ -224,8 +201,8 @@ export const Contact = () => {
       {/* end section */}
       {/* start section */}
       <section
-        className="bg-extra-dark-gray fancy-box-background big-section cover-background"
-        style={{ backgroundImage: 'url("images/contact-us-classic-01.jpg")' }}
+        className="bg-extra-dark-gray fancy-box-background big-section cover-background opacity-8x"
+        style={{ backgroundImage: 'url("../rbk/bg-c.png")' }}
       >
         <div className="opacity-very-light opacity-0-half z-index-minus-1 bg-gradient-sky-blue-pink" />
         <div className="container">
@@ -235,7 +212,7 @@ export const Contact = () => {
                 Fill out the form and we’ll be in touch soon!
               </span>
               <h4 className="alt-font text-white font-weight-600">
-                Gankco offices round the world
+                RKB locations in Abuja
               </h4>
             </div>
           </div>
@@ -247,7 +224,7 @@ export const Contact = () => {
                   <div
                     className="bg-banner-image cover-background"
                     style={{
-                      backgroundImage: `url(${item.bg})`,
+                      backgroundImage: `url("../rbk/20210719_125151.jpg")`,
                     }}
                   >
                     <div className="opacity-medium bg-gradient-sky-blue-pink" />
@@ -310,15 +287,7 @@ export const Contact = () => {
                     <i className="fab fa-facebook-f" />
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="twitter text-extra-dark-gray text-sm-left"
-                    href={site.socials.twitter}
-                    target="_blank"
-                  >
-                    <i className="fab fa-twitter" />
-                  </a>
-                </li>
+
                 <li>
                   <a
                     className="instagram text-extra-dark-gray text-sm-left"
@@ -328,15 +297,17 @@ export const Contact = () => {
                     <i className="fab fa-instagram" />
                   </a>
                 </li>
+
                 <li>
                   <a
-                    className="linkedin text-extra-dark-gray text-sm-left"
-                    href={site.socials.linkedin}
+                    className="youtube text-extra-dark-gray text-sm-left"
+                    href={site.socials.youtube}
                     target="_blank"
                   >
-                    <i className="fab fa-linkedin-in" />
+                    <i className="fab fa-youtube" />
                   </a>
                 </li>
+               
               </ul>
             </div>
           </div>
@@ -347,9 +318,15 @@ export const Contact = () => {
       <section className="p-0 wow animate__fadeIn">
         <div className="container-fluid">
           <div className="row">
-            <div className="col h-600px p-0 md-h-450px xs-h-300px">
+            <div className="col-6 h-600px p-0 md-h-450px xs-h-300px">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.791446025699!2d7.464904514624436!3d9.082754793483613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0aef1c9c84c1%3A0x344060b13288a43a!2sGankco%20Energy!5e0!3m2!1sen!2sng!4v1618490580074!5m2!1sen!2sng"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2425.396125514883!2d7.361628358944251!3d9.057643472406733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e75d8001878af%3A0x4a9e299b57c42545!2sOchacho%20Real-Homes%20LTD!5e0!3m2!1sen!2sng!4v1627063567593!5m2!1sen!2sng"
+                className="w-100 h-100 filter-grayscale-100"
+              />
+            </div>
+            <div className="col-6 h-600px p-0 md-h-450px xs-h-300px">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.0469983415137!2d7.396115414915723!3d9.059477791005017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e754b8ded2d2d%3A0x31986494064c67dc!2sRKB%20Students%20Accommodation!5e0!3m2!1sen!2sng!4v1627065481460!5m2!1sen!2sng"
                 className="w-100 h-100 filter-grayscale-100"
               />
             </div>
@@ -359,3 +336,28 @@ export const Contact = () => {
     </Layout>
   );
 };
+
+
+
+export const ContactPop = ({ room, option, price }) => {
+
+
+  return (
+    <form id="contact-form" action={mailEndpoint} method="post" className="white-popup-block col-xl-4 col-lg-7 col-sm-9  p-0 mx-auto mfp-hide">
+  <div className="padding-fifteen-all bg-white border-radius-6px xs-padding-six-all">
+    <h6 className="text-extra-dark-gray font-weight-500 margin-35px-bottom xs-margin-15px-bottom text-capitalize">Selected Room: <br/><b>{room} [Option-{option}]</b></h6> 
+    <div>
+      <input className="medium-input margin-25px-bottom xs-margin-10px-bottom required" type="hidden" name="name" value={`${(room || "").toUpperCase()} [Option-${option}]`} />
+      <input className="medium-input margin-25px-bottom xs-margin-10px-bottom required" type="text" name="name" placeholder="Your name" />
+      <input className="medium-input margin-25px-bottom xs-margin-10px-bottom required" type="email" name="email" placeholder="Your email address" />
+      <input className="medium-input margin-25px-bottom xs-margin-10px-bottom" type="tel" name="phone" placeholder="Your mobile" />
+      <textarea className="medium-textarea xs-h-100px xs-margin-10px-bottom" rows={6} name="message" placeholder="Additional message" defaultValue={""} />
+      {/* <input type="hidden" name="redirect" value="/success" defaultValue /> */}
+      <button className="btn btn-medium btn-dark w-100 mb-0 submit" type="submit">Send Booking</button>
+      <div className="form-results d-none" />
+    </div>
+  </div>
+</form>
+
+  )
+}

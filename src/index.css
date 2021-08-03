@@ -432,3 +432,22 @@ a.text-parrot-green-hover:hover {
 min-height: 70px !important;
 width: auto;
 }
+.opacity-8x{
+  /* opacity: 0.8 !important; */
+  background-image: linear-gradient(to right top,#556fff,#b263e4,#e05fc4,#f767a6,#ff798e);
+}
+
+
+.form-results .bg-success {
+	padding: 13px 20px;
+	color: #fff;
+}
+
+.form-results .bg-danger {
+	padding: 13px 20px;
+	color: #fff;
+}
+
+.form-results {
+	padding: 0 !important;
+}
