@@ -91,10 +91,10 @@ export const Home = ({ match }) => {
               </h6>
               <div className="mt-auto w-70 mx-lg-0">
                 <a
-                  href="mailto:info@rkbaccommodation.com"
+                  href="mailto:info@rkbstudentaccommodation.com"
                   className="alt-font text-yellow-ochre-light text-extra-dark-gray-hover text-decoration-line-bottom font-weight-500"
                 >
-                  info@rkbaccommodation.com
+                  info@rkbstudentaccommodation.com
                 </a>
                 <a
                   href="#rooms-in-here"

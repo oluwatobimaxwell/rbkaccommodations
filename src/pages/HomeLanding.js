@@ -293,9 +293,9 @@ export const HomeLanding = () => {
                 animationName: "fadeIn",
               }}
               >
-               At RBK Students accommodations,Abuja, we seek to create an  unmatched hostel solution as well as creating home away from home experience for  students.
+               At RKB  Student accommodations, Abuja, we seek to create an  unmatched hostel solution as well as creating home away from home experience for  students.
                <br/>
-               RBK also provides  serene environment for relaxation and creativity for academic pursuit.
+               RKB  also provides  serene environment for relaxation and creativity for academic pursuit.
               </p>
               {/* <a
                 href="#accommdations"

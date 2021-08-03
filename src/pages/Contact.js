@@ -15,7 +15,7 @@ const addresses = [
     address:
       "Ochacho Real Homes LTD, Karmo, Close to Nizamiye Hospital.",
     phone: "+234 807 376 9560",
-    email: "info@rkbaccommodation.com",
+    email: "info@rkbstudentaccommodation.com",
     flag: "https://www.countryflags.com/wp-content/uploads/nigeria-flag-png-xl.png",
     bg: "images/contact-us-classic-bg-1.jpg",
   },
@@ -24,7 +24,7 @@ const addresses = [
     address:
       "46, 35 road, 3rd Avenue, Gwarinpa.",
     phone: "+234 807 376 9560",
-    email: "info@rkbaccommodation.com",
+    email: "info@rkbstudentaccommodation.com",
     flag: "https://www.countryflags.com/wp-content/uploads/nigeria-flag-png-xl.png",
     bg: "images/contact-us-classic-bg-2.jpg",
   },
