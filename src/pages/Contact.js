@@ -150,7 +150,7 @@ export const Contact = () => {
                       <div className="col margin-4-rem-bottom sm-margin-10px-bottom">
                         <textarea
                           className="medium-textarea h-200px bg-white"
-                          name="comment"
+                          name="message"
                           placeholder="Your message"
                           defaultValue={""}
                         />
