@@ -187,9 +187,9 @@ export const Contact = () => {
                         >
                           Send Message
                         </button>
+                        <div className="form-results d-none" />
                       </div>
                     </div>
-                    <div className="form-results d-none" />
                   </form>
                   {/* end contact form */}
                 </div>
@@ -282,7 +282,7 @@ export const Contact = () => {
                   <a
                     className="facebook text-extra-dark-gray text-sm-left"
                     href={site.socials.facebook}
-                    target="_blank"
+                    target="_blank" rel="noreferrer"
                   >
                     <i className="fab fa-facebook-f" />
                   </a>
@@ -292,7 +292,7 @@ export const Contact = () => {
                   <a
                     className="instagram text-extra-dark-gray text-sm-left"
                     href={site.socials.instagram}
-                    target="_blank"
+                    target="_blank" rel="noreferrer"
                   >
                     <i className="fab fa-instagram" />
                   </a>
@@ -302,7 +302,7 @@ export const Contact = () => {
                   <a
                     className="youtube text-extra-dark-gray text-sm-left"
                     href={site.socials.youtube}
-                    target="_blank"
+                    target="_blank" rel="noreferrer"
                   >
                     <i className="fab fa-youtube" />
                   </a>
@@ -318,13 +318,13 @@ export const Contact = () => {
       <section className="p-0 wow animate__fadeIn">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-6 h-600px p-0 md-h-450px xs-h-300px">
+            <div className="col-xl-6 h-600px p-0 md-h-450px xs-h-300px">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2425.396125514883!2d7.361628358944251!3d9.057643472406733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e75d8001878af%3A0x4a9e299b57c42545!2sOchacho%20Real-Homes%20LTD!5e0!3m2!1sen!2sng!4v1627063567593!5m2!1sen!2sng"
                 className="w-100 h-100 filter-grayscale-100"
               />
             </div>
-            <div className="col-6 h-600px p-0 md-h-450px xs-h-300px">
+            <div className="col-xl-6 h-600px p-0 md-h-450px xs-h-300px">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.0469983415137!2d7.396115414915723!3d9.059477791005017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e754b8ded2d2d%3A0x31986494064c67dc!2sRKB%20Students%20Accommodation!5e0!3m2!1sen!2sng!4v1627065481460!5m2!1sen!2sng"
                 className="w-100 h-100 filter-grayscale-100"
