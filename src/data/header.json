@@ -14,6 +14,10 @@
       {
         "name": "Male",
         "link": "/home/male"
+      },
+      {
+        "name": "Coming Soon",
+        "link": "/coming-soon"
       }
     ]
   },

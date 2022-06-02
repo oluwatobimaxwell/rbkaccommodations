@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { About } from "./pages/About";
 import { Career } from "./pages/Career";
+import { ComingSoon } from "./pages/ComingSoon";
 import { Contact } from "./pages/Contact";
 import { Gallery } from "./pages/Gallery";
 import { Home } from "./pages/HomeInterior";
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/rooms" component={Rooms} />
         <Route exact path="/gallery/:type" component={Gallery} />
+        <Route exact path="/coming-soon" component={ComingSoon} />
         <Route component={NotFound} />
       </Switch>
     </Router>

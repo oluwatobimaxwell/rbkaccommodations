@@ -3,7 +3,7 @@ import { Layout } from "../components/Layout";
 
 export const ComingSoon = ({
   pageName,
-  title = "We're coming soon...",
+  title = "Coming Soon",
   enddate = "2021/12/14 12:00:00",
 }) => {
   return (
@@ -11,7 +11,7 @@ export const ComingSoon = ({
       className="p-0 cover-background min-h-100vh"
       style={{
         backgroundImage:
-          'url("https://images.pexels.com/photos/3207536/pexels-photo-3207536.jpeg")',
+          `url("${require("../media/rbk/metro-view.jpg").default}")`,
       }}
     >
       <div
@@ -23,11 +23,12 @@ export const ComingSoon = ({
             <div className="d-flex h-100 justify-content-between flex-column">
               <a className="navbar-brand" href="index.html">
                 <img
-                  src="images/logo-main.png"
-                  data-at2x="images/logo-main@2x.png"
+                  src={require("../media/logo.png").default}
+                  data-at2x={require("../media/logo.png").default}
                   className="default-logo"
                   alt=""
                   width="160"
+                  style={{ borderRadius: 10 }}
                 />
               </a>
               <div className="md-margin-30px-tb">
