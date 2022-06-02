@@ -54,14 +54,14 @@ export const ComingSoon = ({
                     Home
                   </span>
                 </a>
-                <a
+                {/* <a
                   href="#notify_form"
                   className="ml-3 btn btn-medium bg-white btn-transparent-white btn-rounded lg-margin-15px-bottom md-no-margin-bottom md-margin-auto-lr notify-form-button"
                 >
                   <span className="text-gradient-fast-blue-purple text-extra-dark-gray">
                     notify me
                   </span>
-                </a>
+                </a> */}
                 {/* start search input */}
                 <form
                   id="notify_form"
