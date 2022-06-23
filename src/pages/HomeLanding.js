@@ -106,7 +106,7 @@ export const HomeLanding = () => {
     },
     {
       title: "CCTV & Fire Alarm",
-      desc: "Safety",
+      desc: "Fire Alarm System",
       icon: " line-icon-Fire-Flame    icon-very-medium text-primary",
     }
   ];
