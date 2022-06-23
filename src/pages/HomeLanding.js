@@ -1,4 +1,5 @@
 import React from "react";
+import LineAdvert from "../components/ads/LineAdvert";
 import { Layout } from "../components/Layout";
 import { RoomsInner } from "./Rooms";
 
@@ -105,7 +106,7 @@ export const HomeLanding = () => {
     },
     {
       title: "CCTV & Fire Alarm",
-      desc: "Bonus Package",
+      desc: "Safety",
       icon: " line-icon-Fire-Flame    icon-very-medium text-primary",
     }
   ];
@@ -390,6 +391,7 @@ export const HomeLanding = () => {
           </div>
         </div>
       </section>
+        <LineAdvert />
             <div id="room-list" />
       <RoomsInner />
       {/* <section
