@@ -14,7 +14,7 @@
       },
       {
         "image": "/rbk/20210719_114237.jpg",
-        "title": "FREE WIFI & Printers",
+        "title": "FREE WIFI",
         "desc": "EASY CONNECTIVITY"
       },
       {
@@ -78,10 +78,6 @@
       {
         "icon": "  line-icon-Phone-3  ",
         "title": "intracom"
-      },
-      {
-        "icon": " line-icon-Printer ",
-        "title": "printer with 1 ream of paper"
       }
     ],
     "privatefeatures": [
@@ -116,7 +112,7 @@
       },
       {
         "image": "/rbk/20210719_114237.jpg",
-        "title": "FREE WIFI & Printers",
+        "title": "FREE WIFI",
         "desc": "EASY CONNECTIVITY"
       },
       {
@@ -168,10 +164,6 @@
       {
         "icon": " line-icon-Calendar-2 ",
         "title": "water heater"
-      },
-      {
-        "icon": " line-icon-Printer ",
-        "title": "shared printer"
       },
       {
         "icon": "  line-icon-Refresh-Window  ",

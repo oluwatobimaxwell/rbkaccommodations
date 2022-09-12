@@ -1,14 +1,14 @@
 [
   {
     "name": "Premium",
-    "price": "550",
+    "price": "750",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
     "category": "female",
     "image": "../rbk/sa/IMG-20210711-WA0007.jpg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 600,
-      "option2": 750
+      "option1": 750,
+      "option2": 850
     },
     "mediadata": {
       "location": "../rbk/rooms/premium-female",
@@ -88,14 +88,14 @@
   },
   {
     "name": "Premium Plus",
-    "price": "550",
+    "price": "800",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
     "category": "female",
     "image": "../rbk/sa/IMG-20210711-WA0006.jpg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 650,
-      "option2": 800
+      "option1": 800,
+      "option2": 900
     },
     "mediadata": {
       "location": "../rbk/rooms/premium-plus-female",
@@ -193,14 +193,14 @@
 ,
   {
     "name": "Executive Plus",
-    "price": "550",
+    "price": "850",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
     "category": "female",
     "image": "../rbk/WhatsAppImage2021-07-18-1.17.44 PM.jpeg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 700,
-      "option2": 850
+      "option1": 850,
+      "option2": 950
     },
     
     "features": [
@@ -253,14 +253,14 @@
   {
     "name": "Executive II",
     "twoinroom": true,
-    "price": "550",
+    "price": "700",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
     "category": "female",
     "image": "../rbk/sa/IMG_9875.JPG",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 550,
-      "option2": 700
+      "option1": 700,
+      "option2": 800
     },
     "features": [
       {
@@ -327,14 +327,14 @@
 {
   "name": "Premium II",
   "twoinroom": true,
-  "price": "550",
+  "price": "600",
   "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
   "category": "male",
   "image": "../rbk/sa/IMG-20210709-WA0007.jpg",
   "location": "Gwarinpa, Abuja",
   "option_prices": {
-    "option1": 450,
-    "option2": 600
+    "option1": 600,
+    "option2": 700
   },
   "mediadata": {
     "location": "../rbk/rooms/premium-ii-male",

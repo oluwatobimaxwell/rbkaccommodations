@@ -107,7 +107,7 @@ export const SingleRoomView = ({match}) => {
           <div className="pricing-body padding-3-rem-tb">
             <ul className="list-style-03">
               <li className="border-color-medium-gray">Excluded</li>
-              <li className="border-color-medium-gray">Dinner, laundry & printer </li>
+              <li className="border-color-medium-gray">Dinner, laundry </li>
             </ul>
           </div>
           {/* end pricing body */}
@@ -134,7 +134,7 @@ export const SingleRoomView = ({match}) => {
           <div className="pricing-body padding-3-rem-tb">
             <ul className="list-style-03 text-white">
               <li className="border-color-dark-white-transparent">Included</li>
-              <li className="border-color-dark-white-transparent">Dinner, laundry & printer </li>
+              <li className="border-color-dark-white-transparent">Dinner & laundry </li>
             </ul>
           </div>
           {/* end pricing body */}
