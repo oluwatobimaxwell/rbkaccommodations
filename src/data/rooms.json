@@ -369,14 +369,14 @@
 {
   "name": "Executive II",
   "twoinroom": true,
-  "price": "550",
+  "price": "700",
   "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
   "category": "male",
   "image": "../rbk/sa/IMG-20210711-WA0056.jpg",
   "location": "Gwarinpa, Abuja",
   "option_prices": {
-    "option1": 550,
-    "option2": 700
+    "option1": 700,
+    "option2": 800
   },
   "features": [
     {
