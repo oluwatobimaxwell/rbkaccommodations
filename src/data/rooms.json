@@ -52,8 +52,8 @@
     "image": "../rbk/sa/IMG-20210711-WA0007.jpg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 450,
-      "option2": 600
+      "option1": 600,
+      "option2": 700
     },
     "mediadata": {
       "location": "../rbk/rooms/premium-ii-female",
