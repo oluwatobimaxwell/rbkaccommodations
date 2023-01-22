@@ -13,7 +13,7 @@ const addresses = [
   {
     name: "RKB Female Accommodation",
     address:
-      "Ochacho Real Homes LTD, Karmo, Close to Nizamiye Hospital, Abuja.",
+      "Ochacho Real Homes LTD, Karmo, Close to Nizamiye Hospital, Abuja..",
     phone: "+234 807 376 9560",
     email: "info@rkbstudentaccommodation.com",
     flag: "https://www.countryflags.com/wp-content/uploads/nigeria-flag-png-xl.png",
@@ -22,7 +22,7 @@ const addresses = [
   {
     name: "RKB Male Accommodation",
     address:
-      "Metroview Estate, Right beside Nile  University, Abuja",
+      "Metroview Estate, Right beside Nile  University, Abuja.",
     phone: "+234 807 376 9560",
     email: "info@rkbstudentaccommodation.com",
     flag: "https://www.countryflags.com/wp-content/uploads/nigeria-flag-png-xl.png",
