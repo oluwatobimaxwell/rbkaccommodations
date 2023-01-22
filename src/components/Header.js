@@ -168,14 +168,14 @@ export const Footer = () => {
                   RKB Female Accommodation 
                   </span>
                   <p className="m-0">
-                  Ochacho Real Homes LTD, Karmo, Close to Nizamiye Hospital.
+                  Ochacho Real Homes LTD, Karmo, Close to Nizamiye Hospital, Abuja.
                   </p>
                   <br/>
                   <span className="text-white text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
                   RKB Male Accommodation
                   </span>
                   <p className="m-0">
-                    46, 35 road, 3rd Avenue, Gwarinpa. 
+                    Metroview Estate, Right beside Nile  University, Abuja 
                   </p>
                 </div>
               </div>

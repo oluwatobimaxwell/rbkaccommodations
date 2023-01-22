@@ -1,6 +1,7 @@
 import React from "react";
 import LineAdvert from "../components/ads/LineAdvert";
 import { Layout } from "../components/Layout";
+import { ComingSoon } from "./ComingSoon";
 import { ModalBox, RoomItemCard, SingleRoom } from "./Rooms";
 
 export const Home = ({ match }) => {
@@ -12,6 +13,12 @@ export const Home = ({ match }) => {
   const carousel = require("../data/rooms.json").filter(
     (r) => r.category === type
   );
+
+  if (type  === "male") {
+    return <ComingSoon
+      message="RKB Male Accommodation Coming Soon At Metroview Estate which is built by 1sqmbyDantata and owned by World Health Organization (WHO), right beside Nile university."
+    />
+  }
 
   return (
     <Layout>
@@ -207,143 +214,10 @@ export const Home = ({ match }) => {
 
               </div>
             </div>
-              {/* <div className="swiper-pagination swiper-vertical-pagination swiper-pagination-medium swiper-light-pagination d-flex flex-column align-items-center margin-3-half-rem-right lg-margin-1-rem-right" />
-              <div className="swiper-number-pagination">
-              <div className="swiper-pagination-current" />
-              <div className="swiper-pagination-total" />
-              </div> */}
           </div>
         </div>
       </section>
       {/* end section */}
-      {/* start section */}
-      {/* <section
-        className="overflow-visible cover-background wow animate__fadeIn"
-        style={{
-          backgroundImage: `url("${
-            require("../media/images/home-interior-design-about-bg.jpg").default
-          }")`,
-        }}
-      >
-        <div className="container">
-          <div className="row align-items-center justify-content-center">
-            <div
-              className="col-12 col-lg-6 col-md-10 margin-twenty-five-top lg-margin-30px-top md-margin-9-rem-bottom sm-margin-9-rem-bottom wow animate__fadeIn"
-              data-wow-delay="0.2s"
-            >
-              <div
-                className="position-absolute right-15px bottom-0px w-65 lg-bottom-minus-50px xs-bottom-minus-25px"
-                data-parallax-layout-ratio="1.1"
-              >
-                <img
-                  src={
-                    require("../media/rbk/pexels-cats-coming-707579.jpg")
-                      .default
-                  }
-                  alt=""
-                />
-              </div>
-              <div className="w-50 overflow-hidden position-relative md-w-70">
-                <img
-                  src={
-                    require("../media/rbk/pexels-victoria-borodinova-3315291.jpg")
-                      .default
-                  }
-                  alt=""
-                />
-              </div>
-            </div>
-            <div
-              className="col-12 col-lg-5 offset-lg-1 col-md-10 wow animate__fadeIn"
-              data-wow-delay="0.4s"
-            >
-              <div className="alt-font font-weight-500 margin-30px-bottom media">
-                <span className="w-30px h-1px bg-yellow-ochre-light opacity-7 align-self-center margin-20px-right" />
-                <div className="media-body">
-                  <span className="text-yellow-ochre-light text-uppercase">
-                    Best of it's Kind
-                  </span>
-                </div>
-              </div>
-              <h5 className="alt-font text-uppercase text-extra-dark-gray font-weight-700 w-85 margin-30px-bottom xl-w-100">
-                Dining at DAMAC Maison Mall Street
-              </h5>
-              <p className="w-75 xl-w-100">
-                The apartments in DAMAC Maison Mall street include 350 fully
-                furnished suites, available in deluxe, one, two, and three
-                bedrooms. The icing on the cake is the convenience of staying in
-                a luxury hotel near The Dubai Mall.
-              </p>
-              <a
-                href="/contact"
-                className="btn btn-fancy btn-large btn-dark-gray margin-20px-top"
-              >
-                Book NOw
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-       */}
-      {/* end section */}
-
-      {/* start section */}
-      {/* <section
-        className="bg-extra-dark-gray fancy-box-background big-section cover-background p-0 wow animate__fadeIn"
-        style={{
-          backgroundImage: `url("${
-            require("../media/rbk/pexels-m&w-studios-90317.jpg").default
-          }")`,
-        }}
-      >
-        <div className="opacity-very-light opacity-3 bg-extra-dark-gray" />
-        <div className="container-fluid">
-          <div className="row row-cols-2 row-cols-xl-4 row-cols-sm-2 align-items-center justify-content-center">
-
-            {fancy.map((item, i) => {
-              return (
-                <div
-                  className="col p-0 fancy-box-item border-right border-color-dark-white-transparent lg-border-bottom xs-no-border-right wow animate__fadeIn"
-                  data-wow-delay="0.2s"
-                >
-                  <div
-                    className="bg-banner-image cover-background"
-                    style={{
-                      backgroundImage: `url("${item.image}")`,
-                    }}
-                  >
-                    <div className="opacity-very-light opacity-3 bg-black" />
-                  </div>
-                  <div className="fancy-text-box h-800px fancy-text-box-style-03 xl-h-500px xs-h-250px">
-                    <div className="fancy-text-content padding-5-rem-lr padding-4-half-rem-tb xl-padding-2-rem-lr xl-padding-1-half-rem-tb lg-padding-4-rem-all">
-                      <h6 className="alt-font font-weight-600 text-white text-uppercase margin-20px-bottom w-80 xl-w-100 lg-w-60 md-w-80">
-                        {item.title}
-                      </h6>
-                      <div className="fancy-text-box-bottom justify-content-center">
-                        <div className="media">
-                          <p className="m-0 align-self-center w-75 text-white opacity-6">
-                            {item.desc}
-                          </p>
-                          <span className="align-self-center text-center ml-auto">
-                            <a
-                              href="#"
-                              className="d-inline-block line-height-40px rounded-circle bg-extra-dark-gray h-40px w-40px"
-                            >
-                              <i className="feather icon-feather-arrow-right text-white" />
-                            </a>
-                          </span>
-                        </div>
-                      </div>
-                      <div className="feature-box-overlay bg-yellow-ochre-light" />
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-      */}
       {/* end section */}
 
       <section id="features" className="bg-white">

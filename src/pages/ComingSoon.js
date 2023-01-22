@@ -1,10 +1,10 @@
 import React from "react";
-import { Layout } from "../components/Layout";
 
 export const ComingSoon = ({
   pageName,
   title = "Coming Soon",
   enddate = "2021/12/14 12:00:00",
+  message
 }) => {
   return (
     <section
@@ -21,7 +21,7 @@ export const ComingSoon = ({
         <div className="row">
           <div className="col-auto col-sm-12 full-screen full-screen-auto padding-100px-all lg-padding-70px-all sm-padding-20px-tb sm-padding-35px-lr text-center text-md-left">
             <div className="d-flex h-100 justify-content-between flex-column">
-              <a className="navbar-brand" href="index.html">
+              <a className="navbar-brand" href="/">
                 <img
                   src={require("../media/logo.png").default}
                   data-at2x={require("../media/logo.png").default}
@@ -37,8 +37,7 @@ export const ComingSoon = ({
                 </h1>
                 <h3 className="alt-font d-block text-white">{title}</h3>
                 <p className="text-extra-medium text-white opacity-5 line-height-28px font-weight-300 margin-50px-bottom xs-margin-40px-bottom w-450px sm-w-100">
-                  We're currently working hard on this page. Subscribe our
-                  newsletter to get update when it'll be live.
+                {message || "At Metroview Estate which is built by 1sqmbyDantata and owned by World Health Organization (WHO), right beside Nile university. "}
                 </p>
                 <div
                   data-enddate={enddate}
