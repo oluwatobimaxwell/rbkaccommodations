@@ -215,6 +215,13 @@ export const Footer = () => {
                     >
                       +234 807 376 9560
                     </a>
+                    <br />
+                    <a
+                      href="tel:+234 905 835 0009"
+                      className="text-salmon-rose-hover"
+                    >
+                      +234 905 835 0009
+                    </a>
                   </p>
                 </div>
               </div>
