@@ -203,6 +203,13 @@ export const Footer = () => {
                     </a>
                     <br />
                     <a
+                      href="tel:+234 905 835 0009"
+                      className="text-salmon-rose-hover"
+                    >
+                      +234 905 835 0009
+                    </a>
+                    <br />
+                    <a
                       href="tel:+234 706 858 6560"
                       className="text-salmon-rose-hover"
                     >
@@ -214,13 +221,6 @@ export const Footer = () => {
                       className="text-salmon-rose-hover"
                     >
                       +234 807 376 9560
-                    </a>
-                    <br />
-                    <a
-                      href="tel:+234 905 835 0009"
-                      className="text-salmon-rose-hover"
-                    >
-                      +234 905 835 0009
                     </a>
                   </p>
                 </div>
