@@ -1,5 +1,4 @@
 import React from "react";
-import LineAdvert from "../components/ads/LineAdvert";
 import { Layout } from "../components/Layout";
 import { ModalBox, RoomItemCard, SingleRoom } from "./Rooms";
 

@@ -1,5 +1,4 @@
 import React from "react";
-import LineAdvert from "../components/ads/LineAdvert";
 import { Layout } from "../components/Layout";
 import { RoomsInner } from "./Rooms";
 
@@ -391,7 +390,6 @@ export const HomeLanding = () => {
           </div>
         </div>
       </section>
-        <LineAdvert />
             <div id="room-list" />
       <RoomsInner />
       {/* <section

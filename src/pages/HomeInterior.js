@@ -1,5 +1,4 @@
 import React from "react";
-import LineAdvert from "../components/ads/LineAdvert";
 import { Layout } from "../components/Layout";
 import { ComingSoon } from "./ComingSoon";
 import { ModalBox, RoomItemCard, SingleRoom } from "./Rooms";
@@ -160,7 +159,6 @@ export const Home = ({ match }) => {
         </div>
       </section>
       {/* end section */}
-      <LineAdvert />
       {/* start section */}
       <section
         id="rooms-in-here"

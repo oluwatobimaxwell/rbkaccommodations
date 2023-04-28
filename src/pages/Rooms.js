@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
-import LineAdvert from "../components/ads/LineAdvert";
 import { Layout } from "../components/Layout";
 
 export const Rooms = () => {
@@ -10,7 +9,6 @@ export const Rooms = () => {
       title={"RKB Rooms"}
       boxheader={`navbar top-space navbar-expand-lg navbar-light bg-white header-light fixed-top header-reverse-scroll navbar-boxed`}
     >
-      <LineAdvert />
       <RoomsInner />
     </Layout>
   );
