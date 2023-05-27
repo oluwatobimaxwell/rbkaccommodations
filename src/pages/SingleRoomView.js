@@ -99,7 +99,8 @@ export const SingleRoomView = ({match}) => {
           <div className="pricing-header">
             {/* <div className="text-medium margin-10px-bottom d-block alt-font">Core features</div> */}
             <div className="alt-font text-extra-dark-gray text-large font-weight-500 margin-3-rem-bottom text-uppercase">Option 1</div>
-            <h3 className="alt-font font-weight-500 text-primary letter-spacing-minus-2px no-margin-bottom">₦{room?.option_prices?.option1}k</h3>
+            <h3 className="alt-font font-weight-500 text-primary letter-spacing-minus-2px no-margin-bottom">₦{room?.option_prices?.option1 - 100}k</h3>
+            <h3 className="alt-font font-weight-500 text-primary letter-spacing-minus-2px no-margin-bottom strike-through big">₦{room?.option_prices?.option1}k</h3>
             <span className="text-uppercase text-extra-dark-gray letter-spacing-1px font-weight-500 text-small">Per Student Per Semester</span>
           </div>
           {/* end pricing header */}
@@ -126,7 +127,8 @@ export const SingleRoomView = ({match}) => {
           <div className="pricing-header">
             {/* <div className="text-white text-medium margin-10px-bottom d-block alt-font opacity-7">Most popular</div> */}
             <div className="alt-font text-white text-large font-weight-500 margin-3-rem-bottom text-uppercase">Option 2</div>
-            <h2 className="alt-font font-weight-500 text-black letter-spacing-minus-2px no-margin-bottom">₦{room?.option_prices?.option2}k</h2>
+            <h2 className="alt-font font-weight-500 text-black letter-spacing-minus-2px no-margin-bottom">₦{room?.option_prices?.option2 - 100}k</h2>
+            <h2 className="alt-font font-weight-500 text-black letter-spacing-minus-2px no-margin-bottom strike-through big">₦{room?.option_prices?.option2}k</h2>
             <span className="text-uppercase text-white letter-spacing-1px font-weight-500 text-small">Per Student Per Semester</span>
           </div>
           {/* end pricing header */}
@@ -197,40 +199,6 @@ export const SingleRoomView = ({match}) => {
       </section>
 
 
-{/* <section className="big-section bg-light-gray wow animate__fadeIn" >
-  <div className="container">
-  
-    <div className="row overlap-gap-section">
-      <div className="col-12 col-md-4 position-relative sm-padding-10-rem-bottom xs-padding-9-rem-bottom">
-        <h1 className="alt-font font-weight-600 text-extra-dark-gray letter-spacing-minus-2px margin-5-rem-bottom"><span className="text-border text-border-color-black text-border-width-2px opacity-3">Proud</span> stories</h1>
-        <div className="swiper-button-next-nav-02 swiper-button-next slider-navigation-style-03 white rounded-circle"><i className="feather icon-feather-arrow-right" /></div>
-        <div className="swiper-button-previous-nav-02 swiper-button-prev slider-navigation-style-03 white rounded-circle"><i className="feather icon-feather-arrow-left" /></div>
-      </div>
-      <div className="col-12 col-xl-5 col-lg-6 offset-lg-1 col-md-8 swiper-simple-arrow-style-1" data-wow-delay="0.2s">
-        <div className="swiper-container black-move" data-slider-options="{ &quot;loop&quot;: true, &quot;slidesPerView&quot;: 1, &quot;observer&quot;: true, &quot;observeParents&quot;: true, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.swiper-button-next-nav-02&quot;, &quot;prevEl&quot;: &quot;.swiper-button-previous-nav-02&quot; }, &quot;autoplay&quot;: { &quot;delay&quot;: 4500, &quot;disableOnInteraction&quot;: false }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;effect&quot;: &quot;slide&quot; }">
-          <div className="swiper-wrapper">
-            {testimonials.map((item, i) => {
-              return (
-                <div className="swiper-slide" key={"xsdhdht-testim"+i}>
-              <span className="alt-font text-large line-height-38px md-line-height-32px letter-spacing-minus-1-half d-block margin-3-rem-bottom">{item.comment}</span>
-              <div className="feature-box feature-box-left-icon-middle">
-                <div className="feature-box-icon margin-25px-right">
-                  <img className="rounded-circle w-85px h-85px" src={item.image || require("../media/no-image-resulta.jpg").default} alt="" />
-                </div>
-                <div className="feature-box-content">
-                  <div className="text-extra-dark-gray text-large alt-font line-height-20px text-gradient-peacock-blue-crome-yellow-2 text-uppercase d-inline-block"><span className="font-weight-600">{item.firstname}</span> {item.lastname}</div>
-                  <span className="alt-font text-medium d-block text-uppercase margin-5px-top">{item.school}</span>
-                </div>
-              </div>
-            </div>
-              )
-            })}
-          </div> 
-        </div>
-      </div>
-    </div>
-  </div>
-</section> */}
 
 <section className="big-section cover-background" 
 style={{

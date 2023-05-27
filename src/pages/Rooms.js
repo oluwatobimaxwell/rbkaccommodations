@@ -35,11 +35,11 @@ export const RoomsInner = () => {
                   Female
                 </a>
               </li>
-              <li className="nav">
+              {/* <li className="nav">
                 <a data-filter=".male" href="#">
                   Male
                 </a>
-              </li>
+              </li> */}
             
             </ul>
             {/* end filter navigation */}
@@ -52,7 +52,7 @@ export const RoomsInner = () => {
           
             <ul className="blog-clean blog-wrapper grid grid-loading grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large">
               <li className="grid-sizer" />
-              {roomsavailable.map((item, i) => {
+              {roomsavailable.filter(({ category }) => category === "female").map((item, i) => {
                 return (
                    <RoomItemCard item={item} key={"shhshs-wehe-"+i} />
                 );
@@ -82,13 +82,15 @@ export const RoomItemCard = ({item, id}) => {
       <div className="position-relative z-index-1 w-100 padding-4-rem-tb lg-padding-5-rem-tb">
         <div style={{display: "flex", margin: "auto", width: "60%"}}>
           <span className="w-50 d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
-            <div className="option-price-value">N{item.option_prices.option1}k</div>
+            <div className="option-price-value">N{item.option_prices.option1 - 100}k</div>
+            <div className="option-price-value strike-through">N{item.option_prices.option1}k</div>
             <label className="option-price-label">
               Option 1
             </label>
           </span>
           <span className="w-50 d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
-            <div className="option-price-value">N{item.option_prices.option2}k</div>
+            <div className="option-price-value">N{item.option_prices.option2 - 100}k</div>
+            <div className="option-price-value strike-through">N{item.option_prices.option2}k</div>
             <label className="option-price-label">
               Option 2
             </label>

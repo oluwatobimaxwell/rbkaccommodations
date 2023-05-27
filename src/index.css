@@ -451,3 +451,13 @@ width: auto;
 .form-results {
 	padding: 0 !important;
 }
+
+
+.strike-through {
+  text-decoration: line-through !important;
+  font-size: 12px;
+}
+
+.strike-through.big {
+  font-size: 26px;
+}
