@@ -53,11 +53,6 @@ export const HomeLanding = () => {
 			desc: "Fun and games",
 			icon: " line-icon-Gymnastics   icon-very-medium text-primary",
 		},
-		{
-			title: "24/7 Support",
-			desc: "Friendly staff & 24/7 support",
-			icon: " line-icon-Support   icon-very-medium text-primary",
-		},
 
 		{
 			title: "Private Balconies",
