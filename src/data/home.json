@@ -1,5 +1,5 @@
 {
-  "female": {
+  "female-ochacho": {
     "location": "Gwarinpa, Abuja",
     "slider": [
       {
@@ -68,14 +68,6 @@
         "title": "wardrobe"
       },
       {
-        "icon": " line-icon-Drop ",
-        "title": "automated tap"
-      },
-      {
-        "icon": "  line-icon-Solar  ",
-        "title": "solar water heater"
-      },
-      {
         "icon": "  line-icon-Phone-3  ",
         "title": "intracom"
       }
@@ -84,29 +76,65 @@
       {
         "icon": " line-icon-Alarm-Clock2 ",
         "title": "shared inverter microwave"
-      },
-      {
-        "icon": " line-icon-Plug-In ",
-        "title": "shared solar iron"
       }
     ],
     "video": "https://www.youtube.com/watch?v=8m971-dX-V4",
     "title": "Beautifully designed to suit you.",
     "blacktitle": "RKB Female Student Accommodation at Ochacho Real Homes Ltd, Abuja.",
-    "about": "<p class=\"w-85 xl-w-100\">RKB Female Student Accommodation is located at Ochacho Real Homes Ltd, Karmo close to Nizamiye (Turkish) Hospital.    The facility was built in 2021 has eighteen(18) fully furnished en suite  rooms. In addition, each room has its own air conditioner. Rooms on the topmost floor come private kitchens. The facility has skylight(clear glass) restaurant. Gym and outdoor games are available.<br/> <br/>The female accommodation is about 15minutes drive to both Nile & Baze Universities. <br/><br/>RKB Female Students Accommodation is not far from a filling station, restaurant, grocery stores and a farmers' market.</p>",
+    "about": "<p class=\"w-85 xl-w-100\">RKB Female Student Accommodation is located at Ochacho Real Homes Ltd, Karmo close to Nizamiye (Turkish) Hospital.    The facility was built in 2021 has eighteen(18) fully furnished en suite  rooms. In addition, each room has its own air conditioner. Rooms on the topmost floor come with private kitchens. The facility has skylight(clear glass) restaurant. Gym and outdoor games are available.<br/> <br/>The female accommodation is about 15minutes drive to both Nile & Baze Universities. <br/><br/>RKB Female Students Accommodation is not far from a filling station, restaurant, grocery stores and a farmers' market.</p>",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2425.396125514883!2d7.361628358944251!3d9.057643472406733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e75d8001878af%3A0x4a9e299b57c42545!2sOchacho%20Real-Homes%20LTD!5e0!3m2!1sen!2sng!4v1627063567593!5m2!1sen!2sng",
     "bottombg": "/rbk/20210719_125151.jpg"
   },
-  "male": {
-    "location": "Ochacho, Abuja",
+  "female-metroview": {
+    "location": "Metroview Estate, Abuja",
     "slider": [
       {
-        "image": "/rbk/sa/D15E089B-B790-481A-882A-60E6749DF197.JPG",
-        "title": "Male Hostels",
-        "desc": "Welcome to RKB "
+        "image": "/rbk/metro-view.jpg",
+        "title": "Female Hostels",
+        "desc": "Welcome to RKB"
+      }
+    ],
+    "fancy": [
+      {
+        "image": "/rbk/pexels-ivan-samkov-7620569.jpg",
+        "title": "FREE WIFI",
+        "desc": "Fast speed internet"
       },
       {
-        "image": "/rbk/20210709_092807new .jpg",
+        "image": "/rbk/pexels-valeria-boltneva-1484516.jpg",
+        "title": "Skylight Restaurant",
+        "desc": "With a Complementary Breakfast"
+      },
+      {
+        "image": "/rbk/pexels-artem-2249063.jpg",
+        "title": "24/7 Security & Power",
+        "desc": "100% Electricity guarantee"
+      },
+      {
+        "image": "/rbk/pexels-rachel-claire-4992487.jpg",
+        "title": "Air Condition",
+        "desc": "All rooms with AC"
+      }
+    ],
+    "image": "/rbk/metroview-gmap.jpeg",
+    "features": [],
+    "privatefeatures": [],
+    "title": "Beautifully designed to suit you.",
+    "blacktitle": "RKB Female Student Accommodation at Metroview Estate, Abuja.",
+    "about": "<p class=\"w-85 xl-w-100\">Fully Furnished Female only student accommodation Located at Metroview estate. 1minute drive and 5minute walk to Nile university.</p>",
+    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2425.396125514883!2d7.361628358944251!3d9.057643472406733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e75d8001878af%3A0x4a9e299b57c42545!2sOchacho%20Real-Homes%20LTD!5e0!3m2!1sen!2sng!4v1627063567593!5m2!1sen!2sng",
+    "bottombg": "/rbk/20210719_125151.jpg"
+  },
+  "male-metroview": {
+    "location": "Gwarinpa, Abuja",
+    "slider": [
+      {
+        "image": "/rbk/sa/EA42832D-8B27-44DB-B366-00BA96F963AD.JPG",
+        "title": "Female Hostels",
+        "desc": "Welcome to RKB"
+      },
+      {
+        "image": "/rbk/20210719_123600.jpg",
         "title": "EN-SUITE ROOMS",
         "desc": "FULLY FURNISHED"
       },
@@ -116,7 +144,7 @@
         "desc": "EASY CONNECTIVITY"
       },
       {
-        "image": "/rbk/IMG_7185.PNG",
+        "image": "/rbk/20210719_125009new.jpg",
         "title": "SECURITY & POWER",
         "desc": "GUARANTEED 24/7"
       }
@@ -143,14 +171,18 @@
         "desc": "All rooms with AC"
       }
     ],
+    "image": "/rbk/20210719_124545.jpg",
     "features": [
-
+      {
+        "icon": "  line-icon-Plates  ",
+        "title": "skylight restaurant"
+      },
       {
         "icon": " line-icon-Address-Book2 ",
         "title": "reading table and chair"
       },
       {
-        "icon": " line-icon-Bio-Hazard  ",
+        "icon": "  line-icon-Bio-Hazard  ",
         "title": "refrigerator with freezer"
       },
       {
@@ -162,25 +194,22 @@
         "title": "wardrobe"
       },
       {
-        "icon": " line-icon-Calendar-2 ",
-        "title": "water heater"
-      },
-      {
-        "icon": "  line-icon-Refresh-Window  ",
-        "title": "washing machine"
-      },
-      {
-        "icon": " line-icon-Plates ",
-        "title": "dinning area"
+        "icon": "  line-icon-Phone-3  ",
+        "title": "intracom"
       }
-    ]
-    ,
-    "image": "/rbk/20210709_092358.jpg",
-    "title": "Situated at the heart of ABuja",
-    "video": "https://www.youtube.com/watch?v=_rK9SVwMfII",
-    "blacktitle": "RKB Male Student Accommodation at Gwarinpa, Abuja.",
-    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.0469983415137!2d7.396115414915723!3d9.059477791005017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e754b8ded2d2d%3A0x31986494064c67dc!2sRKB%20Students%20Accommodation!5e0!3m2!1sen!2sng!4v1627065481460!5m2!1sen!2sng",
-    "about": "<p class=\"w-85 xl-w-100\"> RKB Male Student Accomodation is located at  House 46, 35 Road, Gwarinpa, Abuja.  The facility is located in the heart of  Gwarinpa Model City in Abuja where everything is within (Shopping Malls, Restaurants  and Services). <br/><br/> The male acommodation is about 20minutes drive to  Nile University  and  Baze University. <br/><br/>We follow strict sanitisation protocol with 24/7  security and power.    </p>",
-    "bottombg": "/rbk/_IMG-20210711-WA0054.jpg"
+    ],
+    "privatefeatures": [
+      {
+        "icon": " line-icon-Alarm-Clock2 ",
+        "title": "shared inverter microwave"
+      }
+    ],
+    "video": "https://www.youtube.com/watch?v=8m971-dX-V4",
+    "title": "Beautifully designed to suit you.",
+    "blacktitle": "RKB Female Student Accommodation at Ochacho Real Homes Ltd, Abuja.",
+    "about": "<p class=\"w-85 xl-w-100\">RKB Female Student Accommodation is located at Ochacho Real Homes Ltd, Karmo close to Nizamiye (Turkish) Hospital.    The facility was built in 2021 has eighteen(18) fully furnished en suite  rooms. In addition, each room has its own air conditioner. Rooms on the topmost floor come with private kitchens. The facility has skylight(clear glass) restaurant. Gym and outdoor games are available.<br/> <br/>The female accommodation is about 15minutes drive to both Nile & Baze Universities. <br/><br/>RKB Female Students Accommodation is not far from a filling station, restaurant, grocery stores and a farmers' market.</p>",
+    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2425.396125514883!2d7.361628358944251!3d9.057643472406733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e75d8001878af%3A0x4a9e299b57c42545!2sOchacho%20Real-Homes%20LTD!5e0!3m2!1sen!2sng!4v1627063567593!5m2!1sen!2sng",
+    "bottombg": "/rbk/20210719_125151.jpg"
   }
+  
 }

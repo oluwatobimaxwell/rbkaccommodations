@@ -1,6 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Footer, TopNavigation } from "./Header";
-import MediaAdPopUp from "./ads/MediaAdPopUp";
 
 export const Layout = ({
   boxheader,
@@ -84,7 +84,6 @@ export const Layout = ({
       <div class="main-content">{children}</div>
 
       <Footer />
-      <MediaAdPopUp />
     </>
   );
 };

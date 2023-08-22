@@ -1,6 +1,5 @@
-import React, {useEffect} from "react";
+import React from "react";
 import { Layout } from "../components/Layout";
-import { RoomSlider } from "./Comps/RoomSlider";
 import { RoomSlider2 } from "./Comps/RoomSlider2";
 import { ContactPop } from "./Contact";
 import { NotFound } from "./NotFound";
@@ -30,7 +29,6 @@ export const SingleRoomView = ({match}) => {
         return previous
     }
 
-    const testimonials = require("../data/testimonials.json") 
     const rooms = require("../data/rooms.json") 
     const room = rooms.find(e => e.name === roomName && e.location === location)
     const roomIndex = rooms.findIndex(e => e.name === roomName && e.location === location)
@@ -46,10 +44,6 @@ export const SingleRoomView = ({match}) => {
 
   return (
     <Layout
-      // subtitle={room.location}
-      // title={room.name}
-      // bgimage={room.image}
-      // boxheader={`navbar navbar-expand-lg navbar-dark bg-transparent border-bottom border-color-white-transparent header-light fixed-top navbar-boxed header-reverse-scroll`}
       subtitle={room.category +" "+ room.name + " Room"}
       baseLink={"/rooms"}
       title={room.category +" "+ room.name + " Room"}
@@ -171,7 +165,7 @@ export const SingleRoomView = ({match}) => {
           </div>
           <div className="row row-cols-3 row-cols-lg-5 row-cols-sm-2">
             {/* start feature box item */}
-            {(room?.features ? [...room.features, ...features] : features).map((item, i) => {
+            {(room?.features ? [...room.features, ...features] : features).map((item) => {
               return (
                 <div
                   className="feature-item-holder col text-center border-radius-6px box-shadow-double-large-hover  transition wow animate__fadeIn"
@@ -233,9 +227,9 @@ style={{
       <div className="col-12 col-md col-sm-2"><div className="w-100 h-1px bg-medium-gray xs-margin-15px-tb" /></div>
       <div className="col-12 col-sm text-center text-sm-left social-icon-style-02">
         <ul className="small-icon">
-          <li><a className="facebook" href={socials.facebook} target="_blank"><i className="fab fa-facebook-f" /></a></li>
-          <li><a className="instagram" href={socials.instagram} target="_blank"><i className="fab fa-instagram" /></a></li>
-          <li><a className="dribbble" href={socials.youtube} target="_blank"><i className="fab fa-youtube" /></a></li>
+          <li><a className="facebook" href={socials.facebook} rel="noreferrer" target="_blank"><i className="fab fa-facebook-f" /></a></li>
+          <li><a className="instagram" href={socials.instagram} rel="noreferrer" target="_blank"><i className="fab fa-instagram" /></a></li>
+          <li><a className="dribbble" href={socials.youtube} rel="noreferrer" target="_blank"><i className="fab fa-youtube" /></a></li>
         </ul>
       </div>
     </div>

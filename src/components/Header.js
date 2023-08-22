@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 
@@ -65,9 +66,8 @@ export const TopNavigation = ({ boxheader }) => {
                 {data.header.map((item, i) => {
                   return (
                     <li
-                      className={`nav-item  ${
-                        window.location.pathname === item.link ? "active" : ""
-                      } ${(item.items && "dropdown simple-dropdown") || ""}`}
+                      className={`nav-item  ${window.location.pathname === item.link ? "active" : ""
+                        } ${(item.items && "dropdown simple-dropdown") || ""}`}
                       key={"nav-" + i}
                     >
                       <a href={item.link} className="nav-link">
@@ -125,7 +125,7 @@ export const TopNavigation = ({ boxheader }) => {
 };
 
 export const Footer = () => {
-  const [instafeeds, setinstafeeds] = React.useState([]);
+  const [, setinstafeeds] = React.useState([]);
 
   React.useEffect(() => {
     fetch(
@@ -139,7 +139,7 @@ export const Footer = () => {
       .then((data) => console.log(data));
   }, []);
 
-  
+
 
   return (
     <>
@@ -164,18 +164,25 @@ export const Footer = () => {
                   <i className="line-icon-Geo2-Love icon-extra-medium text-salmon-rose d-block" />
                 </div>
                 <div className="feature-box-content">
-                <span className="text-white text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
-                  RKB Female Accommodation 
-                  </span>
-                  <p className="m-0">
-                  Ochacho Real Homes LTD, Karmo, Close to Nizamiye Hospital, Abuja..
-                  </p>
-                  <br/>
                   <span className="text-white text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
-                  RKB Male Accommodation
+                    RKB Female Accommodation
                   </span>
                   <p className="m-0">
-                    Metroview Estate, Right beside Nile  University, Abuja. 
+                    Ochacho Real Homes LTD, Karmo, Close to Nizamiye Hospital, Abuja..
+                  </p>
+                  <br />
+                  <span className="text-white text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
+                    RKB Female Accommodation
+                  </span>
+                  <p className="m-0">
+                    Metroview Estate, Right beside Nile  University, Abuja.
+                  </p>
+                  <br />
+                  <span className="text-white text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
+                    RKB Male Accommodation
+                  </span>
+                  <p className="m-0">
+                    Metroview Estate, Right beside Nile  University, Abuja.
                   </p>
                 </div>
               </div>
@@ -215,7 +222,7 @@ export const Footer = () => {
                     >
                       +234 706 858 6560
                     </a>
-                  
+
                   </p>
                 </div>
               </div>
@@ -237,7 +244,7 @@ export const Footer = () => {
                       .default
                   }
                   data-at2x={require("../media/logo.png")
-                  .default}
+                    .default}
                   alt=""
                   className="logo"
                 />
@@ -278,7 +285,7 @@ export const Footer = () => {
                       <i className="fab fa-youtube text-white" />
                     </a>
                   </li>
-               
+
                 </ul>
               </div>
             </div>
@@ -286,7 +293,7 @@ export const Footer = () => {
         </div>
       </footer>
 
-      <a className="scroll-top-arrow" href="javascript:void(0);">
+      <a className="scroll-top-arrow" href="#" onClick={(e) => e.preventDefault()}>
         <i className="feather icon-feather-arrow-up" />
       </a>
     </>

@@ -3,12 +3,12 @@
     "name": "Premium",
     "price": "750",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "category": "female",
+    "category": "female-ochacho",
     "image": "../rbk/sa/IMG-20210711-WA0007.jpg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 750,
-      "option2": 850
+      "option1": null,
+      "option2": null
     },
     "mediadata": {
       "location": "../rbk/rooms/premium-female",
@@ -48,12 +48,12 @@
     "twoinroom": true,
     "price": "550",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "category": "female",
+    "category": "female-ochacho",
     "image": "../rbk/sa/IMG-20210711-WA0007.jpg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 600,
-      "option2": 700
+      "option1": null,
+      "option2": null
     },
     "mediadata": {
       "location": "../rbk/rooms/premium-ii-female",
@@ -89,12 +89,12 @@
     "name": "Premium Plus",
     "price": "800",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "category": "female",
+    "category": "female-ochacho",
     "image": "../rbk/sa/IMG-20210711-WA0006.jpg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 800,
-      "option2": 900
+      "option1": null,
+      "option2": null
     },
     "mediadata": {
       "location": "../rbk/rooms/premium-plus-female",
@@ -194,12 +194,12 @@
     "name": "Executive Plus",
     "price": "850",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "category": "female",
+    "category": "female-ochacho",
     "image": "../rbk/WhatsAppImage2021-07-18-1.17.44 PM.jpeg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 850,
-      "option2": 950
+      "option1": null,
+      "option2": null
     },
     
     "features": [
@@ -254,12 +254,12 @@
     "twoinroom": true,
     "price": "700",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "category": "female",
+    "category": "female-ochacho",
     "image": "../rbk/sa/IMG_9875.JPG",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 700,
-      "option2": 800
+      "option1": null,
+      "option2": null
     },
     "features": [
       {
@@ -332,8 +332,8 @@
   "image": "../rbk/sa/IMG-20210709-WA0007.jpg",
   "location": "Gwarinpa, Abuja",
   "option_prices": {
-    "option1": 600,
-    "option2": 700
+    "option1": null,
+    "option2": null
   },
   "mediadata": {
     "location": "../rbk/rooms/premium-ii-male",
@@ -374,8 +374,8 @@
   "image": "../rbk/sa/IMG-20210711-WA0056.jpg",
   "location": "Gwarinpa, Abuja",
   "option_prices": {
-    "option1": 700,
-    "option2": 800
+    "option1": null,
+    "option2": null
   },
   "features": [
     {

@@ -12,19 +12,28 @@ export const HomeLanding = () => {
 			location: "Ochacho Real-Homes, Karmo, Abuja, Nigeria.",
 			image: require("../media/rbk/sa/EA42832D-8B27-44DB-B366-00BA96F963AD.JPG")
 				.default,
-			// image: "https://lithohtml.themezaa.com/images/home-creative-agency-bg-img-02.jpg",
 			link: "/home/female",
 		},
-		// {
-		// 	name: {
-		// 		line1: "RKB Male",
-		// 		line2: "Accommodation",
-		// 	},
-		// 	location: "Gwarinpa, Abuja, Nigeria.",
-		// 	image: require("../media/rbk/sa/D15E089B-B790-481A-882A-60E6749DF197.JPG")
-		// 		.default,
-		// 	link: "/home/male",
-		// },
+		{
+			name: {
+				line1: "RKB Female",
+				line2: "Accommodation",
+			},
+			location: "Metroview, right beside Nile University, Abuja, Nigeria",
+			image: require("../media/rbk/metro-view.jpg")
+				.default,
+			link: "/home/male",
+		},
+		{
+			name: {
+				line1: "RKB Male",
+				line2: "Accommodation",
+			},
+			location: "Metroview, right beside Nile University, Abuja, Nigeria",
+			image: require("../media/rbk/metro-view.jpg")
+				.default,
+			link: "/home/male",
+		},
 	];
 
 	const features = [
@@ -44,8 +53,8 @@ export const HomeLanding = () => {
 			icon: " line-icon-Wind-Turbine   icon-very-medium text-primary",
 		},
 		{
-			title: "24/7 Power & Security",
-			desc: "100% Electricity guarantee",
+			title: "Power & Security",
+			desc: "Renewable inclusive",
 			icon: " line-icon-Light-Bulb   icon-very-medium text-primary",
 		},
 		{
@@ -71,7 +80,7 @@ export const HomeLanding = () => {
 		},
 		{
 			title: "Social Space",
-			desc: "Bonus Package",
+			desc: "Relaxation",
 			icon: " line-icon-Eifel-Tower    icon-very-medium text-primary",
 		},
 		{
@@ -84,31 +93,23 @@ export const HomeLanding = () => {
 			desc: "Fire Alarm System",
 			icon: " line-icon-Fire-Flame    icon-very-medium text-primary",
 		},
+		{
+			title: "Customer Service",
+			desc: "Responsible staff",
+			icon: "  line-icon-Headset     icon-very-medium text-primary",
+		},
 	];
 
-	const menus = require("../data/header.json");
-
 	return (
-		<Layout
-		// boxheader={`navbar top-space navbar-expand-lg navbar-light bg-white header-light fixed-top header-reverse-scroll navbar-boxed`}
-		>
+		<Layout>
 			<style>{`.show-theme-demos .theme-demos {display: none }`}</style>
-
-			{/* end header */}
-			{/* start slider section */}
 			<section className="home-vertical-portfolio p-0 full-screen w-100 position-relative">
 				<div
-					// className="swiper-container vertical-white-move slider-vertical swiper-container-vertical"
-					// data-slider-options='{ "slidesPerView": 1, "spaceBetween": 0, "direction": "vertical", "autoplay": { "delay": 5000, "disableOnInteraction": false }, "pagination": { "el": ".swiper-vertical-pagination", "clickable": true }, "allowTouchMove": true, "mousewheel": true, "loop": true, "iOSEdgeSwipeThreshold": 200, "keyboard": { "enabled": true, "onlyInViewport": true } }'
-					// data-slider-md-direction="horizontal"
-					// data-slider-number-pagination={1}
 
 					className="swiper-container vertical-white-move slider-vertical"
 					data-slider-options='{ "slidesPerView": 1, "spaceBetween": 0, "direction": "vertical", "autoplay": { "delay": 2000, "disableOnInteraction": false }, "pagination": { "el": ".swiper-vertical-pagination", "clickable": true }, "autoplay": { "delay": 5500, "disableOnInteraction": true }, "loop": false, "iOSEdgeSwipeThreshold": 200, "keyboard": { "enabled": true, "onlyInViewport": true }, "touchReleaseOnEdges": true }'
 					data-slider-md-direction="horizontal"
 
-					// className="swiper-container full-screen md-landscape-h-600px white-move   "
-					// data-slider-options='{ "slidesPerView": 1, "loop": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav" }, "autoplay": { "delay": 5500, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'
 				>
 					<div className="swiper-wrapper">
 						{/* start swiper slide */}
@@ -141,7 +142,7 @@ export const HomeLanding = () => {
 												<div className="swiper-right-content position-absolute right-15px bottom-50px w-45 padding-5-half-rem-bottom md-w-60 xs-w-70 md-no-padding-bottom sm-bottom-30px">
 													<div className="d-flex align-items-center align-self-end justify-content-end w-100">
 														<span className="col-3 col-lg bg-white h-1px opacity-3 d-none d-sm-inline-block" />
-														<span className="alt-font text-large text-white padding-3-rem-left xs-padding-2-rem-left">
+														<span className="alt-font text-large font-weight-bold text-white padding-3-rem-left xs-padding-2-rem-left">
 															{item.location}
 														</span>
 													</div>
@@ -156,24 +157,7 @@ export const HomeLanding = () => {
 					</div>
 					{/* start slider pagination */}
 					<div className="swiper-pagination swiper-vertical-pagination swiper-pagination-medium swiper-light-pagination d-flex flex-column align-items-center margin-3-half-rem-right lg-margin-1-rem-right" />
-					{/* end slider pagination */}
-					{/* start slider number pagination */}
-					{/* <div className="swiper-number-pagination">
-            <div className="swiper-pagination-current" />
-            <div className="swiper-pagination-total" />
-          </div> */}
-					{/* end slider number pagination */}
 				</div>
-				{/* <div className="scroll-down-bottom">
-          <a
-            href="#welcome"
-            className="section-link d-block w-2px h-35px bg-white mx-auto right-0px left-0px position-absolute"
-          >
-            <span class="scroll-down-text alt-font font-weight-600 text-white-gray letter-spacing-minus-1-half margin-5px-bottom">
-              scroll
-            </span>
-          </a>
-        </div> */}
 			</section>
 
 			<section
@@ -222,9 +206,8 @@ export const HomeLanding = () => {
 						>
 							<div className="w-70 margin-4-rem-bottom sm-no-margin-bottom">
 								<img
-									src={`${
-										require("../media/rbk/sa/IMG-20210711-WA0029.jpg").default
-									}`}
+									src={`${require("../media/rbk/sa/IMG-20210711-WA0029.jpg").default
+										}`}
 									alt=""
 									style={{ borderRadius: 8 }}
 								/>
@@ -234,9 +217,8 @@ export const HomeLanding = () => {
 								data-parallax-layout-ratio="1.1"
 							>
 								<img
-									src={`${
-										require("../media/rbk/sa/IMG-20210711-WA0023.jpg").default
-									}`}
+									src={`${require("../media/rbk/sa/IMG-20210711-WA0023.jpg").default
+										}`}
 									alt=""
 									style={{ borderRadius: 8 }}
 								/>
@@ -274,12 +256,6 @@ export const HomeLanding = () => {
 								RKB also provides serene environment for relaxation and
 								creativity for academic pursuit.
 							</p>
-							{/* <a
-                href="#accommdations"
-                className="btn btn-fancy btn-medium btn-dark-gray margin-20px-top section-link"
-              >
-                Our Accommodations
-              </a> */}
 						</div>
 					</div>
 				</div>
@@ -344,18 +320,6 @@ export const HomeLanding = () => {
 									RKB - Green & Smart Student Accommodations.
 								</span>
 							</h4>
-
-							{/* <p
-                className="text-large line-height-38px w-90 lg-w-100 md-w-80 sm-w-100 wow animate__fadeIn"
-                data-wow-delay="0.4s"
-                style={{
-                  visibility: "visible",
-                  animationDelay: "0.4s",
-                  animationName: "fadeIn",
-                }}
-              >
-                
-              </p> */}
 							<a
 								href="#room-list"
 								className="section-link btn btn-link scroll-down-text btn-extra-large text-white margin-15px-top letter-spacing-1px wow animate__fadeIn"
@@ -374,9 +338,8 @@ export const HomeLanding = () => {
 							className="col-12 col-xl-5 col-lg-6 cover-background md-h-500px sm-h-350px wow animate__fadeIn"
 							data-wow-delay="0.1s"
 							style={{
-								backgroundImage: `url("${
-									require("../media/rbk/20210719_125009_new.jpg").default
-								}")`,
+								backgroundImage: `url("${require("../media/rbk/20210719_125009_new.jpg").default
+									}")`,
 								visibility: "visible",
 								animationDelay: "0.1s",
 								animationName: "fadeIn",

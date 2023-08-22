@@ -4,7 +4,7 @@ import { Career } from "./pages/Career";
 import { ComingSoon } from "./pages/ComingSoon";
 import { Contact } from "./pages/Contact";
 import { Gallery } from "./pages/Gallery";
-import { Home } from "./pages/HomeInterior";
+import { HomeInterior } from "./pages/HomeInterior";
 import { HomeLanding } from "./pages/HomeLanding";
 import { NotFound } from "./pages/NotFound";
 import { Rooms } from "./pages/Rooms";
@@ -17,8 +17,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomeLanding} />
         <Route exact path="/single-room/:roomname" component={SingleRoomView} />
-        {/* <Route exact path="/" component={Landing} /> */}
-        <Route exact path="/home/:type" component={Home} />
+        <Route exact path="/home/:type" component={HomeInterior} />
         <Route exact path="/career" component={Career} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/solutions" component={Services} />

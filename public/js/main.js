@@ -1632,7 +1632,7 @@
           </a>
         </div>
         <div class="all-demo call">
-          <a href="tel:+2348073769560" target="_blank">
+          <a href="tel:+2349058350009" target="_blank">
             <i class="feather icon-feather-x align-middle"></i>
             <div class="theme-wrapper">
               <div>
@@ -1643,7 +1643,7 @@
           </a>
         </div>
         <div class="buy-theme sm-display-none whatsapp">
-          <a href="https://wa.me/+2348073769560?text=Hello,%20I'm%20interested%20in%20your%20accommodation." target="_blank">
+          <a href="https://wa.me/+2349058350009?text=Hello,%20I'm%20interested%20in%20your%20accommodation." target="_blank">
             <i class="feather icon-feather-shopping-bag align-middle"></i>
             <div class="theme-wrapper">
               <div>
@@ -1657,17 +1657,6 @@
     
     `
   ),
-    // t(document).on("click", ".all-demo", function () {
-    //   var e = t(this).parents(".theme-demos");
-    //   if (e.hasClass("active"))
-    //     e.removeClass("active"), t("body").removeClass("overflow-hidden");
-    //   else {
-    //     e.addClass("active"), t("body").addClass("overflow-hidden");
-    //     var a = e.find(".demos-wrapper"),
-    //       o = a.attr("data-scroll-options") || '{ "theme": "dark" }';
-    //     null != o && ((o = t.parseJSON(o)), a.mCustomScrollbar(o));
-    //   }
-    // }),
     t(window).on("load", function () {
       V(),
         t("img:not([data-at2x])").each(function () {

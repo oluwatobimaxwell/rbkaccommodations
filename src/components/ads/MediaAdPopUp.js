@@ -8,7 +8,7 @@ const MediaAdPopUp = () => {
 					<div className="col-12 col-lg-5 col-md-10 bg-white modal-popup-main p-0">
 						<img
 							src={require("../../media/add-image-2.jpg").default}
-							alt="add-image"
+							alt="advertisement"
 						/>
 						<button title="Close (Esc)" type="button" className="mfp-close">
 							×

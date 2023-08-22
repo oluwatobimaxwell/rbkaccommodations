@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Layout } from "../components/Layout";
 
 export const Rooms = () => {
@@ -16,7 +16,6 @@ export const Rooms = () => {
 
 export const RoomsInner = () => {
   const roomsavailable = require("../data/rooms.json");
-  const [current, setcurrent] = useState();
 
   return (
     <section class="border-top border-width-1px border-color-medium-gray padding-six-lr lg-no-padding-lr">
@@ -35,11 +34,6 @@ export const RoomsInner = () => {
                   Female
                 </a>
               </li>
-              {/* <li className="nav">
-                <a data-filter=".male" href="#">
-                  Male
-                </a>
-              </li> */}
             
             </ul>
             {/* end filter navigation */}
@@ -81,6 +75,7 @@ export const RoomItemCard = ({item, id}) => {
       <div className="opacity-extra-medium-2 bg-extra-dark-gray" />
       <div className="position-relative z-index-1 w-100 padding-4-rem-tb lg-padding-5-rem-tb">
         <div style={{display: "flex", margin: "auto", width: "60%"}}>
+          {item.option_prices.option1 && (
           <span className="w-50 d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
             <div className="option-price-value">N{item.option_prices.option1 - 100}k</div>
             <div className="option-price-value strike-through">N{item.option_prices.option1}k</div>
@@ -88,13 +83,16 @@ export const RoomItemCard = ({item, id}) => {
               Option 1
             </label>
           </span>
-          <span className="w-50 d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
-            <div className="option-price-value">N{item.option_prices.option2 - 100}k</div>
-            <div className="option-price-value strike-through">N{item.option_prices.option2}k</div>
-            <label className="option-price-label">
-              Option 2
-            </label>
-          </span>
+          )}
+          {item.option_prices.option2 && (
+            <span className="w-50 d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
+              <div className="option-price-value">N{item.option_prices.option2 - 100}k</div>
+              <div className="option-price-value strike-through">N{item.option_prices.option2}k</div>
+              <label className="option-price-label">
+                Option 2
+              </label>
+            </span>
+          )}
         </div>
         <h4 className="alt-font text-white text-uppercase w-90 lg-w-85 mx-auto margin-35px-bottom font-weight-500 " style={item?.twoinroom ? { marginBottom: 0 }:{}}>
           {item.name}
@@ -190,28 +188,8 @@ export const SingleRoom = ({ room = {}, revId = "" }) => {
   const [showbook, setshowbook] = useState(false);
   const [option, setoption] = useState("option1")
 
-  useEffect(() => {
-    if (room?.name) {
-      setdata(room);
-      setTimeout(() => {
-        addEvent();
-      }, 2000);
-    }
-  }, [room?.name]);
 
-  const addEvent = () => {
-    window[revId] = false;
-    const btk = document.getElementById("bookbtn-" + revId);
-
-    if (btk) {
-      btk.addEventListener("click", (e) => {
-        e.preventDefault();
-        toggleView();
-      });
-    }
-  };
-
-  const toggleView = () => {
+  const toggleView = useCallback(() => {
     window[revId] = !(window[revId] === true);
     const book = document.getElementById("box-area-book-" + revId);
     const box = document.getElementById("box-area-" + revId);
@@ -226,7 +204,31 @@ export const SingleRoom = ({ room = {}, revId = "" }) => {
       box.classList.add("show-in");
       box.classList.remove("show-out");
     }
-  };
+  }, [revId]);
+
+  const addEvent = useCallback(() => {
+    window[revId] = false;
+    const btk = document.getElementById("bookbtn-" + revId);
+
+    if (btk) {
+      btk.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleView();
+      });
+    }
+  }, [revId, toggleView]);
+
+  useEffect(() => {
+    if (room?.name) {
+      setdata(room);
+      setTimeout(() => {
+        addEvent();
+      }, 2000);
+    }
+  }, [addEvent, room, room?.name]);
+
+
+
 
 
   if (!data?.name) return <div />;
@@ -394,7 +396,7 @@ export const SingleRoom = ({ room = {}, revId = "" }) => {
   );
 };
 
-export const SwiperSlide = ({ slides = {}, book }) => {
+export const SwiperSlide = ({ slides = {} }) => {
   useEffect(() => {
     window.$ &&
       window.$(".popup-with-form").on("click", () => {
@@ -410,8 +412,6 @@ export const SwiperSlide = ({ slides = {}, book }) => {
           data-slider-options='{ "slidesPerView": 1, "loop": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav" }, "autoplay": { "delay": 6000, "disableOnInteraction": false },  "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'
         >
           <div className="swiper-wrapper">
-            {/* start slider item */}
-            {/* end slider item */}
             {(slides?.media &&
               slides?.media.length > 0 &&
               slides?.media.map((media, i) => {
@@ -434,21 +434,6 @@ export const SwiperSlide = ({ slides = {}, book }) => {
                             <br />
                             {media?.title}
                           </h2>
-                          {/* <div
-                            className="btn-dual book-room-btn"
-                            onClick={(e) => {
-                              e.preventDefault();
-                              alert("Tobi");
-                              book && book();
-                            }}
-                          >
-                            <a
-                              href="#"
-                              className="btn btn-fancy btn-medium btn-fast-yellow margin-25px-right d-table d-sm-inline-block xs-margin-auto-lr xs-margin-15px-bottom"
-                            >
-                              Book Now
-                            </a>
-                          </div> */}
                         </div>
                       </div>
                     </div>
@@ -494,20 +479,11 @@ export const SwiperSlide = ({ slides = {}, book }) => {
   );
 };
 
-export const BookingForm = ({ data, id, toggle }) => {
+export const BookingForm = ({ id, toggle }) => {
   const [form, setform] = useState({});
 
-  useEffect(() => {
-    const btn = document.getElementById("submit-btn-" + id);
-    if (btn) {
-      btn.addEventListener("click", (e) => {
-        e.preventDefault();
-        submit(btn);
-      });
-    }
-  }, []);
 
-  const submit = (e) => {
+  const submit = useCallback( (e) => {
     e.style.cursor = "wait !important";
     var d = document.getElementById("book-form-" + id);
     if (d) {
@@ -521,7 +497,18 @@ export const BookingForm = ({ data, id, toggle }) => {
       alert("Thank you for your reservation! We will contact you shortly!");
       toggle();
     }
-  };
+  }, [id, toggle]);
+  
+  useEffect(() => {
+    const btn = document.getElementById("submit-btn-" + id);
+    if (btn) {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        submit(btn);
+      });
+    }
+  }, [id, submit]);
+
   return (
     <div className="row align-items-center justify-content-center text-center text-md-left">
       <div className="col-12 col-md-10 col-lg-10 offset-lg-1 notify-form padding-80px-bottom md-padding-30px-bottom sm-no-padding-bottom">

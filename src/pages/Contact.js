@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
 import { Layout } from "../components/Layout";
 
@@ -28,14 +30,6 @@ const addresses = [
     flag: "https://www.countryflags.com/wp-content/uploads/nigeria-flag-png-xl.png",
     bg: "images/contact-us-classic-bg-2.jpg",
   },
-  // {
-  //   name: "New Jersey - USA",
-  //   address: "11 Kinder Drive Bloomfield, New Jersey 07003, United States",
-  //   phone: "07054545477",
-  //   email: "info@gankcoenergy.com",
-  //   flag: "https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png",
-  //   bg: "images/contact-us-classic-bg-3.jpg",
-  // },
 ];
 
 export const Contact = () => {

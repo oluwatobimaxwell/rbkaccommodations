@@ -111,6 +111,7 @@ export const ComingSoon = ({
                       className="facebook text-white"
                       href="https://www.facebook.com/"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i className="fab fa-facebook-f" />
                     </a>
@@ -120,6 +121,7 @@ export const ComingSoon = ({
                       className="dribbble text-white"
                       href="http://www.dribbble.com/"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i className="fab fa-dribbble" />
                     </a>
@@ -129,6 +131,7 @@ export const ComingSoon = ({
                       className="twitter text-white"
                       href="http://www.twitter.com/"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i className="fab fa-twitter" />
                     </a>
@@ -138,6 +141,7 @@ export const ComingSoon = ({
                       className="instagram text-white"
                       href="http://www.instagram.com/"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i className="fab fa-instagram" />
                     </a>
@@ -147,6 +151,7 @@ export const ComingSoon = ({
                       className="linkedin text-white"
                       href="http://www.linkedin.com/"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i className="fab fa-linkedin-in" />
                     </a>

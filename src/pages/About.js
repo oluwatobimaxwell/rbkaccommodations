@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/heading-has-content */
 import React from "react";
 import { Layout } from "../components/Layout";
 
@@ -196,150 +197,6 @@ export const About = () => {
           </div>
         </div>
       </section>
-      {/* end section */}
-
-      {/* start section */}
-      {/* <section className="wow animate__fadeIn">
-        <div className="container">
-          <div className="row align-items-center justify-content-center">
-            <div className="col-12 col-xl-7 col-lg-8 col-md-7 col-sm-10 text-center text-md-left sm-margin-30px-bottom">
-              <h5 className="alt-font text-extra-dark-gray font-weight-500 mb-0">
-                <strong className="text-fast-blue text-decoration-underline">
-                  25 years
-                </strong>{" "}
-                we have created websites for global brands. Our success story.
-              </h5>
-            </div>
-            <div className="col-12 col-xl-3 offset-xl-2 col-lg-4 col-md-5 text-center text-md-right">
-              <a
-                href="https://www.youtube.com/watch?v=g0f_BRYJLJE"
-                className="popup-youtube btn btn-extra-large btn-gradient-fast-blue-purple btn-round-edge"
-              >
-                <i
-                  className="fa fa-arrow-right line-icon-Video-5 icon-large d-inline-block no-margin-left margin-15px-right align-middle"
-                  aria-hidden="true"
-                />{" "}
-                <div className="d-inline-block text-left align-middle">
-                  <span className="opacity-6 text-medium d-block font-weight-500 line-height-15px">
-                    Story video
-                  </span>
-                  Watch
-                </div>
-              </a>
-            </div>
-          </div>
-          <div className="row row-cols-1 row-cols-md-4 row-cols-sm-2 client-logo-style-01 align-items-center margin-7-half-rem-top sm-margin-5-rem-top">
-            <div className="col text-center margin-30px-bottom sm-margin-15px-bottom wow animate__fadeIn">
-              <div className="client-box padding-15px-all border border-color-dark-gray">
-                <a href="#">
-                  <img
-                    className="client-box-image"
-                    src="images/client-logo-35.png"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-            <div
-              className="col text-center margin-30px-bottom sm-margin-15px-bottom wow animate__fadeIn"
-              data-wow-delay="0.2s"
-            >
-              <div className="client-box padding-15px-all border border-color-dark-gray">
-                <a href="#">
-                  <img
-                    className="client-box-image"
-                    src="images/client-logo-37.png"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-            <div
-              className="col text-center margin-30px-bottom sm-margin-15px-bottom wow animate__fadeIn"
-              data-wow-delay="0.4s"
-            >
-              <div className="client-box padding-15px-all border border-color-dark-gray">
-                <a href="#">
-                  <img
-                    className="client-box-image"
-                    src="images/client-logo-33.png"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-            <div
-              className="col text-center margin-30px-bottom sm-margin-15px-bottom wow animate__fadeIn"
-              data-wow-delay="0.6s"
-            >
-              <div className="client-box padding-15px-all border border-color-dark-gray">
-                <a href="#">
-                  <img
-                    className="client-box-image"
-                    src="images/client-logo-38.png"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="col text-center sm-margin-15px-bottom wow animate__fadeIn">
-              <div className="client-box padding-15px-all border border-color-dark-gray">
-                <a href="#">
-                  <img
-                    className="client-box-image"
-                    src="images/client-logo-39.png"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-            <div
-              className="col text-center sm-margin-15px-bottom wow animate__fadeIn"
-              data-wow-delay="0.2s"
-            >
-              <div className="client-box padding-15px-all border border-color-dark-gray">
-                <a href="#">
-                  <img
-                    className="client-box-image"
-                    src="images/client-logo-34.png"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-            <div
-              className="col text-center xs-margin-15px-bottom wow animate__fadeIn"
-              data-wow-delay="0.4s"
-            >
-              <div className="client-box padding-15px-all border border-color-dark-gray">
-                <a href="#">
-                  <img
-                    className="client-box-image"
-                    src="images/client-logo-40.png"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-            <div
-              className="col text-center wow animate__fadeIn"
-              data-wow-delay="0.6s"
-            >
-              <div className="client-box padding-15px-all border border-color-dark-gray">
-                <a href="#">
-                  <img
-                    className="client-box-image"
-                    src="images/client-logo-36.png"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* end section */}
-      {/* start section */}
       <section className=" bg-light-gray wow animate__fadeIn">
         <div className="container">
           <div className="row justify-content-center">
@@ -670,36 +527,7 @@ export const About = () => {
                         >
                           {person.note}
                         </div>
-                        {/* <div className="social-icon w-100 position-absolute bottom-40px left-0px">
-                      <a
-                        href="https://www.facebook.com/"
-                        target="_blank"
-                        className="icon-very-small text-white"
-                      >
-                        <i aria-hidden="true" className="fab fa-facebook-f" />
-                      </a>
-                      <a
-                        href="https://twitter.com/"
-                        target="_blank"
-                        className="icon-very-small text-white"
-                      >
-                        <i aria-hidden="true" className="fab fa-twitter" />
-                      </a>
-                      <a
-                        href="https://www.dribbble.com/"
-                        target="_blank"
-                        className="icon-very-small text-white"
-                      >
-                        <i aria-hidden="true" className="fab fa-dribbble" />
-                      </a>
-                      <a
-                        href="https://www.linkedin.com/"
-                        target="_blank"
-                        className="icon-very-small text-white"
-                      >
-                        <i aria-hidden="true" className="fab fa-linkedin-in" />
-                      </a>
-                    </div> */}
+                       
                       </div>
                     </div>
                     <figcaption className="team-member-position padding-35px-tb text-center">

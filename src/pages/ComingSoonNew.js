@@ -1,6 +1,5 @@
 import React from "react";
 import { Layout } from "../components/Layout";
-import { ModalBox, RoomItemCard, SingleRoom } from "./Rooms";
 
 export const Home = ({ match }) => {
   const type = (match?.params?.type || "").replace(/home/g, "");

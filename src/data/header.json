@@ -8,16 +8,16 @@
     "link": "#",
     "items": [
       {
-        "name": "Female",
-        "link": "/home/female"
+        "name": "Female Ochacho",
+        "link": "/home/female-ochacho"
       },
       {
-        "name": "Male",
-        "link": "/home/male"
+        "name": "Female Metroview",
+        "link": "/home/female-metroview"
       },
       {
-        "name": "Coming Soon",
-        "link": "/coming-soon"
+        "name": "Male Metroview",
+        "link": "/home/male-metroview"
       }
     ]
   },
