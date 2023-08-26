@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useCallback, useEffect, useState } from "react";
+import numeral from "numeral"
 import { Layout } from "../components/Layout";
 
 export const Rooms = () => {
@@ -34,7 +35,7 @@ export const RoomsInner = () => {
                   Female
                 </a>
               </li>
-            
+
             </ul>
             {/* end filter navigation */}
           </div>
@@ -43,12 +44,12 @@ export const RoomsInner = () => {
       <div className="container-fluid rooms">
         <div className="row">
           <div className="col-12 blog-content">
-          
+
             <ul className="blog-clean blog-wrapper grid grid-loading grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large">
               <li className="grid-sizer" />
               {roomsavailable.filter(({ category }) => category === "female").map((item, i) => {
                 return (
-                   <RoomItemCard item={item} key={"shhshs-wehe-"+i} />
+                  <RoomItemCard item={item} key={"shhshs-wehe-" + i} />
                 );
               })}
             </ul>
@@ -60,112 +61,128 @@ export const RoomsInner = () => {
 };
 
 
-export const RoomItemCard = ({item, id}) => {
+export const RoomItemCard = ({ item, id }) => {
   return (
     <li
-    className={`grid-item ${item.category} wow animate__fadeIn`}
-  >
-     <div
-      className="position-relative h-100 d-flex align-items-center cover-background text-center"
-      style={{
-        backgroundImage: `url("${item?.mediadata ? item?.mediadata?.location+"/image-"+(item?.mediadata?.index || 0)+".jpg": item?.image}")`,
-        borderRadius: 8,
-      }}
+      className={`grid-item ${item.category} wow animate__fadeIn`}
     >
-      <div className="opacity-extra-medium-2 bg-extra-dark-gray" />
-      <div className="position-relative z-index-1 w-100 padding-4-rem-tb lg-padding-5-rem-tb">
-        <div style={{display: "flex", margin: "auto", width: "60%"}}>
-          {item.option_prices.option1 && (
-          <span className="w-50 d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
-            <div className="option-price-value">N{item.option_prices.option1 - 100}k</div>
-            <div className="option-price-value strike-through">N{item.option_prices.option1}k</div>
-            <label className="option-price-label">
-              Option 1
-            </label>
-          </span>
-          )}
-          {item.option_prices.option2 && (
-            <span className="w-50 d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
-              <div className="option-price-value">N{item.option_prices.option2 - 100}k</div>
-              <div className="option-price-value strike-through">N{item.option_prices.option2}k</div>
-              <label className="option-price-label">
-                Option 2
-              </label>
-            </span>
-          )}
-        </div>
-        <h4 className="alt-font text-white text-uppercase w-90 lg-w-85 mx-auto margin-35px-bottom font-weight-500 " style={item?.twoinroom ? { marginBottom: 0 }:{}}>
-          {item.name}
-          {item.twoinroom && (
-            <>
-            <br/>
-          <div style={{fontSize: 14, marginTop: -12}}>[Two In A Room]</div>
-            </>
-          )}
-        </h4>
+      <div
+        className="position-relative h-100 d-flex align-items-center cover-background text-center"
+        style={{
+          backgroundImage: `url("${item?.mediadata ? item?.mediadata?.location + "/image-" + (item?.mediadata?.index || 0) + ".jpg" : item?.image}")`,
+          borderRadius: 8,
+        }}
+      >
+        <div className="opacity-extra-medium-2 bg-extra-dark-gray" />
+        <div className="position-relative z-index-1 w-100 padding-4-rem-tb lg-padding-5-rem-tb">
+          <div style={{ display: "flex", margin: "auto", width: "60%" }}>
+            {item.option_prices.option1 && (
+              <span className="w-50 d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
+                <div className="option-price-value">N{numeral(item.option_prices.option1 * 1000).format('0.00a')}</div>
+                {/* <div className="option-price-value strike-through">N{item.option_prices.option1}k</div> */}
+                <label className="option-price-label">
+                  Option 1
+                </label>
+              </span>
+            )}
+            {item.option_prices.option2 && (
+              <span className="w-50 d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
+                <div className="option-price-value">N{numeral(item.option_prices.option2 * 1000).format('0.00a')}</div>
+                {/* <div className="option-price-value strike-through">N{item.option_prices.option2}k</div> */}
+                <label className="option-price-label">
+                  Option 2
+                </label>
+              </span>
+            )}
+          </div>
+          <h4 className="alt-font text-white text-uppercase w-90 lg-w-85 mx-auto margin-35px-bottom font-weight-500 " style={item?.twoinroom ? { marginBottom: 0 } : {}}>
+            {item.name}
+            {item.twoinroom && (
+              <>
+                <br />
+                <div style={{ fontSize: 14, marginTop: -12 }}>[Two In A Room]</div>
+              </>
+            )}
+            {item.roominfo && (
+              <>
+                <br />
+                <div style={{ fontSize: 14, marginTop: -12 }}>[{item.roominfo}]</div>
+              </>
+            )}
+          </h4>
 
-        <div
-          style={{
-            borderRadius: "8px",
-            display: "flex",
-            width: "max-content",
-            margin: "auto",
-            marginBottom: "15px",
-          }}
-        >
           <div
-            className="padding-3-half-rem-lr padding-10px-tb border-right border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-20px-bottom xs-no-border-right"
             style={{
+              borderRadius: "8px",
               display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
+              width: "max-content",
+              margin: "auto",
+              marginBottom: "15px",
             }}
           >
-            <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom margin-5px-right">
-              <i className="feather  icon-feather-user   " />
-            </span>
-            <span
-              className="alt-font text-medium text-uppercase d-inline-block d-sm-block"
-              style={{ color: "#c9c7c5" }}
+            <div
+              className="padding-3-half-rem-lr padding-10px-tb border-right border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-20px-bottom xs-no-border-right"
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+              }}
             >
-              {item.category}
-            </span>
-          </div>
-          <div
-            className="padding-3-half-rem-lr padding-10px-tb border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-30px-bottom xs-no-border-right"
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-            }}
-          >
-            <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom margin-5px-right">
-              <i className="feather icon-feather-map-pin " />
-            </span>
-            <span
-              className="alt-font text-medium text-uppercase d-inline-block d-sm-block"
-              style={{ color: "#c9c7c5" }}
+              <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom margin-5px-right">
+                <i className="feather  icon-feather-user   " />
+              </span>
+              <span
+                className="alt-font text-medium text-uppercase d-inline-block d-sm-block"
+                style={{ color: "#c9c7c5" }}
+              >
+                {item.category?.includes("female") ? "Female" : "Male"}
+              </span>
+            </div>
+            <div
+              className="padding-3-half-rem-lr padding-10px-tb border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-30px-bottom xs-no-border-right"
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+              }}
             >
-              {item.location}
-            </span>
+              <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom margin-5px-right">
+                <i className="feather icon-feather-map-pin " />
+              </span>
+              <span
+                className="alt-font text-medium text-uppercase d-inline-block d-sm-block"
+                style={{ color: "#c9c7c5" }}
+              >
+                {item.location}
+              </span>
+            </div>
           </div>
-        </div>
+          {item.cta_booknow ? (
+            <a
+              href={`https://wa.me/+2349058350009?text=Hello, I would like to book the ${item.category.toUpperCase()},%20${item.name}%20@${item.location}.`}
+              target="_blank"
+              className={" btn btn-medium btn-fancy btn-round-edge-small btn-box-shadow btn-white section-link"}
+              rel="noreferrer" 
+            >
+              Book Now
+            </a>
+          ) : (
+            <a
+              href={`/single-room/${item.name}?location=${item.location}`}
+              className={
+                " btn btn-medium btn-fancy btn-round-edge-small btn-box-shadow btn-white section-link"
+              }
+            >
+              View Room
+            </a>
+          )}
 
-        <a
-          // href={"#view-room-" + id}
-          href={`/single-room/${item.name}?location=${item.location}`}
-          className={
-            " btn btn-medium btn-fancy btn-round-edge-small btn-box-shadow btn-white section-link"
-          }
-        >
-          View Room
-        </a>
-        <ModalBox id={"view-room-" + id}>
-          <SingleRoom room={item}  />
-        </ModalBox>
+          <ModalBox id={"view-room-" + id}>
+            <SingleRoom room={item} />
+          </ModalBox>
+        </div>
       </div>
-    </div>
-  </li>
+    </li>
   )
 }
 
@@ -174,9 +191,8 @@ export const ModalBox = ({ children, id, width }) => {
   return (
     <div
       id={id}
-      className={`white-popup-block col-xl-${
-        width || 8
-      } col-lg-7 col-sm-9  p-0 mx-auto mfp-hide border-radius-15px m-4`}
+      className={`white-popup-block col-xl-${width || 8
+        } col-lg-7 col-sm-9  p-0 mx-auto mfp-hide border-radius-15px m-4`}
     >
       {children}
     </div>
@@ -267,33 +283,33 @@ export const SingleRoom = ({ room = {}, revId = "" }) => {
               className="col-12 col-lg-6 col-md-6 architecture fancy-text-box-style-01 text-center text-md-left md-margin-50px-bottom sm-margin-50px-bottom wow animate__fadeIn"
               data-wow-delay="0.1s"
             >
-              <div className="architecture-overlap"  style={{borderRadius: 8, display: "flex", margin: 0, marginBottom: 15}}>
-              <div className="padding-3-half-rem-lr padding-10px-tb border-right border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-20px-bottom xs-no-border-right">
-                <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom">
-                  <i className="feather  icon-feather-user   " />
-                </span>
-                <span className="alt-font text-medium text-uppercase d-inline-block d-sm-block">
-                  {data?.category}
-                </span>
+              <div className="architecture-overlap" style={{ borderRadius: 8, display: "flex", margin: 0, marginBottom: 15 }}>
+                <div className="padding-3-half-rem-lr padding-10px-tb border-right border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-20px-bottom xs-no-border-right">
+                  <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom">
+                    <i className="feather  icon-feather-user   " />
+                  </span>
+                  <span className="alt-font text-medium text-uppercase d-inline-block d-sm-block">
+                    {data?.category}
+                  </span>
+                </div>
+                <div className="padding-3-half-rem-lr padding-10px-tb border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-30px-bottom xs-no-border-right">
+                  <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom">
+                    <i className="feather icon-feather-map-pin " />
+                  </span>
+                  <span className="alt-font text-medium text-uppercase d-inline-block d-sm-block">
+                    {data?.location}
+                  </span>
+                </div>
               </div>
-              <div className="padding-3-half-rem-lr padding-10px-tb border-color-white-transparent xl-padding-1-half-rem-lr md-padding-3-rem-lr xs-no-padding xs-margin-30px-bottom xs-no-border-right">
-                <span className="alt-font font-weight-500 text-white d-inline-block d-sm-block margin-5px-bottom xs-margin-10px-right xs-no-margin-bottom">
-                  <i className="feather icon-feather-map-pin " />
-                </span>
-                <span className="alt-font text-medium text-uppercase d-inline-block d-sm-block">
-                  {data?.location}
-                </span>
-              </div>
-              </div>
-              
 
 
-              <div className="fancy-text-box padding-2-half-rem-all md-padding-4-rem-all xs-padding-30px-all"  style={{minHeight: 300}} >
+
+              <div className="fancy-text-box padding-2-half-rem-all md-padding-4-rem-all xs-padding-30px-all" style={{ minHeight: 300 }} >
                 <div className="fancy-text-box-border-left border-color-white-transparent" style={{ borderRadius: 8 }} />
 
                 <div className="w-100">
-                  <a onClick={() => setoption("option1")} href="#" className={`w-50 btn btn-large btn-${option === "option1"?"transparent-":""}white btn-slide-up-bg d-table d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr`}>Option 1<span className={option === "option1"?"bg-white":"bg-transparent"} /></a>
-                  <a onClick={() => alert("option2")} href="#" className={`w-50 btn btn-large btn-${option === "option2"?"transparent-":""}white btn-slide-up-bg d-table d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr`}>Option 2<span className={option === "option2"?"bg-white":"bg-transparent"} /></a>
+                  <a onClick={() => setoption("option1")} href="#" className={`w-50 btn btn-large btn-${option === "option1" ? "transparent-" : ""}white btn-slide-up-bg d-table d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr`}>Option 1<span className={option === "option1" ? "bg-white" : "bg-transparent"} /></a>
+                  <a onClick={() => alert("option2")} href="#" className={`w-50 btn btn-large btn-${option === "option2" ? "transparent-" : ""}white btn-slide-up-bg d-table d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr`}>Option 2<span className={option === "option2" ? "bg-white" : "bg-transparent"} /></a>
                 </div>
                 <h1
                   className="alt-font w-100 text-center fancy-text-content font-weight-600 text-parrot-green d-inline-block align-middle letter-spacing-minus-5px"
@@ -304,12 +320,12 @@ export const SingleRoom = ({ room = {}, revId = "" }) => {
                 <div className="alt-font w-100 text-center text-extra-medium text-white text-left d-inline-block align-middle w-90px mx-auto line-height-24px position-relative top-minus-4px">
                   Per Student Per Semester
                 </div>
-                <div className="fancy-text-box-border-right border-color-white-transparent" style={{ borderRadius: 8 }}/>
+                <div className="fancy-text-box-border-right border-color-white-transparent" style={{ borderRadius: 8 }} />
               </div>
               <button
                 id={"bookbtn-" + revId}
                 className="bookbtn btn btn-large mt-4 btn-transparent-white w-100 d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr pointer-events"
-                style={{borderRadius: 8}}
+                style={{ borderRadius: 8 }}
               >
                 Book Now
               </button>
@@ -361,9 +377,8 @@ export const SingleRoom = ({ room = {}, revId = "" }) => {
                         return (
                           <div
                             id={"tab-" + content.name}
-                            className={`tab-pane fade ${
-                              i === 0 ? "in active show" : ""
-                            }`}
+                            className={`tab-pane fade ${i === 0 ? "in active show" : ""
+                              }`}
                             key={"tab-" + content.name}
                           >
                             <p
@@ -379,15 +394,15 @@ export const SingleRoom = ({ room = {}, revId = "" }) => {
                   </div>
                 </div>
               )) || (
-                <p
-                  className="w-100 lg-w-100 m-0 room-read-content"
-                  dangerouslySetInnerHTML={{
-                    __html:
-                      data.content ||
-                      `<div class="empty-content"> <i class="feather  icon-feather-alert-circle" ></i> Empty content!!!</div>`,
-                  }}
-                />
-              )}
+                  <p
+                    className="w-100 lg-w-100 m-0 room-read-content"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        data.content ||
+                        `<div class="empty-content"> <i class="feather  icon-feather-alert-circle" ></i> Empty content!!!</div>`,
+                    }}
+                  />
+                )}
             </div>
           </div>
         </div>
@@ -440,24 +455,24 @@ export const SwiperSlide = ({ slides = {} }) => {
                   </div>
                 );
               })) || (
-              <div
-                className="swiper-slide cover-background"
-                style={{
-                  backgroundImage: `url("${slides.image}")`,
-                }}
-              >
-                <div className="opacity-light opacity-4 bg-extra-dark-gray" />
-                <div className="container h-100">
-                  <div className="row justify-content-center h-100">
-                    <div className="col-12 col-lgxl-10 col-lg-12 d-flex flex-column justify-content-center h-100 text-center">
-                      <h2 className="alt-font font-weight-300 text-white margin-4-rem-bottom">
-                        <span className="font-weight-600">{slides.name}</span>{" "}
-                      </h2>
+                <div
+                  className="swiper-slide cover-background"
+                  style={{
+                    backgroundImage: `url("${slides.image}")`,
+                  }}
+                >
+                  <div className="opacity-light opacity-4 bg-extra-dark-gray" />
+                  <div className="container h-100">
+                    <div className="row justify-content-center h-100">
+                      <div className="col-12 col-lgxl-10 col-lg-12 d-flex flex-column justify-content-center h-100 text-center">
+                        <h2 className="alt-font font-weight-300 text-white margin-4-rem-bottom">
+                          <span className="font-weight-600">{slides.name}</span>{" "}
+                        </h2>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            )}
+              )}
           </div>
           {/* start slider arrow */}
 
@@ -483,7 +498,7 @@ export const BookingForm = ({ id, toggle }) => {
   const [form, setform] = useState({});
 
 
-  const submit = useCallback( (e) => {
+  const submit = useCallback((e) => {
     e.style.cursor = "wait !important";
     var d = document.getElementById("book-form-" + id);
     if (d) {
@@ -498,7 +513,7 @@ export const BookingForm = ({ id, toggle }) => {
       toggle();
     }
   }, [id, toggle]);
-  
+
   useEffect(() => {
     const btn = document.getElementById("submit-btn-" + id);
     if (btn) {

@@ -7,8 +7,8 @@
     "image": "../rbk/sa/IMG-20210711-WA0007.jpg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": null,
-      "option2": null
+      "option1": 850,
+      "option2": 950
     },
     "mediadata": {
       "location": "../rbk/rooms/premium-female",
@@ -52,8 +52,8 @@
     "image": "../rbk/sa/IMG-20210711-WA0007.jpg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": null,
-      "option2": null
+      "option1": 700,
+      "option2": 800
     },
     "mediadata": {
       "location": "../rbk/rooms/premium-ii-female",
@@ -93,8 +93,8 @@
     "image": "../rbk/sa/IMG-20210711-WA0006.jpg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": null,
-      "option2": null
+      "option1": 900,
+      "option2": 1000
     },
     "mediadata": {
       "location": "../rbk/rooms/premium-plus-female",
@@ -198,8 +198,8 @@
     "image": "../rbk/WhatsAppImage2021-07-18-1.17.44 PM.jpeg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": null,
-      "option2": null
+      "option1": 950,
+      "option2": 1050
     },
     
     "features": [
@@ -258,8 +258,8 @@
     "image": "../rbk/sa/IMG_9875.JPG",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": null,
-      "option2": null
+      "option1": 800,
+      "option2": 900
     },
     "features": [
       {
@@ -332,8 +332,8 @@
   "image": "../rbk/sa/IMG-20210709-WA0007.jpg",
   "location": "Gwarinpa, Abuja",
   "option_prices": {
-    "option1": null,
-    "option2": null
+    "option1": 700,
+    "option2": 800
   },
   "mediadata": {
     "location": "../rbk/rooms/premium-ii-male",
@@ -396,6 +396,64 @@
     {
       "title": null,
       "image": "../rbk/sa/IMG-20210711-WA0056.jpg"
+    }
+  ],
+  "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
+},
+{
+  "name": "Room of 2",
+  "roominfo": "Breakfast & dinner inclusive",
+  "price": "700",
+  "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
+  "category": "female-metroview",
+  "image": "../rbk/metro-view.jpg",
+  "location": "Metroview, Abuja",
+  "option_prices": {
+    "option1": 900
+  },
+  "features": [
+    {
+      "icon": "line-icon-Alarm-Clock2",
+      "title": "Private Kitchen"
+    }
+  ],
+  "cta_booknow": true,
+  "selectedmedia": [
+    "../rbk/metro-view.jpg"
+  ],
+  "media": [
+    {
+      "title": null,
+      "image": "../rbk/metro-view.jpg"
+    }
+  ],
+  "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
+},
+{
+  "name": "Room of 4",
+  "roominfo": "Breakfast & dinner inclusive",
+  "price": "700",
+  "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
+  "category": "female-metroview",
+  "image": "../rbk/metro-view.jpg",
+  "location": "Metroview, Abuja",
+  "option_prices": {
+    "option1": 800
+  },
+  "features": [
+    {
+      "icon": "line-icon-Alarm-Clock2",
+      "title": "Private Kitchen"
+    }
+  ],
+  "cta_booknow": true,
+  "selectedmedia": [
+    "../rbk/metro-view.jpg"
+  ],
+  "media": [
+    {
+      "title": null,
+      "image": "../rbk/metro-view.jpg"
     }
   ],
   "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
