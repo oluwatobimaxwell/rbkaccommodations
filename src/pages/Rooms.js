@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useCallback, useEffect, useState } from "react";
-import numeral from "numeral"
 import { Layout } from "../components/Layout";
+import { usePriceFormat } from "../hooks/usePriceFormat";
+import { makeWhatsappMessage } from "../hooks/makeWhatsappMessage";
 
 export const Rooms = () => {
   return (
@@ -35,6 +36,11 @@ export const RoomsInner = () => {
                   Female
                 </a>
               </li>
+              <li className="nav">
+                <a data-filter=".male" href="#">
+                  Male
+                </a>
+              </li>
 
             </ul>
             {/* end filter navigation */}
@@ -47,7 +53,7 @@ export const RoomsInner = () => {
 
             <ul className="blog-clean blog-wrapper grid grid-loading grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large">
               <li className="grid-sizer" />
-              {roomsavailable.filter(({ category }) => category === "female").map((item, i) => {
+              {roomsavailable.map((item, i) => {
                 return (
                   <RoomItemCard item={item} key={"shhshs-wehe-" + i} />
                 );
@@ -62,9 +68,12 @@ export const RoomsInner = () => {
 
 
 export const RoomItemCard = ({ item, id }) => {
+
+  const [price1, price2] = usePriceFormat(item);
+
   return (
     <li
-      className={`grid-item ${item.category} wow animate__fadeIn`}
+      className={`grid-item ${item.category.includes("female") ? "female" : "male"} wow animate__fadeIn`}
     >
       <div
         className="position-relative h-100 d-flex align-items-center cover-background text-center"
@@ -76,18 +85,18 @@ export const RoomItemCard = ({ item, id }) => {
         <div className="opacity-extra-medium-2 bg-extra-dark-gray" />
         <div className="position-relative z-index-1 w-100 padding-4-rem-tb lg-padding-5-rem-tb">
           <div style={{ display: "flex", margin: "auto", width: "60%" }}>
-            {item.option_prices.option1 && (
-              <span className="w-50 d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
-                <div className="option-price-value">N{numeral(item.option_prices.option1 * 1000).format('0.00a')}</div>
+            {price1 && (
+              <span className={`w-${!!(price1 && price2) ? "50" : "100"} d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom`}>
+                <div className="option-price-value">N {price1}</div>
                 {/* <div className="option-price-value strike-through">N{item.option_prices.option1}k</div> */}
                 <label className="option-price-label">
                   Option 1
                 </label>
               </span>
             )}
-            {item.option_prices.option2 && (
+            {price2 && (
               <span className="w-50 d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
-                <div className="option-price-value">N{numeral(item.option_prices.option2 * 1000).format('0.00a')}</div>
+                <div className="option-price-value">N {price2}</div>
                 {/* <div className="option-price-value strike-through">N{item.option_prices.option2}k</div> */}
                 <label className="option-price-label">
                   Option 2
@@ -159,10 +168,10 @@ export const RoomItemCard = ({ item, id }) => {
           </div>
           {item.cta_booknow ? (
             <a
-              href={`https://wa.me/+2349058350009?text=Hello, I would like to book the ${item.category.toUpperCase()},%20${item.name}%20@${item.location}.`}
+              href={makeWhatsappMessage(item)}
               target="_blank"
               className={" btn btn-medium btn-fancy btn-round-edge-small btn-box-shadow btn-white section-link"}
-              rel="noreferrer" 
+              rel="noreferrer"
             >
               Book Now
             </a>
@@ -273,12 +282,6 @@ export const SingleRoom = ({ room = {}, revId = "" }) => {
       >
         <div className="containerx">
           <div className="row justify-content-center">
-
-            {/* <div className="col-12 col-lg-5 col-lg-6  bottom-0px right-0px d-flex flex-column flex-sm-row padding-1-half-rem-tb padding-2-rem-lr xl-padding-2-rem-lr lg-padding-3-rem-tb sm-position-relative sm-no-padding-top text-center text-sm-left architecture-overlap" style={{borderRadius: 8}}>
-              
-            </div>
-
-       */}
             <div
               className="col-12 col-lg-6 col-md-6 architecture fancy-text-box-style-01 text-center text-md-left md-margin-50px-bottom sm-margin-50px-bottom wow animate__fadeIn"
               data-wow-delay="0.1s"

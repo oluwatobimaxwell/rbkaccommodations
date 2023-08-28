@@ -126,27 +126,12 @@
     "bottombg": "/rbk/20210719_125151.jpg"
   },
   "male-metroview": {
-    "location": "Gwarinpa, Abuja",
+    "location": "Metroview Estate, Abuja",
     "slider": [
       {
-        "image": "/rbk/sa/EA42832D-8B27-44DB-B366-00BA96F963AD.JPG",
-        "title": "Female Hostels",
+        "image": "/rbk/metro-view.jpg",
+        "title": "Male Hostels",
         "desc": "Welcome to RKB"
-      },
-      {
-        "image": "/rbk/20210719_123600.jpg",
-        "title": "EN-SUITE ROOMS",
-        "desc": "FULLY FURNISHED"
-      },
-      {
-        "image": "/rbk/20210719_114237.jpg",
-        "title": "FREE WIFI",
-        "desc": "EASY CONNECTIVITY"
-      },
-      {
-        "image": "/rbk/20210719_125009new.jpg",
-        "title": "SECURITY & POWER",
-        "desc": "GUARANTEED 24/7"
       }
     ],
     "fancy": [
@@ -171,44 +156,13 @@
         "desc": "All rooms with AC"
       }
     ],
-    "image": "/rbk/20210719_124545.jpg",
-    "features": [
-      {
-        "icon": "  line-icon-Plates  ",
-        "title": "skylight restaurant"
-      },
-      {
-        "icon": " line-icon-Address-Book2 ",
-        "title": "reading table and chair"
-      },
-      {
-        "icon": "  line-icon-Bio-Hazard  ",
-        "title": "refrigerator with freezer"
-      },
-      {
-        "icon": " line-icon-Monitor-4 ",
-        "title": "smart television"
-      },
-      {
-        "icon": " line-icon-Hanger ",
-        "title": "wardrobe"
-      },
-      {
-        "icon": "  line-icon-Phone-3  ",
-        "title": "intracom"
-      }
-    ],
-    "privatefeatures": [
-      {
-        "icon": " line-icon-Alarm-Clock2 ",
-        "title": "shared inverter microwave"
-      }
-    ],
-    "video": "https://www.youtube.com/watch?v=8m971-dX-V4",
+    "image": "/rbk/metroview-gmap.jpeg",
+    "features": [],
+    "privatefeatures": [],
     "title": "Beautifully designed to suit you.",
-    "blacktitle": "RKB Female Student Accommodation at Ochacho Real Homes Ltd, Abuja.",
-    "about": "<p class=\"w-85 xl-w-100\">RKB Female Student Accommodation is located at Ochacho Real Homes Ltd, Karmo close to Nizamiye (Turkish) Hospital.    The facility was built in 2021 has eighteen(18) fully furnished en suite  rooms. In addition, each room has its own air conditioner. Rooms on the topmost floor come with private kitchens. The facility has skylight(clear glass) restaurant. Gym and outdoor games are available.<br/> <br/>The female accommodation is about 15minutes drive to both Nile & Baze Universities. <br/><br/>RKB Female Students Accommodation is not far from a filling station, restaurant, grocery stores and a farmers' market.</p>",
-    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2425.396125514883!2d7.361628358944251!3d9.057643472406733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e75d8001878af%3A0x4a9e299b57c42545!2sOchacho%20Real-Homes%20LTD!5e0!3m2!1sen!2sng!4v1627063567593!5m2!1sen!2sng",
+    "blacktitle": "RKB Male Student Accommodation at Metroview Estate, Abuja.",
+    "about": "<p class=\"w-85 xl-w-100\">Fully Furnished Male only student accommodation Located at Metroview estate. 1minute drive and 5minute walk to Nile university.</p>",
+    "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15761.86501824392!2d7.4014701!3d9.0211608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e754b8ded2d2d%3A0x31986494064c67dc!2sRKB%20Student%20Accommodation%20(Male)!5e0!3m2!1sen!2sfi!4v1693209089806!5m2!1sen!2sfi",
     "bottombg": "/rbk/20210719_125151.jpg"
   }
   

@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Layout } from "../components/Layout";
 
 const data = { female: 36, male: 29 }
 
 export const Gallery = ({ match }) => {
   const type = match?.params?.type;
-
+  useEffect(() => {
+    if (!["female"].includes(type)) window.location.href = "/not-found"
+  }, [type])
   return (
     <Layout
       subtitle={"Gallery"}

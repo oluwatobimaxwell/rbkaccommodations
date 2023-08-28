@@ -314,14 +314,6 @@ a.text-parrot-green-hover:hover {
 .animate__fadeIn.show-in {
   display: block !important;
 }
-/* 
-.pointer-events {
-  pointer-events: all !important;
-  cursor: pointer !important;
-  position: relative !important;
-  background: red !important;
-  z-index: 9000000000;
-} */
 
 .tp-splitted.tp-charsplit {
   color: #007bff;
@@ -358,22 +350,22 @@ a.text-parrot-green-hover:hover {
 }
 
 .option-price-label {
-	font-size: 10px;
+	font-size: 12px;
 	text-transform: capitalize;
 	width: 100%;
 }
 
 .option-price-value {
+  font-size: 18px;
+  font-weight: 600;
 	margin-bottom: -10px !important;
 }
 
 .page.option-price-label {
 	font-size: 13px;
 	margin-top: -10px;
-  /* font-weight: bold; */
-
-
 }
+
 .page.option-price-label .inner-label {
 	font-size: 12px;
 	margin-top: -13px !important;

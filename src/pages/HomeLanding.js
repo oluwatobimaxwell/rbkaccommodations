@@ -348,8 +348,9 @@ export const HomeLanding = () => {
 					</div>
 				</div>
 			</section>
-			<div id="room-list" />
-			<RoomsInner />
+			<div id="room-list" >
+				<RoomsInner />
+			</div>
 		</Layout>
 	);
 };

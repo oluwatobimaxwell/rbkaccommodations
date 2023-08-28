@@ -15,6 +15,8 @@ export const HomeInterior = ({ match }) => {
     (r) => r.category === type
   );
 
+  const sliderSize = carousel?.length < 3 ? carousel.length : 3;
+
   if (type === "male") {
     return <ComingSoon
       message="RKB Male Accommodation Coming Soon At Metroview Estate which is built by 1sqmbyDantata and owned by World Health Organization (WHO), right beside Nile university."
@@ -195,7 +197,7 @@ export const HomeInterior = ({ match }) => {
               >
                 <div
                   className="swiper-container portfolio-classic position-relative"
-                  data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav" }, "autoplay": { "delay": 4500, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 3 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 } }, "effect": "slide" }'
+                  data-slider-options={`{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav" }, "autoplay": { "delay": 4500, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": ${sliderSize} }, "992": { "slidesPerView": ${sliderSize} }, "768": { "slidesPerView": 2 } }, "effect": "slide" }`}
                 >
                   <div className="swiper-wrapper">
                     {carousel.map((item, i) => {
