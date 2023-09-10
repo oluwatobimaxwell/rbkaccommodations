@@ -6,7 +6,7 @@ export const HomeLanding = () => {
 	const accommodations = [
 		{
 			name: {
-				line1: "RKB Female",
+				line1: "RKB Male",
 				line2: "Accommodation",
 			},
 			location: "Ochacho Real-Homes, Karmo, Abuja, Nigeria.",
