@@ -13,18 +13,18 @@ const { site } = data;
 
 const addresses = [
   {
-    name: "RKB Female Accommodation",
+    name: "RKB Male Accommodation",
     address:
-      "Ochacho Real Homes LTD, Karmo, Close to Nizamiye Hospital, Abuja..",
+      "Ochacho Real Homes LTD, Karmo, Close to Nizamiye Hospital, Abuja.",
     phone: site.phone1,
     email: "info@rkbstudentaccommodation.com",
     flag: "https://www.countryflags.com/wp-content/uploads/nigeria-flag-png-xl.png",
     bg: "images/contact-us-classic-bg-1.jpg",
   },
   {
-    name: "RKB Male Accommodation",
+    name: "RKB Female Accommodation",
     address:
-      "Metroview Estate, Right beside Nile  University, Abuja.",
+      "Metroview Estate, Right beside Nile  University, <br/>Abuja.",
     phone: site.phone1,
     email: "info@rkbstudentaccommodation.com",
     flag: "https://www.countryflags.com/wp-content/uploads/nigeria-flag-png-xl.png",
@@ -237,9 +237,9 @@ export const Contact = () => {
                       </span>
                     </div>
                     <div className="bg-medium-gray margin-20px-tb w-100 h-1px" />
-                    <p className="margin-10px-bottom w-85 lg-w-100 sm-w-75 xs-w-85">
-                      {item.address}
-                    </p>
+                    <p className="margin-10px-bottom w-85 lg-w-100 sm-w-75 xs-w-85" 
+                      dangerouslySetInnerHTML={{ __html: item.address }}
+                    />
                     <span className="d-block font-weight-500 margin-10px-top text-extra-dark-gray line-height-20px w-100">
                       Phone: {item.phone}
                     </span>

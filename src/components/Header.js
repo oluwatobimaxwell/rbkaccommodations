@@ -165,7 +165,7 @@ export const Footer = () => {
                 </div>
                 <div className="feature-box-content">
                   <span className="text-white text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
-                    RKB Female Accommodation
+                    RKB Male Accommodation
                   </span>
                   <p className="m-0">
                     Ochacho Real Homes LTD, Karmo, Close to Nizamiye Hospital, Abuja..
