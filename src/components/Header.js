@@ -168,7 +168,7 @@ export const Footer = () => {
                     RKB Male Accommodation
                   </span>
                   <p className="m-0">
-                    Ochacho Real Homes LTD, Karmo, Close to Nizamiye Hospital, Abuja..
+                    Ochacho Real Homes LTD, Karmo, Close to Nizamiye Hospital, Abuja.
                   </p>
                   <br />
                   <span className="text-white text-uppercase text-medium font-weight-500 alt-font margin-5px-bottom d-block">
