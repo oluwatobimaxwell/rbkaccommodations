@@ -17,7 +17,7 @@ export const HomeInterior = ({ match }) => {
 
   const sliderSize = carousel?.length < 3 ? carousel.length : 3;
 
-  if (type === "male") {
+  if (["male-metroview"].includes(type)) {
     return <ComingSoon
       message="RKB Male Accommodation Coming Soon At Metroview Estate which is built by 1sqmbyDantata and owned by World Health Organization (WHO), right beside Nile university."
     />

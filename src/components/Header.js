@@ -13,12 +13,12 @@ const { socials } = require("../data/site.json");
 
 export const TopNavigation = ({ boxheader }) => {
   return (
-    <header>
+    <header class="sticky">
       {/* start navigation */}
       <nav
         className={
           boxheader ||
-          "navbar navbar-expand-lg navbar-dark bg-transparent header-light fixed-top navbar-boxed header-reverse-scroll"
+          "navbar top-space navbar-expand-lg navbar-boxed navbar-light bg-transparent header-light fixed-top header-reverse-scroll"
         }
       >
         <div className="container-fluid nav-header-container">

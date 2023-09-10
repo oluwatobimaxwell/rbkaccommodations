@@ -80,6 +80,7 @@ export const RoomItemCard = ({ item, id }) => {
         style={{
           backgroundImage: `url("${item?.mediadata ? item?.mediadata?.location + "/image-" + (item?.mediadata?.index || 0) + ".jpg" : item?.image}")`,
           borderRadius: 8,
+          minHeight: 450
         }}
       >
         <div className="opacity-extra-medium-2 bg-extra-dark-gray" />
@@ -88,16 +89,14 @@ export const RoomItemCard = ({ item, id }) => {
             {price1 && (
               <span className={`w-${!!(price1 && price2) ? "50" : "100"} d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom`}>
                 <div className="option-price-value">N {price1}</div>
-                {/* <div className="option-price-value strike-through">N{item.option_prices.option1}k</div> */}
-                <label className="option-price-label">
+                {price2 && <label className="option-price-label">
                   Option 1
-                </label>
+                </label>}
               </span>
             )}
             {price2 && (
               <span className="w-50 d-block text-extra-medium text-white opacity-6 alt-font letter-spacing-2px text-uppercase margin-25px-bottom">
                 <div className="option-price-value">N {price2}</div>
-                {/* <div className="option-price-value strike-through">N{item.option_prices.option2}k</div> */}
                 <label className="option-price-label">
                   Option 2
                 </label>
@@ -106,12 +105,6 @@ export const RoomItemCard = ({ item, id }) => {
           </div>
           <h4 className="alt-font text-white text-uppercase w-90 lg-w-85 mx-auto margin-35px-bottom font-weight-500 " style={item?.twoinroom ? { marginBottom: 0 } : {}}>
             {item.name}
-            {item.twoinroom && (
-              <>
-                <br />
-                <div style={{ fontSize: 14, marginTop: -12 }}>[Two In A Room]</div>
-              </>
-            )}
             {item.roominfo && (
               <>
                 <br />
