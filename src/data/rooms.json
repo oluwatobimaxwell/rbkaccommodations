@@ -3,12 +3,11 @@
     "name": "Premium",
     "price": "750",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "category": "female-ochacho",
+    "category": "male-ochacho",
     "image": "../rbk/sa/IMG-20210711-WA0007.jpg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 850,
-      "option2": 950
+      "option1": 950
     },
     "mediadata": {
       "location": "../rbk/rooms/premium-female",
@@ -47,12 +46,11 @@
     "roominfo": "Two In A Room",
     "price": "550",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "category": "female-ochacho",
+    "category": "male-ochacho",
     "image": "../rbk/sa/IMG-20210711-WA0007.jpg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 700,
-      "option2": 800
+      "option1": 800
     },
     "mediadata": {
       "location": "../rbk/rooms/premium-ii-female",
@@ -88,12 +86,11 @@
     "name": "Premium Plus",
     "price": "800",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "category": "female-ochacho",
+    "category": "male-ochacho",
     "image": "../rbk/sa/IMG-20210711-WA0006.jpg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 900,
-      "option2": 1000
+      "option1": 1000
     },
     "mediadata": {
       "location": "../rbk/rooms/premium-plus-female",
@@ -192,12 +189,11 @@
     "name": "Executive Plus",
     "price": "850",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "category": "female-ochacho",
+    "category": "male-ochacho",
     "image": "../rbk/WhatsAppImage2021-07-18-1.17.44 PM.jpeg",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 950,
-      "option2": 1050
+      "option1": 1050
     },
     "features": [
       {
@@ -251,12 +247,11 @@
     "roominfo": "Two In A Room",
     "price": "700",
     "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
-    "category": "female-ochacho",
+    "category": "male-ochacho",
     "image": "../rbk/sa/IMG_9875.JPG",
     "location": "Ochacho, Abuja",
     "option_prices": {
-      "option1": 800,
-      "option2": 900
+      "option1": 900
     },
     "features": [
       {
