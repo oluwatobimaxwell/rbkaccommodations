@@ -94,7 +94,7 @@ export const SingleRoomView = ({ match }) => {
                 {/* start pricing header */}
                 <div className="pricing-header">
                   {/* <div className="text-medium margin-10px-bottom d-block alt-font">Core features</div> */}
-                  <div className="alt-font text-extra-dark-gray text-large font-weight-500 margin-3-rem-bottom text-uppercase">Option 1</div>
+                  {option2 && <div className="alt-font text-extra-dark-gray text-large font-weight-500 margin-3-rem-bottom text-uppercase">Option 1</div>}
                   <h3 className="alt-font font-weight-500 text-primary letter-spacing-minus-2px no-margin-bottom text-uppercase">₦{option1}</h3>
                   {/* <h3 className="alt-font font-weight-500 text-primary letter-spacing-minus-2px no-margin-bottom strike-through big">₦{room?.option_prices?.option1}k</h3> */}
                   <span className="text-uppercase text-extra-dark-gray letter-spacing-1px font-weight-500 text-small">Per Student Per Semester</span>
@@ -103,8 +103,8 @@ export const SingleRoomView = ({ match }) => {
                 {/* start pricing body */}
                 <div className="pricing-body padding-3-rem-tb">
                   <ul className="list-style-03">
-                    <li className="border-color-medium-gray">Excluded</li>
-                    <li className="border-color-medium-gray">Dinner, laundry </li>
+                    <li className="text-large font-weight-500">Included</li>
+                    <li className="text-large font-weight-500">Breakfast, dinner, laundry </li>
                   </ul>
                 </div>
                 {/* end pricing body */}

@@ -69,8 +69,8 @@ export const HomeLanding = () => {
 			icon: " line-icon-Bridge   icon-very-medium text-primary",
 		},
 		{
-			title: "Breakfast & Dinner",
-			desc: "Bonus Package",
+			title: "Meals",
+			desc: "Breakfast & Dinner",
 			icon: " line-icon-Teapot   icon-very-medium text-primary",
 		},
 		{
@@ -85,7 +85,7 @@ export const HomeLanding = () => {
 		},
 		{
 			title: "Laundry",
-			desc: "Bonus Package",
+			desc: "Dry cleaned, Washed & Ironed",
 			icon: " line-icon-Polo-Shirt    icon-very-medium text-primary",
 		},
 		{

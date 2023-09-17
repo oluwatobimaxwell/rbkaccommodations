@@ -17,7 +17,7 @@ const LineAdvert = () => {
         {/* start page title */}
         <i className={"solid-icon-Loudspeaker icon-very-medium text-white mr-3"} />   
         <h1 className="alt-font text-white no-margin-bottom text-center text-lg-start">
-        100K discount on any room option for Baze students
+        200K discount on any room option for Baze students
         </h1>
         {/* end page title */}
       </div>

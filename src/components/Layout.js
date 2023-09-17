@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Footer, TopNavigation } from "./Header";
+import LineAdvert from "./ads/LineAdvert";
 
 export const Layout = ({
   boxheader,
@@ -55,6 +56,7 @@ export const Layout = ({
           </div>
         </section>
       )}
+      <LineAdvert />
       {title && !boxheader && (
         <section
           className="parallax "
@@ -81,6 +83,7 @@ export const Layout = ({
           </div>
         </section>
       )}
+      
       <div class="main-content">{children}</div>
 
       <Footer />

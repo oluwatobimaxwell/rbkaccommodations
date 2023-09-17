@@ -166,6 +166,7 @@ export const HomeInterior = ({ match }) => {
         </div>
       </section>
       {/* end section */}
+      
       {/* start section */}
       {carousel.length ? (
         <section
