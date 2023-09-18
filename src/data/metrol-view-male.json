@@ -1,0 +1,89 @@
+[
+    {
+        "name": "Room of 2",
+        "roominfo": "Breakfast & dinner inclusive",
+        "price": "700",
+        "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
+        "category": "male-metroview",
+        "image": "../rbk/metro-view.jpg",
+        "location": "Metroview, Abuja",
+        "option_prices": {
+          "option1": 900
+        },
+        "features": [
+          {
+            "icon": "line-icon-Alarm-Clock2",
+            "title": "Private Kitchen"
+          }
+        ],
+        "cta_booknow": true,
+        "selectedmedia": [
+          "../rbk/metro-view.jpg"
+        ],
+        "media": [
+          {
+            "title": null,
+            "image": "../rbk/metro-view.jpg"
+          }
+        ],
+        "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
+      },
+      {
+        "name": "Room of 4",
+        "roominfo": "Breakfast & dinner inclusive",
+        "price": "700",
+        "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
+        "category": "male-metroview",
+        "image": "../rbk/metro-view.jpg",
+        "location": "Metroview, Abuja",
+        "option_prices": {
+          "option1": 800
+        },
+        "features": [
+          {
+            "icon": "line-icon-Alarm-Clock2",
+            "title": "Private Kitchen"
+          }
+        ],
+        "cta_booknow": true,
+        "selectedmedia": [
+          "../rbk/metro-view.jpg"
+        ],
+        "media": [
+          {
+            "title": null,
+            "image": "../rbk/metro-view.jpg"
+          }
+        ],
+        "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
+      },
+      {
+        "name": "Executive Room of 6",
+        "roominfo": "Breakfast & dinner inclusive",
+        "price": "800",
+        "rooms": "A1,A2,A3-B1,B2,B3 (A4&B4)",
+        "category": "male-metroview",
+        "image": "../rbk/metro-view.jpg",
+        "location": "Metroview, Abuja",
+        "option_prices": {
+          "option1": 800
+        },
+        "features": [
+          {
+            "icon": "line-icon-Alarm-Clock2",
+            "title": "Private Kitchen"
+          }
+        ],
+        "cta_booknow": true,
+        "selectedmedia": [
+          "../rbk/metro-view.jpg"
+        ],
+        "media": [
+          {
+            "title": null,
+            "image": "../rbk/metro-view.jpg"
+          }
+        ],
+        "content": "<b>Amenities:</b><br/>1. Kitchen & Dining area <br/>2. Lounge<br/>3. Laundry Room<br/>4. Gym<br/>5. Study Area<br/><br/><b>Rent Includes:</b><br/>1. Electricity<br/>2. Wi-Fi<br/>3. DSTV<br/>4. Water<br/>5. Transportation<br/>6. Laundry<br/><br/><b>Safety and Security:<b/><br/>1. CCTV Surveillance<br/>2. Armed Security Guards"
+      }
+]

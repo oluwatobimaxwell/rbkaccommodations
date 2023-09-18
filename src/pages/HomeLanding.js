@@ -95,7 +95,7 @@ export const HomeLanding = () => {
 		},
 		{
 			title: "Customer Service",
-			desc: "Responsible staff",
+			desc: "Responsive staff",
 			icon: "  line-icon-Headset     icon-very-medium text-primary",
 		},
 	];
