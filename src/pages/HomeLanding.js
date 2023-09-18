@@ -29,7 +29,7 @@ export const HomeLanding = () => {
 				line1: "RKB Male",
 				line2: "Accommodation",
 			},
-			location: "Metroview, right beside Nile University, Abuja, Nigeria",
+			location: "Coming Soon @ Metroview, right beside Nile University, Abuja, Nigeria",
 			image: require("../media/rbk/metro-view.jpg")
 				.default,
 			link: "/home/male",
