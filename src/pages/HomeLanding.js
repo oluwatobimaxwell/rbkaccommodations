@@ -38,7 +38,7 @@ export const HomeLanding = () => {
 
 	const features = [
 		{
-			title: "Free Wi-Fi",
+			title: "Starlink Wi-Fi",
 			desc: "Fast speed internet",
 			icon: " line-icon-Phone-Wifi    icon-very-medium text-primary",
 		},
